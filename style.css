@@ -2716,3 +2716,10 @@ img {
     transform: scale3d(1, 1, 1);
   }
 }
+
+@media (min-width: 992px) {
+  .custom-padding {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
