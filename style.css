@@ -889,7 +889,39 @@ padding: 50px 0px;
   text-transform: uppercase;
   overflow: hidden;
   display: inline-block;
+  line-height: 1.2;
+  word-break: break-word;
+  /* text-align: center; */
 }
+
+/* Large screens (default) */
+@media (min-width: 1200px) {
+  .text-reveal-heading {
+    font-size: 75px;
+  }
+}
+
+/* Medium screens (tablets & laptops) */
+@media (max-width: 1199px) {
+  .text-reveal-heading {
+    font-size: 60px;
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width: 767px) {
+  .text-reveal-heading {
+    font-size: 38px;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .text-reveal-heading {
+    font-size: 30px;
+  }
+}
+
  
 .overlay-group {
   position: absolute;
