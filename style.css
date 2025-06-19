@@ -967,20 +967,25 @@ padding: 50px 0px;
 
 @media (max-width: 1150px) {
   .about-three {
-    padding: 100px 50px;
+    /* padding: 100px 50px; */
   }
 }
 
 @media (max-width: 991px) {
   .about-three {
-    padding: 100px 0px;
+    /* padding: 100px 0px; */
   }
 }
 
 @media (max-width: 767px) {
   .about-three {
-    padding: 80px 0px;
+    /* padding: 80px 0px; */
     width: 100%;
+    /* max-width: 1900px; */
+    padding-top: 0% !important;
+    padding-left: 0% !important;
+  
+
   }
 }
 
@@ -1230,7 +1235,7 @@ padding: 50px 0px;
   .about-three__feature__item:not(:first-of-type) {
     padding-left: 0px;
     border-left: 0px solid var(--ostech-border-color, #dbdbdb);
-    margin-left: 0px;
+   
   }
 }
 
@@ -1286,7 +1291,7 @@ padding: 50px 0px;
 }
 
 .about-three__list {
-  width: 75%;
+  width: 90%;
   border-top: 1px solid var(--ostech-border-color, #dbdbdb);
   padding-top: 35px;
   margin-bottom: 35px;
@@ -1297,7 +1302,28 @@ padding: 50px 0px;
     width: 100%;
   }
 }
+@media (max-width: 1523px) {
+  .about-three__list {
+    width: 90%;
+  }
+}
 
+@media (max-width: 1519px) {
+  .about-three__list {
+    width: 95%;
+  }
+}
+@media (max-width: 1450px) {
+  .about-three__list {
+    width: 95%;
+  }
+}
+
+@media (max-width: 1447px) {
+  .about-three__list {
+    width: 99%;
+  }
+}
 .about-three__list__item {
   color: var(--ostech-text-dark, #222429);
   font-size: 14px;
@@ -1412,6 +1438,104 @@ padding: 50px 0px;
   margin-right: 10px !important;
   }
 }
+@media (max-width: 1407px) {
+  .about-three__award {
+   
+  margin-right: 100px !important;
+  }
+}
+@media (max-width: 1392px) {
+  .about-three__award {
+   
+  margin-right: 90px !important;
+  }
+}
+
+@media (max-width: 1377px) {
+  .about-three__award {
+   
+  margin-right: 80px !important;
+  }
+}
+
+@media (max-width: 1352px) {
+  .about-three__award {
+   
+  margin-right: 70px !important;
+  }
+}
+
+@media (max-width: 1310px) {
+  .about-three__award {
+   
+  margin-right: 60px !important;
+  }
+}
+
+@media (max-width: 1288px) {
+  .about-three__award {
+   
+  margin-right: 50px !important;
+  }
+}
+
+@media (max-width: 1288px) {
+  .about-three__award {
+   
+  margin-right: 10px !important;
+  }
+}
+
+@media (max-width: 1168px) {
+  .about-three__award {
+   
+  margin-right: -10px !important;
+  }
+}
+@media (max-width: 1147px) {
+  .about-three__award {
+   
+  margin-right: -70px !important;
+  }
+}
+
+@media (max-width: 1150px) {
+  .about-three__award {
+   
+  margin-right: -40px !important;
+  }
+}
+@media (max-width: 1147px) {
+  .about-three__award {
+   
+  margin-right: -10px !important;
+  }
+}
+
+@media (max-width: 1110px) {
+  .about-three__award {
+   
+  margin-right: -50px !important;
+  }
+}
+
+
+
+@media (max-width: 1107px) {
+  .about-three__award {
+   
+  margin-right: -20px !important;
+  }
+}
+
+@media (max-width: 1075px) {
+  .about-three__award {
+   
+  margin-right: -25px !important;
+  }
+}
+
+
 
 .about-three__award i {
   padding: 17px;
@@ -1689,8 +1813,23 @@ padding: 50px 0px;
 }
 
 @media (max-width: 1650px) {
-    .about-three__thumb::after {
-           position: absolute;
+  .about-three__thumb::after {
+    position: absolute;
+    bottom: 50px;
+    right: 200px;
+    height: 260px;
+    content: "";
+    width: 88%;
+    background: transparent;
+    border: 30px solid var(--ostech-base, #ee8624);
+    z-index: -1;
+    animation: leftRightAnimation 5s ease-in-out infinite;
+}
+
+}
+@media (min-width: 1600px) {
+  .about-three__thumb::after {
+    position: absolute;
     bottom: 50px;
     right: 190px;
     height: 260px;
@@ -1700,9 +1839,84 @@ padding: 50px 0px;
     border: 30px solid var(--ostech-base, #ee8624);
     z-index: -1;
     animation: leftRightAnimation 5s ease-in-out infinite;
-    }
 }
 
+}
+@media (max-width: 1600px) {
+  .about-three__thumb::after {
+    position: absolute;
+    bottom: 50px;
+    right: 188px;
+    height: 260px;
+    content: "";
+    width: 90%;
+    background: transparent;
+    border: 30px solid var(--ostech-base, #ee8624);
+    z-index: -1;
+    animation: leftRightAnimation 5s ease-in-out infinite;
+}
+
+}
+@media (max-width: 1570px) {
+  .about-three__thumb::after {
+    position: absolute;
+    bottom: 50px;
+    right: 170px;
+    height: 260px;
+    content: "";
+    width: 100%;
+    background: transparent;
+    border: 30px solid var(--ostech-base, #ee8624);
+    z-index: -1;
+    animation: leftRightAnimation 5s ease-in-out infinite;
+}
+
+}
+@media (max-width: 1490px) {
+  .about-three__thumb::after {
+    position: absolute;
+    bottom: 50px;
+    right: 150px;
+    height: 260px;
+    content: "";
+    width: 106%;
+    background: transparent;
+    border: 30px solid var(--ostech-base, #ee8624);
+    z-index: -1;
+    animation: leftRightAnimation 5s ease-in-out infinite;
+}
+
+}
+@media (max-width: 1390px) {
+  .about-three__thumb::after {
+    position: absolute;
+    bottom: 50px;
+    right: 130px;
+    height: 260px;
+    content: "";
+    width: 110%;
+    background: transparent;
+    border: 30px solid var(--ostech-base, #ee8624);
+    z-index: -1;
+    animation: leftRightAnimation 5s ease-in-out infinite;
+}
+
+}
+@media (max-width: 1000px) {
+  .about-three__thumb::after {
+    position: absolute;
+    bottom: 50px;
+    right: 190px;
+    height: 260px;
+    content: "";
+    width: 90%;
+    background: transparent;
+    border: 30px solid var(--ostech-base, #ee8624);
+    z-index: -1;
+    animation: leftRightAnimation 5s ease-in-out infinite;
+}
+
+}
 /* ---------------------------service-------------------------------------------------- */
 .service-three {
     position: relative;
@@ -2050,12 +2264,12 @@ padding: 50px 0px;
 .why-choose-two__funfact__item {
     position: relative;
     z-index: 1;
-background: linear-gradient(135deg, #f3f3f3, #ffffff);
-
+background-image: url("./images/background/funfact-1-1.png");
+border: 1px solid rgb(196, 196, 196);
     padding-bottom: 30px;
     transition: all 0.4s ease-in-out;
     padding: 50px 0px;
-    /* border-radius: 10px; */
+    border-radius: 10px;
 }
 
 .why-choose-two__funfact__item__icon {
@@ -2131,11 +2345,11 @@ background: linear-gradient(135deg, #f3f3f3, #ffffff);
 }
 
 .why-choose-two__funfact__item:hover .why-choose-two__funfact__item__count {
-    color: var(--ostech-black, #171717);
+    color: var(--ostech-black, #ffffff);
 }
 
 .why-choose-two__funfact__item:hover .why-choose-two__funfact__item__text {
-    color: var(--ostech-black, #171717);
+    color: var(--ostech-black, #fffbfb);
 }
 
 .why-choose-two__funfact__item:hover {
