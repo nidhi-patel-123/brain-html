@@ -208,17 +208,17 @@
 }
 
 .topbar-one__social a {
-  font-size: 12px;
+  font-size: 10px;
   color: var(--ostech-black, #171717);
   transition: all 500ms ease;
   border: 1px solid black;
   border-radius: 23%;
-  padding: 4px 7px;
+  padding: 3px 5px;
   
 }
 
 .topbar-one__social a + a {
-  margin-left: 15px;
+  margin-left: 10px;
 }
 
 .topbar-one__social a:hover {
