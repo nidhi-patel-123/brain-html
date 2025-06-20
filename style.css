@@ -1048,7 +1048,7 @@ padding: 50px 0px;
   mask-size: auto;
   width: auto;
   height: 470px;
-  background: var(--ostech-base, #ee8624);
+  /* background: var(--ostech-base, #ee8624); */
   margin-left: -80px;
 }
 
@@ -1073,6 +1073,7 @@ padding: 50px 0px;
 .about-three__thumb__item--two img {
   object-fit: cover;
   width: 100%;
+  border: none !important;
 }
 
 .about-three__thumb__call {
@@ -3335,4 +3336,416 @@ img {
 
 .slider-container .px-3.py-4 {
   flex-grow: 1;
+}
+
+/* ---------------------------------------contact----------------------------------------- */
+.center-fm {
+    background-color: #FFAA17;
+}
+ 
+@media(max-width: 991px) {
+    .center-fm {
+        background-color: #232429;
+    }
+}
+ 
+.center-last {
+    position: relative;
+    background-color: #232429;
+    z-index: 0;
+}
+ 
+.center-last::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/benefit-shape-1-1.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    z-index: -1;
+}
+ 
+.contact-two {
+    background: var(--ostech-secondary, #232429);
+    position: relative;
+    overflow: hidden;
+}
+ 
+.sec-title__title .contact-two__thumb {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+ 
+.contact-two__thumb img {
+    object-fit: cover;
+}
+ 
+@media (max-width: 991px) {
+    .contact-two__thumb {
+        width: 100%;
+        position: relative;
+    }
+ 
+    .contact-two__thumb img {
+        width: 100%;
+    }
+}
+ 
+.contact-two__right {
+    position: relative;
+    z-index: 1;
+}
+ 
+@media (max-width: 1199px) {
+    .contact-two__right {
+        padding: 100px 0px 0px;
+    }
+}
+ 
+@media (max-width: 991px) {
+    .contact-two__right {
+        padding: 30px 0px 0px;
+    }
+}
+ 
+.contact-two__top {
+    background: var(--ostech-base, #EE8624);
+    position: absolute;
+    top: 0;
+    left: 5%;
+    height: 100%;
+    width: 240px;
+}
+ 
+@media (max-width: 1199px) {
+    .contact-two__top {
+        background: transparent;
+        height: auto;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+    }
+}
+ 
+.center-text-add {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+ 
+@media (max-width: 991px) {
+    .center-text-add {
+        transform: rotate(0deg);
+        writing-mode: horizontal-tb;
+    }
+}
+ 
+.contact-two__top__content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+ 
+@media (max-width: 991px) {
+    .contact-two__top__content {
+        transform: rotate(0deg);
+        writing-mode: horizontal-tb;
+    }
+ 
+    .contact-two__top__content .sec-title .sec-title__title,
+    .contact-two__top__content .sec-title .sec-title__tagline {
+        color: var(--ostech-white, #fff);
+    }
+}
+ 
+.contact-two__top__content .sec-title {
+    padding-bottom: 0;
+}
+ 
+@media (max-width: 1199px) {
+    .contact-two__top__content .sec-title .sec-title__title,
+    .contact-two__top__content .sec-title .sec-title__tagline {
+        color: var(--ostech-white, #fff);
+    }
+ 
+    .contact-two__top__content .sec-title .sec-title__img {
+        transform: rotate(90deg);
+        margin: 0 12px 0px 0px;
+    }
+}
+ 
+.contact-two__content {
+    position: relative;
+    padding: 190px 0px;
+}
+ 
+@media (max-width: 1199px) {
+    .contact-two__content {
+        padding: 0px 0px 0px;
+    }
+}
+ 
+.contact-two__form__innersssss {
+    width: 80%;
+    margin: 50px auto;
+    padding: 60px 40px;
+    background: var(--ostech-black, #171717);
+    margin-left: -50px;
+}
+ 
+@media (max-width: 991px) {
+    .contact-two__form__innersssss {
+        max-width: 100%;
+    }
+}
+ 
+@media (max-width: 575px) {
+    .contact-two__form__innersssss {
+        padding: 40px 20px;
+    }
+}
+ 
+.contact-two__form input,
+.contact-two__form textarea {
+    background: var(--ostech-white, #fff);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 179%;
+    color: var(--ostech-text, #686A6F);
+}
+ 
+.contact-two__form input::placeholder,
+.contact-two__form textarea::placeholder {
+    font-size: 14px;
+    color: var(--ostech-text, #686A6F);
+}
+ 
+.contact-two__form textarea {
+    height: 151px;
+}
+ 
+.contact-two__shape {
+    position: absolute;
+    right: 0;
+    top: 0;
+    mix-blend-mode: overlay;
+    opacity: 0.7;
+}
+ 
+@media (max-width: 991px) {
+    .contact-two__shape {
+        display: none;
+    }
+}
+ 
+.sec-title {
+    margin-top: -3px;
+    padding-bottom: 38px;
+}
+ 
+@media (min-width: 768px) {
+    .sec-title {
+        padding-bottom: 52px;
+    }
+}
+ 
+.sec-title__img {
+    margin-right: 6px;
+}
+ 
+.sec-title__tagline {
+    margin: 0;
+    color: var(--ostech-text, #686A6F);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+ 
+.sec-title__title {
+    margin-top: 7px;
+    margin: 0;
+    font-size: 35px;
+    margin-top: 5px;
+    color: var(--ostech-text-dark, #222429);
+    font-weight: 700;
+    line-height: 117.5%;
+    align-items: center;
+    justify-content: center;
+}
+ 
+@media (min-width: px) {
+    .sec-title__title {
+        font-size: 40px;
+    }
+}
+ 
+.sec-title--two .sec-title__title {
+    color: var(--ostech-white, #fff);
+}
+ 
+.sec-title--two .sec-title__tagline {
+    color: var(--ostech-text-gray, #999B9F);
+}
+ 
+.sec-title--dark .sec-title__tagline {
+    color: var(--ostech-text-gray, #999B9F);
+}
+ 
+.sec-title--three .sec-title__tagline {
+    color: var(--ostech-secondary, #232429);
+}
+ 
+.sec-title__title {
+    margin-top: 7px;
+    margin: 0;
+    font-size: 35px;
+}
+ 
+@media(max-width : 500px) {
+    .sec-title__title {
+        padding-top: 6px;
+        font-size: 20px;
+    }
+}
+ 
+.form-one .bootstrap-select>.dropdown-toggle,
+.form-one input[type=text],
+.form-one input[type=email],
+.form-one input[type=tel],
+.form-one textarea {
+    display: block;
+    width: 100%;
+    height: 58px;
+    background-color: var(--ostech-gray, #F4F5F8);
+    color: var(--ostech-text, #686A6F);
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+ 
+.contact-two__form input,
+.contact-two__form textarea {
+    background: var(--ostech-white, #fff);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 179%;
+    color: var(--ostech-text, #686A6F);
+}
+ 
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password],
+input[type=search],
+input[type=number],
+input[type=tel],
+input[type=range],
+input[type=date],
+input[type=month],
+input[type=week],
+input[type=time],
+input[type=datetime],
+input[type=datetime-local],
+input[type=color],
+textarea {
+    color: var(--ostech-black, #171717);
+    border: 1px solid #eceae0;
+    border-radius: 0px;
+    padding: 3px;
+}
+ 
+.form-one__control--full {
+    margin-top: 20px;
+}
+ 
+.submit-button {
+    padding: 12px;
+    /* width: 50%; */
+    /* justify-content: left; */
+    /* align-items: start; */
+    /* margin-left: -180px; */
+    background-color: #ee8624;
+    color: black;
+}
+ 
+.tes-box-svg {
+    width: 61px;
+    height: 38px;
+    fill: var(--ostech-border-color, #DBDBDB);
+    position: absolute;
+    left: 40px;
+    bottom: -38px;
+}
+ 
+.right-Bg-Image {
+    background-image: url("https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/benefit-shape-1-1.png");
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right center;
+    z-index: 0;
+    opacity: 0.2;
+}
+ 
+@media(max-width : 991px) {
+    .center-text-add {
+        display: none;
+    }
+}
+ 
+.contact-two__form__innersssss {
+    width: 90%;
+    margin: 50px auto;
+    padding: 30px 40px;
+    background: var(--ostech-black, #171717);
+    margin-left: -80px;
+}
+@media(max-width : 991px) {
+    .contact-two__form__innersssss {
+        width: 80%;
+        margin: 50px auto;
+        padding: 60px 40px;
+        background: var(--ostech-black, #171717);
+     
+    }
+}
+
+
+@media(max-width : 500px) {
+    .contact-two__form__innersssss {
+        width: 90%;
+        margin: 50px auto;
+        padding: 60px 40px;
+        background: var(--ostech-black, #171717);
+     
+    }
+}
+ 
+
+.text-sastya{
+    margin-right: -70px;
+}
+
+
+@media(max-width : 500px) {
+    .text-sastya{
+       display: none;
+    }
 }
