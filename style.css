@@ -3364,6 +3364,9 @@ img {
     background-repeat: no-repeat;
     opacity: 0.3;
     z-index: -1;
+    object-fit: cover !important;
+    width: 100%;
+    margin-left: 300px;
 }
  
 .contact-two {
@@ -3698,7 +3701,7 @@ textarea {
     width: 100%;
     height: 100%;
     position: absolute;
-    background-size: contain;
+    background-size: cover !important;
     background-repeat: no-repeat;
     background-position: right center;
     z-index: 0;
@@ -3712,10 +3715,10 @@ textarea {
 }
  
 .contact-two__form__innersssss {
-    width: 80%;
+    width: 85%;
     margin: 50px auto;
     /* padding: 40px 50px !important; */
-    padding: 30px 40px 53px 45px;
+    padding: 30px 45px 53px 45px;
     background: var(--ostech-black, #171717);
     margin-left: -80px;
 }
@@ -3749,6 +3752,57 @@ textarea {
 }
 
 
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .contact-two__form__innersssss {
+   width: 130%;
+    margin: 50px auto;
+    /* padding: 40px 50px !important; */
+    padding: 40px 50px 53px 50px;
+    background: var(--ostech-black, #171717);
+    /* margin-left: -50px; */
+  }
+}
+
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .custom-col {
+    max-width: 20.5%;
+    flex: 0 0 18.5%;
+    display: none;
+ 
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1400px) {
+  .contact-two__form__innersssss {
+   width: 130%;
+    margin: 50px auto;
+    /* padding: 40px 50px !important; */
+    padding: 40px 50px 53px 50px;
+    background: var(--ostech-black, #171717);
+    margin-left: -50px;
+  }
+}
+@media (min-width: 1501px) and (max-width: 1700px) {
+  .contact-two__form__innersssss {
+   width: 130%;
+    margin: 50px auto;
+    /* padding: 40px 50px !important; */
+    padding: 40px 50px 53px 50px;
+    background: var(--ostech-black, #171717);
+    margin-left: -50px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .custom-col {
+    max-width: 20.5%;
+    flex: 0 0 18.5%;
+    display: none;
+ 
+  }
+}
 @media(max-width : 500px) {
     .contact-two__form__innersssss {
         width: 90%;
