@@ -2279,8 +2279,8 @@ border: 1px solid rgb(196, 196, 196);
     width: 100%;
     background: var(--ostech-black, #171717);
     height: 130px;
-    padding-left: 23px;
-    padding-right: 23px;
+    padding-left: 20px;
+    padding-right: 20px;
     font-size: 50px;
     color: var(--ostech-base, #FFAA17);
     display: flex;
@@ -3499,9 +3499,10 @@ img {
 .contact-two__form__innersssss {
     width: 80%;
     margin: 50px auto;
-    padding: 60px 40px;
+    padding: 600px 60px;
     background: var(--ostech-black, #171717);
     margin-left: -50px;
+   
 }
  
 @media (max-width: 991px) {
@@ -3711,9 +3712,10 @@ textarea {
 }
  
 .contact-two__form__innersssss {
-    width: 90%;
+    width: 80%;
     margin: 50px auto;
-    padding: 30px 40px;
+    /* padding: 40px 50px !important; */
+    padding: 30px 40px 53px 45px;
     background: var(--ostech-black, #171717);
     margin-left: -80px;
 }
@@ -3725,6 +3727,25 @@ textarea {
         background: var(--ostech-black, #171717);
      
     }
+}
+
+@media (min-width: 1400px) and (max-width: 1500px) {
+  .contact-two__form__innersssss {
+   width: 110%;
+    margin: 50px auto;
+    /* padding: 40px 50px !important; */
+    padding: 40px 50px 53px 50px;
+    background: var(--ostech-black, #171717);
+    margin-left: -50px;
+  }
+}
+
+
+@media (min-width: 1400px) and (max-width: 1500px) {
+  .custom-col {
+    max-width: 14.5%;
+    flex: 0 0 14.5%;
+  }
 }
 
 
@@ -3748,4 +3769,10 @@ textarea {
     .text-sastya{
        display: none;
     }
+}
+@media (min-width: 992px) {
+  .custom-col {
+    max-width: 12.5%;
+    flex: 0 0 12.5%;
+  }
 }
