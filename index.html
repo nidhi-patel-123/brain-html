@@ -11,7 +11,11 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 <!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  
+<!-- Include Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <!-- Include this in <head> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="css/topbar.css">
   <style>
@@ -735,37 +739,160 @@
   </div>
 </div>
 <!-- --------------------------------------logo swipe----------------------------------------- -->
- <div class="hsccs container-fluid">
-  <div class="bg-white py-5 px-4 text-center overflow-hidden">
-    <div class="custom-slider-track">
-      <div class="custom-slider d-flex align-items-center">
-        <!-- Duplicate logos for infinite scroll effect -->
-        <img src="images/sl-2.png" alt="L&T" class="trusted-client-logo" />
-        <img src="images/sl-3.png" alt="TVS Next" class="trusted-client-logo" />
-        <img src="images/sl-4.png" alt="Biocon" class="trusted-client-logo" />
-        <img src="images/sl-5.png" alt="Infosys" class="trusted-client-logo" />
-        <img src="images/sl-8.png" alt="Infosys" class="trusted-client-logo" />
-        <img src="images/sl-6.png" alt="Infosys" class="trusted-client-logo" />
 
-        <!-- Repeat again for smooth loop -->
-        <img src="images/sl-2.png" alt="L&T" class="trusted-client-logo" />
-        <img src="images/sl-3.png" alt="TVS Next" class="trusted-client-logo" />
-        <img src="images/sl-4.png" alt="Biocon" class="trusted-client-logo" />
-        <img src="images/sl-5.png" alt="Infosys" class="trusted-client-logo" />
-        <img src="images/sl-8.png" alt="Infosys" class="trusted-client-logo" />
-        <img src="images/sl-6.png" alt="Infosys" class="trusted-client-logo" />
+
+
+<div class="hsccs">
+  <div class="bg-white py-5 px-4 text-center">
+    <div class="swiper mySwiper mt-4">
+      <div class="swiper-wrapper">
+        <!-- Repeat this block for each image -->
+        <div class="swiper-slide d-flex justify-content-center">
+          <img src="images/sl-2.png" alt="L&T" class="trusted-client-logo">
+        </div>
+        <div class="swiper-slide d-flex justify-content-center">
+          <img src="images/sl-3.png" alt="TVS Next" class="trusted-client-logo">
+        </div>
+        <div class="swiper-slide d-flex justify-content-center">
+          <img src="images/sl-4.png" alt="Biocon" class="trusted-client-logo">
+        </div>
+        <div class="swiper-slide d-flex justify-content-center">
+          <img src="images/sl-5.png" alt="Infosys" class="trusted-client-logo">
+        </div>
+        <div class="swiper-slide d-flex justify-content-center">
+          <img src="images/sl-8.png" alt="Infosys" class="trusted-client-logo">
+        </div>
+        <div class="swiper-slide d-flex justify-content-center">
+          <img src="images/sl-6.png" alt="Infosys" class="trusted-client-logo">
+        </div>
+        <!-- Repeat once more for seamless looping -->
+        <div class="swiper-slide d-flex justify-content-center">
+          <img src="images/sl-2.png" alt="L&T" class="trusted-client-logo">
+        </div>
+        <div class="swiper-slide d-flex justify-content-center">
+          <img src="images/sl-3.png" alt="TVS Next" class="trusted-client-logo">
+        </div>
+        <div class="swiper-slide d-flex justify-content-center">
+          <img src="images/sl-4.png" alt="Biocon" class="trusted-client-logo">
+        </div>
+        <div class="swiper-slide d-flex justify-content-center">
+          <img src="images/sl-5.png" alt="Infosys" class="trusted-client-logo">
+        </div>
+        <div class="swiper-slide d-flex justify-content-center">
+          <img src="images/sl-8.png" alt="Infosys" class="trusted-client-logo">
+        </div>
+        <div class="swiper-slide d-flex justify-content-center">
+          <img src="images/sl-6.png" alt="Infosys" class="trusted-client-logo">
+        </div>
       </div>
     </div>
   </div>
 </div>
 
 
+<!-- ------------------------------------------latest project------------------------------------------- -->
+ <section class="project-two py-5">
+  <div class="container">
+    <!-- Section Heading -->
+    <div class="d-flex align-items-center justify-content-center mb-3">
+      <img src="images/background/smallDesign.png" alt="sec-title-s-1" class="sec-title__img me-2" />
+      <h6 class="sec-title__tagline">Latest Project</h6>
+    </div>
+    <div class="text-center mb-4">
+      <h2 class="sec-title__title">Our Recently Completed Latest Projects</h2>
+    </div>
+
+    <!-- Slick Slider -->
+    <div class="slider-container px-2">
+      <div class="latest-project-slider">
+        <!-- Slide 1 -->
+        <div class="p-2 d-flex gap-4">
+          <div class="overflow-hidden main-div">
+            <img src="images/background/Frame 1 (1).png" class="imgg1 w-100" alt="TIC TAC TOE PRO" />
+            <div class="px-3 py-2">
+              <h3 class="mt-2">TIC TAC TOE PRO</h3>
+              <p class="mt-2 text-gray-600">Experience the ultimate version of the classic Tic Tac Toe game! With advanced features, sleek design, and engaging gameplay, this app offers fun for all ages......</p>
+              <a href="/tictac" class="btn but mt-2">Read More +</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="p-2 d-flex gap-4">
+          <div class="overflow-hidden main-div">
+            <img src="images/background/frame 5.png" class="imgg1 w-100" alt="Radio Luisteren.fm" />
+            <div class="px-3 py-2">
+              <h3 class="mt-2">Radio Luisteren.fm: Live radio</h3>
+              <p class="mt-2 text-gray-600">We develop custom RadioLuisteren.fm solutions for clients, offering seamless live radio streaming experiences...</p>
+              <a href="/radioo" class="btn but mt-2">Read More +</a>
+            </div>
+          </div>
+        </div>
 
 
+          <!-- Slide 3 -->
+        <div class="p-2 d-flex gap-4">
+          <div class="overflow-hidden main-div">
+            <img src="images/background/frame 4.png" class="imgg1 w-100" alt="Radio Luisteren.fm" />
+            <div class="px-3 py-2">
+              <h3 class="mt-2">Photo Recovery & Data Recovery</h3>
+              <p class="mt-2 text-gray-600">We develop cutting-edge Photo Recovery apps to help you restore lost or deleted photos seamlessly. Our solutions are fast, secure, and designed for ultimate ease of use</p>
+              <a href="/radioo" class="btn but mt-2">Read More +</a>
+            </div>
+          </div>
+        </div>
 
 
+        
+          <!-- Slide 4 -->
+        <div class="p-2 d-flex gap-4">
+          <div class="overflow-hidden main-div">
+            <img src="./images/background/Frame 6.png" class="imgg1 w-100" alt="Radio Luisteren.fm" />
+            <div class="px-3 py-2">
+              <h3 class="mt-2">Dynamic Event Management App</h3>
+              <p class="mt-2 text-gray-600">We develop and design Dynamic Event Management Apps that streamline event planning, attendee management, and real-time coordination for a seamless experience.</p>
+              <a href="/radioo" class="btn but mt-2">Read More +</a>
+            </div>
+          </div>
+        </div>
 
+        <!-- Slide 5 -->
+        <div class="p-2 d-flex gap-4">
+          <div class="overflow-hidden main-div">
+            <img src="./images/background/frame6.jpg.png" class="imgg1 w-100" alt="Radio Luisteren.fm" />
+            <div class="px-3 py-2">
+              <h3 class="mt-2">Rayhan Medical Complex App</h3>
+              <p class="mt-2 text-gray-600">The Rayhan Medical Complex App is designed to provide a seamless and user-friendly healthcare experience. From booking appointments and accessing medical records to telemedicine consultations, this app ensures that quality healthcare is always within reach.</p>
+              <a href="/radioo" class="btn but mt-2">Read More +</a>
+            </div>
+          </div>
+        </div>
 
+        <div class="p-2 d-flex gap-4">
+          <div class="overflow-hidden main-div">
+            <img src="images/background/frame7.jpg.png" class="imgg1 w-100" alt="NextStep Freelancing" />
+            <div class="px-3 py-2">
+              <h3 class="mt-2">NextStep Freelancing</h3>
+              <p class="mt-2 text-gray-600">NextStep Freelancing is a comprehensive platform designed to help freelancers launch, grow, and succeed in their careers...</p>
+              <a href="/NextStep" class="btn but mt-2">Read More +</a>
+            </div>
+          </div>
+        </div>
+
+           <div class="p-2 d-flex gap-4">
+          <div class="overflow-hidden main-div">
+            <img src="images/background/frame8.jpg.png" class="imgg1 w-100" alt="NextStep Freelancing" />
+            <div class="px-3 py-2">
+              <h3 class="mt-2">One More Step Multimedia Education</h3>
+              <p class="mt-2 text-gray-600">At OMS Multimedia, we specialize in delivering cutting-edge digital solutions tailored to your business needs. From branding and graphic design to digital marketing, video production, and web solutions, we help businesses enhance their digital presence with impactful and engaging content. Let’s bring your vision to life with creativity and technology!</p>
+              <a href="/NextStep" class="btn but mt-2">Read More +</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 
@@ -805,8 +932,24 @@
   });
 </script>
 
-
-
+<!-- Swiper Initialization -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    loop: true,
+    speed: 3000,
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      320: { slidesPerView: 1 },
+      450: { slidesPerView: 2 },
+      768: { slidesPerView: 3 },
+      1024: { slidesPerView: 4 },
+    }
+  });
+</script>
 
 
 
@@ -842,6 +985,26 @@
         slidesPerView: 2,
       },
     },
+  });
+</script>
+<!-- JS Slick Carousel -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script>
+  $(document).ready(function () {
+    $('.latest-project-slider').slick({
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      responsive: [
+        { breakpoint: 1024, settings: { slidesToShow: 2 } },
+        { breakpoint: 768, settings: { slidesToShow: 1 } },
+        { breakpoint: 480, settings: { slidesToShow: 1 } }
+      ]
+    });
   });
 </script>
 </body>

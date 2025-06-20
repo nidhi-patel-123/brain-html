@@ -3091,34 +3091,218 @@ img {
   }
 }
 /* -----------------------------logo slider-------------------- */
-.hsccs {
-  width: 100%;
+.trusted-client-logo {
+  max-height: 150px;
+  width: auto;
+  object-fit: contain;
+}
+/* ------------------------------------------latest project--------------------------- */
+.project-two {
+  background-color: #f4f5f8;
+  padding: 50px 0px;
 }
 
-.custom-slider-track {
+@media (max-width: 991px) {
+  .project-two {
+    padding: 100px 0px 100px;
+  }
+}
+
+@media (max-width: 767px) {
+  .project-two {
+    padding: 80px 0px 0px;
+  }
+}
+
+.project-two--page {
+  padding: 120px 0px 120px;
+}
+
+@media (max-width: 991px) {
+  .project-two--page {
+    padding: 100px 0px 100px;
+  }
+}
+
+@media (max-width: 767px) {
+  .project-two--page {
+    padding: 80px 0px 80px;
+  }
+}
+
+.project-two--page::after {
+  display: none;
+}
+
+.project-two .container-fluid {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-two__item {
+  position: relative;
+  z-index: 1;
   overflow: hidden;
-  width: 100%;
+}
+
+.project-two__item:hover .project-two__thumb::after {
+  height: 100%;
+}
+
+.project-two__item:hover .project-two__thumb img {
+  transform: scale(1.1);
+}
+
+.project-two__item:hover .project-two__content {
+  transform: translateX(0%);
+}
+
+.project-two__thumb {
+  max-height: 510px;
+  height: 100%;
   position: relative;
 }
 
-.custom-slider {
+.project-two__thumb img {
+  width: 100%;
+  object-fit: cover;
+  transform: scale(1);
+  transition: all 0.4s ease-in-out;
+}
+
+.project-two__thumb::after {
+  content: "";
+  width: 100%;
+  height: 0%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: auto;
+  background-color: rgba(var(--ostech-secondary-rgb, 35, 36, 41), 0.6);
+  transition: all 0.4s ease-in-out;
+}
+
+.project-two__content {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  background: var(--ostech-base, #ee8624);
+  display: block;
+  right: 30px;
+  padding: 12px 30px 18px;
+  transform: translateX(-100%);
+  transition: transform 1000ms ease;
+}
+
+@media (max-width: 767px) and (min-width: 576px) {
+  .project-two__content {
+    right: 0;
+    width: 100%;
+    padding: 12px 20px 18px;
+  }
+}
+
+.project-two__content__title {
+  color: var(--ostech-text-dark, #222429);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 240%;
+  margin-bottom: -15px;
+  padding-bottom: 0;
+}
+
+.project-two__content__title a {
+  color: inherit;
+  background: linear-gradient(to right, currentcolor 0%, currentcolor 100%) 0px 95%/0px 1px no-repeat;
+  transition: all 500ms ease;
+}
+
+.project-two__content__title a:hover {
+  background-size: 100% 1px;
+}
+
+@media (max-width: 767px) and (min-width: 575px) {
+  .project-two__content__title {
+    font-size: 20px;
+  }
+}
+
+.project-two__content__text {
+  color: var(--ostech-text-dark, #222429);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 218.75%;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.project-two__content__btn {
+  position: absolute;
+  right: 30px;
+  top: -20px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--ostech-secondary, #232429);
+}
+
+.project-two__content__btn__icon {
+  width: 17px;
+  height: 17px;
+  display: block;
+  position: relative;
+}
+
+.project-two__content__btn__icon::after,
+.project-two__content__btn__icon::before {
+  content: "";
+  width: 2px;
+  height: 100%;
+  background-color: var(--ostech-white, #fff);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.4s ease-in-out;
+}
+
+.project-two__content__btn__icon::after {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.project-two__content__btn:hover {
+  background: var(--ostech-white, #fff);
+}
+
+.project-two__content__btn:hover .project-two__content__btn__icon::after,
+.project-two__content__btn:hover .project-two__content__btn__icon::before {
+  background-color: var(--ostech-base, #ee8624);
+}
+
+.imgg1 {
+  width: 100%;
+  object-fit: cover;
+}
+
+.main-div {
+  border: 1px solid #e5e7eb;
+  border-radius: 5px;
+}
+
+.but {
+  color: #ee8624;
+}
+
+.slider-container .main-div {
+  height: 435px;
   display: flex;
-  gap: 30px;
-  animation: slide-left 30s linear infinite;
+  flex-direction: column;
 }
 
-.trusted-client-logo {
-  max-height: 70px;
-  width: auto;
-  object-fit: contain;
-  flex-shrink: 0;
-}
-
-@keyframes slide-left {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+.slider-container .px-3.py-4 {
+  flex-grow: 1;
 }
