@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Navbar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- Swiper CSS CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<!-- Include Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <!-- Include this in <head> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/topbar.css">
+ <link rel="stylesheet" href="css/service.css">
+ <link rel="stylesheet" href="cssservice/app.css">
+ <link rel="stylesheet" href="css/footer.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&family=Playwrite+AU+SA:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+    * {
+ font-family: "Barlow" , sans-serif;
+}
+
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+
+
+</head>
+<body>
+<div>
+  <!-- -----------------------------top--------------------------- -->
+  <div class="topbar-one">
+    <div class="container-fluid">
+      <div class="topbar-one__inner">
+        <ul class="list-unstyled topbar-one__info ml-0">
+          <li class="topbar-one__info__item">
+            <i class="topbar-one__info__icon fas fa-map-marker-alt" aria-hidden="true"></i>
+            <a href="#" style="text-decoration: none;">440, Opera Business Hub, Surat.</a>
+          </li>
+          <li class="topbar-one__info__item">
+            <i class="topbar-one__info__icon fa-solid fa-envelope"></i>
+            <a href="mailto:info@brainartit.in" target="_blank" style="text-decoration: none;">info@brainartit.in</a>
+          </li>
+        </ul>
+
+        <div class="topbar-one__right">
+          <a href="tel:+91 93272 28578" class="topbar-one__right__call" style="text-decoration: none;">
+            <div class="topbar-one__right__call__icon">
+              <i class="fa-solid fa-phone-volume" aria-hidden="true"></i>
+            </div>
+            <p class="topbar-one__right__call__text">+91 93272 28578</p>
+          </a>
+
+          <div class="topbar-one__social">
+            <a href="https://www.linkedin.com/company/102210949/admin/dashboard/" target="_blank">
+              <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.facebook.com/people/Brainart-it-soution/61558498887261/" target="_blank">
+              <i class="fab fa-facebook-f" aria-hidden="true" style="padding: 1px 2px;"></i>
+            </a>
+            <a href="https://www.instagram.com/brainart_it_solution/" target="_blank">
+              <i class="fab fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="https://join.skype.com/invite/vHEhLX46XvDt" target="_blank">
+              <i class="fab fa-skype" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Navbar -->
+<nav class="z-50 p-1 Navbar-main" style="margin-top: -5px;">
+  <div class="container d-flex justify-content-between align-items-center mt-2 mb-2" style="padding-bottom: 0%;">
+    <img src="./images/logo-2-yellow.png" alt="Logo" class="LOGOSSS" />
+
+    <!-- Desktop Nav -->
+    <div class="d-none d-md-flex gap-5 align-items-center pp1ff">
+      <a href="index.html" class="nav-link-animate" style="font-size: 18px;">Home</a>
+      <a href="about.html" class="nav-link-animate" style="font-size: 18px;">About Us</a>
+
+      <!-- Dropdown -->
+   <!-- Dropdown -->
+<div class="position-relative dropdown-hover">
+  <a href="service.html" class="nav-link-animate dropdown-toggl border-0 bg-transparent d-inline-block" style="font-size: 18px;">Services <i class="fa-solid fa-chevron-down" style="font-size: 16px;"></i></a>
+  <div class="dropdown-menu shadow bg-white py-4 px-2 mt-2" style="width: 210px;border-radius: 0%;">
+    <a href="appdev.html" class="d-block text-decoration-none text-dark px-3 py-2 hover-orange" style="font-size: 18px;">App Development</a>
+    <a href="webdev.html" class="d-block text-decoration-none text-dark px-3 py-2 hover-orange" style="font-size: 18px;">Web Development</a>
+    <a href="gamedev.html" class="d-block text-decoration-none text-dark px-3 py-2 hover-orange" style="font-size: 18px;">Game Development</a>
+    <a href="digital.html" class="d-block text-decoration-none text-dark px-3 py-2 hover-orange" style="font-size: 18px;">Digital Marketing</a>
+    <a href="uiux.html" class="d-block text-decoration-none text-dark px-3 py-2 hover-orange" style="font-size: 18px;">UI/UX Design</a>
+  </div>
+</div>
+
+      <a href="career.html" class="nav-link-animate" style="font-size: 18px;">Career</a>
+      <a href="portfolio.html" class="nav-link-animate" style="font-size: 18px;">Portfolio</a>
+      <a href="contact.html" class="nav-link-animate" style="font-size: 18px;">Contact Us</a>
+    </div>
+
+    <!-- CTA Button -->
+    <div class="d-none d-md-block">
+      <a href="contact.html" class="MY_BTN" style="font-size: 17px;">Take Solution</a>
+    </div>
+
+    <!-- Mobile Toggle -->
+    <button class="d-md-none btn btn-link text-dark fs-3" onclick="toggleMobileMenu()">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+
+  <!-- Mobile Sidebar -->
+  <div class="mobile-sidebar bg-dark text-white px-3 py-4" id="mobileSidebar">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <img src="./images/logo-yellow.png" alt="Mobile Logo" class="mobilelogo" />
+      <button class="btn text-white fs-3" onclick="toggleMobileMenu()"><i class="fas fa-times"></i></button>
+    </div>
+
+    <nav class="d-flex flex-column gap-3">
+      <a href="index.html" class="text-white text-decoration-none border-bottom pb-1 ">HOME</a>
+      <a href="about.html" class="text-white text-decoration-none border-bottom pb-1">ABOUT US</a>
+      <a href="career.html" class="text-white text-decoration-none border-bottom pb-1">CAREER</a>
+      <a href="portfolio.html" class="text-white text-decoration-none border-bottom pb-1">PORTFOLIO</a>
+      <a href="contact.html" class="text-white text-decoration-none border-bottom pb-1">CONTACT US</a>
+
+      <div>
+        <button style="margin-top: -10px;margin-left: -10px;"  class="btn w-100 text-white text-start d-flex justify-content-between align-items-center " onclick="toggleServiceDropdown()">
+          SERVICES
+          <i class="fas fa-angle-down" id="dropdownIcon"></i>
+        </button>
+        <div class="mt-2 d-none" id="mobileServiceDropdown">
+          <a href="appdev.html" class="text-white d-block border-bottom pb-1 ps-3" style="text-decoration: none;">APP DEVELOPMENT</a>
+          <a href="webdev.html" class="text-white d-block border-bottom pb-1 ps-3" style="text-decoration: none;">WEB DEVELOPMENT</a>
+          <a href="gamedev.html" class="text-white d-block border-bottom pb-1 ps-3" style="text-decoration: none;">GAME DEVELOPMENT</a>
+          <a href="digital.html" class="text-white d-block border-bottom pb-1 ps-3" style="text-decoration: none;">DIGITAL MARKETING</a>
+          <a href="uiux.html" class="text-white d-block border-bottom pb-1 ps-3" style="text-decoration: none;">UI/UX DESIGN</a>
+        </div>
+      </div>
+
+      <a href="contact.html" class="MY_BTN mt-3 w-100">Take Solution</a>
+
+      <div class="location-mobile mt-3">
+        <i class="fa-solid fa-envelope"></i>
+        <a href="mailto:info@brainartit.in" class="text-white ms-2" style="text-decoration: none;">info@brainartit.in</a>
+      </div>
+      <div class="call-mobile mt-2">
+        <i class="fa-solid fa-phone"></i>
+        <a href="tel:+919327228578" class="text-white ms-2" style="text-decoration: none;">+91 93272 28578</a>
+      </div>
+
+      <div class="icon-div-mobile mt-3">
+        <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="text-white"><i class="fab fa-skype"></i></a>
+      </div>
+    </nav>
+  </div>
+</nav>
+
+
+<!-- -------------------------hero----------------------------------------- -->
+ <!-- Hero Section -->
+<div class="position-relative w-100 mt-5" style="height: 400px;">
+  <!-- Background Image -->
+  <div class="position-absolute top-0 start-0 w-100 h-100 bg-cover bg-center" style="background-image: url('./images/main-slider/mobileapp.jpg'); background-position: top;">
+    <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0,0,0,0.7);"></div>
+  </div>
+
+  <!-- Content -->
+  <div class="position-relative z-2 text-white h-100 d-flex align-items-center px-3 px-sm-4 px-md-5 text-center text-sm-start">
+    <div>
+      <h1 class="fw-bold display-5 display-sm-4 display-md-3">App Development</h1>
+      <div class="d-flex align-items-center justify-content-center justify-content-sm-start gap-2 mt-3 small">
+        <span style="color: #ee8624;font-size: 18px;">Home</span>
+        <i class="fa-solid fa-angles-right"></i>
+        <span style="color: #ee8624;font-size: 18px;">Service</span>
+        <i class="fa-solid fa-angles-right"></i>
+        <span class="" style="font-size: 18px;">Mobile App Development</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- --------------------------------------111111111111111--------------------------- -->
+<div class="d-flex flex-column flex-md-row align-items-center justify-content-center px-4 px-md-5 px-lg-5 mt-5 container">
+  <div class="w-100 max-w-1000 bg-white d-flex flex-column flex-md-row align-items-stretch shadow-md gap-md-3">
+    
+    <!-- Left Menu -->
+    <div class="w-100 left-menu" style="max-width: 400px; background-color: #EE8624; padding: 1rem;">
+      <!-- All Service Header -->
+      <div class="position-relative">
+        <div class="bg-black text-white fw-bold fs-5 p-3">All Service</div>
+        <div style="
+          position: absolute;
+          left: 1rem;
+          bottom: -0.5rem;
+          width: 0;
+          height: 0;
+          border-left: 8px solid transparent;
+          border-right: 8px solid transparent;
+          border-top: 8px solid black;">
+        </div>
+      </div>
+
+      <!-- Selected Service -->
+      <div class="bg-black text-white fw-semibold p-3 mt-3 w-100 d-flex align-items-center justify-content-between">
+        Mobile App Development
+        <div style="
+          width: 0;
+          height: 0;
+          border-left: 10px solid transparent;
+          border-right: 10px solid transparent;
+          border-top: 10px solid white;">
+        </div>
+      </div>
+
+      <!-- Dynamic Menu Items -->
+   <div class="mt-3 d-flex flex-column gap-2 flex-grow-1">
+
+  <!-- Repeatable hover box -->
+  <div class="d-flex align-items-center justify-content-between" style="
+    position: relative;
+    padding: 19px 30px;
+    background-color: white;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    transition: color 0.3s ease;
+    z-index: 1;
+  " onmouseover="
+    this.children[0].style.transform = 'scaleX(1)';
+    this.children[1].style.color = 'white';
+    this.children[2].style.color = 'black';
+  " onmouseout="
+    this.children[0].style.transform = 'scaleX(0)';
+    this.children[1].style.color = 'black';
+    this.children[2].style.color = 'gray';
+  ">
+    <div style="
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-color: black;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
+      z-index: 0;
+    "></div>
+    <span style="position: relative; z-index: 1; color: black; transition: color 0.3s ease;">Native App Development</span>
+    <i class="fa fa-arrow-right" style="position: relative; z-index: 1; color: gray; transition: color 0.3s ease;"></i>
+  </div>
+
+  <!-- Repeat for each item -->
+
+<div class="d-flex align-items-center justify-content-between" style="
+  position: relative; padding: 19px 30px; background-color: white; overflow: hidden; cursor: pointer;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); transition: color 0.3s ease; z-index: 1;
+" onmouseover="
+  this.children[0].style.transform = 'scaleX(1)';
+  this.children[1].style.color = 'white';
+  this.children[2].style.color = 'black';
+" onmouseout="
+  this.children[0].style.transform = 'scaleX(0)';
+  this.children[1].style.color = 'black';
+  this.children[2].style.color = 'gray';
+">
+  <div style="content: ''; position: absolute; inset: 0; background-color: black; transform: scaleX(0);
+    transform-origin: left; transition: transform 0.3s ease; z-index: 0;">
+  </div>
+  <span style="position: relative; z-index: 1; color: black; transition: color 0.3s ease;">Hybrid App Development</span>
+  <i class="fa fa-arrow-right" style="position: relative; z-index: 1; color: gray; transition: color 0.3s ease;"></i>
+</div>
+
+
+  <div class="d-flex align-items-center justify-content-between" style="
+    position: relative;     padding: 19px 30px; background-color: white; overflow: hidden; cursor: pointer;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); transition: color 0.3s ease; z-index: 1;
+  " onmouseover="
+    this.children[0].style.transform = 'scaleX(1)';
+    this.children[1].style.color = 'white';
+    this.children[2].style.color = 'black';
+  " onmouseout="
+    this.children[0].style.transform = 'scaleX(0)';
+    this.children[1].style.color = 'black';
+    this.children[2].style.color = 'gray';
+  ">
+    <div style="content: ''; position: absolute; inset: 0; background-color: black; transform: scaleX(0);
+      transform-origin: left; transition: transform 0.3s ease; z-index: 0;">
+    </div>
+    <span style="position: relative; z-index: 1; color: black; transition: color 0.3s ease;">Progressive Web Apps</span>
+    <i class="fa fa-arrow-right" style="position: relative; z-index: 1; color: gray; transition: color 0.3s ease;"></i>
+  </div>
+
+  <div class="d-flex align-items-center justify-content-between" style="
+    position: relative;     padding: 19px 30px; background-color: white; overflow: hidden; cursor: pointer;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); transition: color 0.3s ease; z-index: 1;
+  " onmouseover="
+    this.children[0].style.transform = 'scaleX(1)';
+    this.children[1].style.color = 'white';
+    this.children[2].style.color = 'black';
+  " onmouseout="
+    this.children[0].style.transform = 'scaleX(0)';
+    this.children[1].style.color = 'black';
+    this.children[2].style.color = 'gray';
+  ">
+    <div style="content: ''; position: absolute; inset: 0; background-color: black; transform: scaleX(0);
+      transform-origin: left; transition: transform 0.3s ease; z-index: 0;">
+    </div>
+    <span style="position: relative; z-index: 1; color: black; transition: color 0.3s ease;">App Migrations & Integrations</span>
+    <i class="fa fa-arrow-right" style="position: relative; z-index: 1; color: gray; transition: color 0.3s ease;"></i>
+  </div>
+
+  <div class="d-flex align-items-center justify-content-between" style="
+    position: relative;     padding: 19px 30px; background-color: white; overflow: hidden; cursor: pointer;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); transition: color 0.3s ease; z-index: 1;
+  " onmouseover="
+    this.children[0].style.transform = 'scaleX(1)';
+    this.children[1].style.color = 'white';
+    this.children[2].style.color = 'black';
+  " onmouseout="
+    this.children[0].style.transform = 'scaleX(0)';
+    this.children[1].style.color = 'black';
+    this.children[2].style.color = 'gray';
+  ">
+    <div style="content: ''; position: absolute; inset: 0; background-color: black; transform: scaleX(0);
+      transform-origin: left; transition: transform 0.3s ease; z-index: 0;">
+    </div>
+    <span style="position: relative; z-index: 1; color: black; transition: color 0.3s ease;">App Support & Maintenance</span>
+    <i class="fa fa-arrow-right" style="position: relative; z-index: 1; color: gray; transition: color 0.3s ease;"></i>
+  </div>
+
+  <div class="d-flex align-items-center justify-content-between" style="
+    position: relative;     padding: 19px 30px; background-color: white; overflow: hidden; cursor: pointer;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); transition: color 0.3s ease; z-index: 1;
+  " onmouseover="
+    this.children[0].style.transform = 'scaleX(1)';
+    this.children[1].style.color = 'white';
+    this.children[2].style.color = 'black';
+  " onmouseout="
+    this.children[0].style.transform = 'scaleX(0)';
+    this.children[1].style.color = 'black';
+    this.children[2].style.color = 'gray';
+  ">
+    <div style="content: ''; position: absolute; inset: 0; background-color: black; transform: scaleX(0);
+      transform-origin: left; transition: transform 0.3s ease; z-index: 0;">
+    </div>
+    <span style="position: relative; z-index: 1; color: black; transition: color 0.3s ease;">Custom App Development</span>
+    <i class="fa fa-arrow-right" style="position: relative; z-index: 1; color: gray; transition: color 0.3s ease;"></i>
+  </div>
+
+</div>
+
+    </div>
+
+    <!-- Right Image -->
+    <div class="w-100 flex-md-fill ps-0 ps-md-2 pe-0 pe-md-2 mt-4 mt-md-0">
+      <img
+        src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/service-d-1-1.png"
+        alt="Services"
+        class="w-100 h-100 rounded-1 object-fit-cover"
+        style="max-height: 700px;"
+      />
+    </div>
+  </div>
+</div>
+
+
+
+<!-- -------------------------------------------------------------------------------- -->
+<div class="container mt-5 px-5">
+  <div class="row">
+    <!-- Empty column (4 of 12) -->
+    <div class="col-lg-4 d-none d-lg-block"></div>
+
+    <!-- Content column (7 of 12) -->
+    <div class="col-12 col-lg-7">
+      <h1 class="h3 h-md4 fw-bold text-dark" style="font-size: 30px;">
+        Mobile App Development
+      </h1>
+      <p class="mt-3 text-secondary small small-md fw-normal lh" style="font-size: 18px;">
+        We create mobile apps that help businesses work more efficiently and connect better with their customers.
+        Our skilled developers at BrainArt IT Solution specialize in building high-quality Android, iOS,
+        and cross-platform apps to meet your needs.
+      </p>
+
+      <h2 class="h5 h-md5 fw-bold text-dark mt-4" style="font-size: 30px;">
+        Mobile-First Approach for Better Results
+      </h2>
+      <p class="mt-3 text-secondary small small-md fw-normal" style="font-size: 18px;">
+        We create smooth and efficient mobile experiences that improve operations and keep customers happy.
+        Our expertise ensures your app works seamlessly across all platforms.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<section class="py-5 text-[#333333]">
+  <div class="container px-3 px-md-5" style="margin-top: -50px;">
+    <div class="row">
+      <!-- Empty space (4 columns on large screens) -->
+      <div class="d-none d-lg-block col-lg-4"></div>
+
+      <!-- Content (7 columns on large screens, full on mobile) -->
+      <div class="col-12 col-lg-7">
+        <h2 class="fs-4 fs-md-5 fw-bold mb-4 text-center text-md-start mt-4">
+          Why Choose BrainArt IT Solution?
+        </h2>
+
+        <div class="row gy-4 justify-content-center">
+          <!-- Box 1 -->
+          <div class="col-12 col-md-6">
+            <div class="d-flex flex-column flex-md-row bg-white shadow overflow-hidden iit-11 group h-100">
+              <div class="p-3 d-flex align-items-center justify-content-center position-relative itt-a-1 icon-box mx-auto mx-md-0" style="width: 120px; max-width: 112px;">
+                <img src="./images/NewIcon/digital-service.png" alt="" class="it-img11 position-absolute img-fluid" />
+                <img src="./images/NewIcon/digital-service (2).png" alt="" class="it-img22 position-absolute img-fluid" />
+              </div>
+              <div class="p-4 flex-grow-1 text-center text-md-start">
+                <h6 class="fw-bold fs-5">Managed Tech Services</h3>
+                <p class="text-secondary mb-0" style="font-size: 14px;">
+                  Comprehensive IT management and support <br class="d-none d-md-block"> solutions.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Box 2 -->
+          <div class="col-12 col-md-6">
+            <div class="d-flex flex-column flex-md-row bg-white shadow overflow-hidden iit-11 group h-100">
+              <div class="p-3 d-flex align-items-center justify-content-center position-relative itt-a-1 icon-box mx-auto mx-md-0" style="width: 120px; max-width: 112px;">
+                <img src="./images/NewIcon/it-service.png" alt="" class="it-img11 position-absolute" style="width: 50px;" />
+                <img src="./images/NewIcon/it-service (2).png" alt="" class="it-img22 position-absolute" style="width: 50px;" />
+              </div>
+              <div class="p-4 flex-grow-1 text-center text-md-start">
+                <h6 class="fw-bold fs-5">IT Consulting Solutions</h3>
+                <p class="text-secondary mb-0" style="font-size: 14px;">
+                  Strategic consulting to enhance your business  <br class="d-none d-md-block"> technology infrastructure.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div> <!-- /col-7 -->
+    </div> <!-- /row -->
+  </div> <!-- /container -->
+</section>
+
+
+<section class="py-1 bg-white text-black">
+  <div class="container mx-auto">
+    <div class="row px-5">
+      
+      <!-- Empty space on large screens -->
+      <div class="d-none d-lg-block col-lg-4"></div>
+
+      <!-- Combined Content & Image Column -->
+      <div class="col-12 col-lg-7">
+        <div class="row align-items-center">
+          
+          <!-- Image -->
+          <div class="col-12 col-md-6 mb-4 mb-md-0">
+            <img
+              src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/service-s-1-1.png"
+              alt="Benefits"
+              class="shadow-md w-100"
+              style="height: 350px; object-fit: cover;"
+            />
+          </div>
+
+          <!-- Text Content -->
+          <div class="col-12 col-md-6">
+            <div class="d-flex align-items-start flex-column gap-3">
+              <!-- Heading -->
+              <h2 class="text-2xl fw-bold m-0">Our Few Benefits</h2>
+
+              <!-- Paragraph -->
+              <p class="text-gray-600 m-0" style="font-size: 18px;">
+                We create powerful, user-friendly mobile apps for seamless performance and better engagement.
+              </p>
+
+              <!-- Benefits List -->
+              <ul class="list-unstyled m-0">
+                <li class="d-flex align-items-center gap-2 text-gray-700 mt-1">
+                  <i class="fa-solid fa-circle-check fs-5" style="color: #EE8624;"></i>
+                  <span style="font-size: 18px;">Cross-Platform Compatibility</span>
+                </li>
+                <li class="d-flex align-items-center gap-2 text-gray-700 mt-1">
+                  <i class="fa-solid fa-circle-check fs-5" style="color: #EE8624;"></i>
+                  <span style="font-size: 18px;">Smooth Performance</span>
+                </li>
+                <li class="d-flex align-items-center gap-2 text-gray-700 mt-1">
+                  <i class="fa-solid fa-circle-check fs-5" style="color: #EE8624;"></i>
+                  <span style="font-size: 18px;">Ongoing Support</span>
+                </li>
+                <li class="d-flex align-items-center gap-2 text-gray-700 mt-1">
+                  <i class="fa-solid fa-circle-check fs-5" style="color: #EE8624;"></i>
+                  <span style="font-size: 18px;">On-time Delivery</span>
+                </li>
+                <li class="d-flex align-items-center gap-2 text-gray-700 mt-1">
+                  <i class="fa-solid fa-circle-check fs-5" style="color: #EE8624;"></i>
+                  <span style="font-size: 18px;">Cost Efficient</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div> <!-- inner row -->
+      </div> <!-- col-7 -->
+
+    </div> <!-- outer row -->
+  </div> <!-- container -->
+</section>
+
+
+
+<section class="py-5 px-5 d-flex justify-content-center align-items-start">
+  <div class="w-100" style="max-width: 1200px;">
+    <div class="row">
+      
+      <!-- Empty space on large screen -->
+      <div class="d-none d-lg-block col-lg-4"></div>
+      
+      <!-- FAQ content area -->
+      <div class="col-12 col-lg-7">
+        <h2 class="fw-bold mb-4 fs-3">Frequently Asked Questions (FAQs)</h2>
+
+        <div class="accordion" id="faqAccordion">
+
+          <!-- FAQ 1 -->
+          <div class="accordion-item border mb-3" style="border-radius: 0%;">
+            <h2 class="accordion-header">
+              <button class="accordion-button d-flex justify-content-between align-items-center px-4 py-4 text-start collapsed" type="button">
+                <span class="flex-grow-1" style="font-size: 18px;">What is mobile app development?</span>
+                <i class="fa fa-plus ms-3 toggle-icon"></i>
+              </button>
+            </h2>
+            <div class="accordion-body-wrapper" style="border-radius: 0%;">
+              <div class="accordion-body px-4 py-4 text-muted" style="border-radius: 0%;font-size: 17px;">
+                Mobile app development is the process of creating software applications specifically designed to run on mobile devices such as smartphones and tablets. This includes both native apps and cross-platform applications.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="accordion-item border mb-3" style="border-radius: 0%;">
+            <h2 class="accordion-header">
+              <button class="accordion-button d-flex justify-content-between align-items-center px-4 py-4 text-start collapsed" type="button">
+                <span class="flex-grow-1" style="font-size: 18px;">What platforms do you develop apps for?</span>
+                <i class="fa fa-plus ms-3 toggle-icon"></i>
+              </button>
+            </h2>
+            <div class="accordion-body-wrapper" style="border-radius: 0%;">
+              <div class="accordion-body px-4 py-4 text-muted" style="border-radius: 0%;font-size: 17px;">
+                We develop apps for various platforms, including iOS, Android, and cross-platform solutions that work on both operating systems, ensuring maximum reach and compatibility.
+              </div>
+            </div>
+          </div>
+
+          <!-- Add rest of the FAQs here (3 to 10) using same pattern -->
+          <!-- ... (Your existing FAQ 3 to 10 markup goes here without change) -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- --------------------------footer-------------------------------- -->
+ <!-- Footer Start -->
+<footer class="main-footer">
+  <div class="bg-image"></div>
+
+  <div class="widgets-section">
+    <div class="containerrr">
+      <div class="row footer-responsive">
+
+        <!-- About Widget -->
+        <div class="footer-column col-xl-3 col-lg-12 col-md-6 col-sm-12">
+          <div class="footer-widget about-widget">
+            <div class="logo">
+              <a href="index.html" style="text-decoration: none;">
+                <img src="images/background/footer-logo.png" alt="Footer Logo" style="width: 200px;" />
+              </a>
+            </div>
+            <div class="text">
+              BrainArt IT Solution is a leading software development company offering top-notch app development,
+              web development, and design services.
+            </div>
+           <ul class="social-icon-two d-flex gap-2" style="padding-left: 0; margin: 0;">
+  <li style="list-style: none;">
+    <a href="https://www.linkedin.com/company/brainart-it-solution/" target="_blank" style="text-decoration: none;">
+      <i class="fa-brands fa-linkedin-in"></i>
+    </a>
+  </li>
+  <li style="list-style: none;">
+    <a href="https://www.instagram.com/brainart_it_solution/" target="_blank" style="text-decoration: none;">
+      <i class="fab fa-instagram"></i>
+    </a>
+  </li>
+  <li style="list-style: none;">
+    <a href="https://www.facebook.com/people/Brainart-it-soution/" target="_blank" style="text-decoration: none;">
+      <i class="fab fa-facebook"></i>
+    </a>
+  </li>
+  <li style="list-style: none;">
+    <a href="https://join.skype.com/invite/vHEhLX46XvDt" target="_blank" style="text-decoration: none;">
+      <i class="fab fa-skype"></i>
+    </a>
+  </li>
+</ul>
+
+          </div>
+        </div>
+
+        <!-- Company Links -->
+        <div class="footer-column col-xl-3 col-lg-4 col-md-6 col-sm-12" style="text-decoration: none;">
+          <div class="footer-widget">
+            <h3 class="widget-title">Company</h3>
+      <ul class="user-links" style="padding-left: 0; margin-bottom: 0;">
+  <li style="list-style: none;">
+    <a href="about.html" style="text-decoration: none;">About Us</a>
+  </li>
+  <li style="list-style: none;">
+    <a href="services.html" style="text-decoration: none;">Services</a>
+  </li>
+  <li style="list-style: none;">
+    <a href="career.html" style="text-decoration: none;">Career</a>
+  </li>
+  <li style="list-style: none;">
+    <a href="portfolio.html" style="text-decoration: none;">Portfolio</a>
+  </li>
+  <li style="list-style: none;">
+    <a href="contact.html" style="text-decoration: none;">Contact Us</a>
+  </li>
+</ul>
+
+          </div>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-column col-xl-3 col-lg-4 col-md-6 col-sm-12">
+          <div class="footer-widget contact-widget">
+            <h3 class="widget-title">Contact</h3>
+            <div class="widget-content">
+              <div class="text">
+                440, Opera Business Hub, Lajamni Chowk, Digital Valley, Surat, Gujarat -394101
+              </div>
+           <ul class="contact-info" style="padding-left: 0; margin-bottom: 0;">
+  <li style="list-style: none; text-decoration: none;">
+    <i class="fa fa-envelope"></i>
+    <a href="mailto:info@brainartit.in" style="text-decoration: none;">info@brainartit.in</a>
+  </li>
+  <li style="list-style: none; text-decoration: none;">
+    <i class="fa fa-phone-square"></i>
+    <a href="tel:+919327228578" style="text-decoration: none;">+91 93272 28578</a>
+  </li>
+</ul>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery -->
+        <div class="footer-column col-xl-3 col-lg-4 col-md-6 col-sm-12">
+          <div class="footer-widget">
+            <h3 class="widget-title">Gallery</h3>
+            <div class="row d-flex g-2">
+              <div class="col-4"><img src="images/footer/8.png" alt="" /></div>
+              <div class="col-4"><img src="images/footer/2.jpeg" alt="" /></div>
+              <div class="col-4"><img src="images/footer/7.png" alt="" /></div>
+              <div class="col-4"><img src="images/footer/1.jpeg" alt="" /></div>
+              <div class="col-4"><img src="images/footer/3 1.png" alt="" /></div>
+              <div class="col-4"><img src="images/footer/4.png" alt="" /></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Copyright -->
+<div style="padding: 10px; background-color: black;">
+  <p style="text-align: center; margin-bottom: 0px; color: white;">
+    © 2025 BrainArt IT Solution All Rights Reserved
+  </p>
+</div>
+<!-- Footer End -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="scrpt.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script>
+  new WOW().init();
+</script>
+<!-- Swiper JS CDN -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Swiper Initialization -->
+<script>
+  const swiper = new Swiper('.review-swiper', {
+    modules: [Swiper.Autoplay, Swiper.Pagination],
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    spaceBetween: 20,
+    slidesPerView: 1,
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
+    },
+  });
+</script>
+<!-- JS Slick Carousel -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script>
+  $(document).ready(function () {
+    $('.latest-project-slider').slick({
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      responsive: [
+        { breakpoint: 1024, settings: { slidesToShow: 2 } },
+        { breakpoint: 768, settings: { slidesToShow: 1 } },
+        { breakpoint: 480, settings: { slidesToShow: 1 } }
+      ]
+    });
+  });
+</script>
+<!-- Include Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<!-- Bootstrap Bundle JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const buttons = document.querySelectorAll('.accordion-button');
+
+  buttons.forEach(button => {
+    const wrapper = button.parentElement.nextElementSibling;
+    const content = wrapper.firstElementChild;
+    const icon = button.querySelector('.toggle-icon');
+
+    button.addEventListener('click', () => {
+      const isOpen = wrapper.style.height && wrapper.style.height !== '0px';
+
+      // Close all
+      document.querySelectorAll('.accordion-body-wrapper').forEach(w => {
+        w.style.height = '0px';
+      });
+      document.querySelectorAll('.accordion-button').forEach(btn => {
+        btn.classList.remove('active');
+        const i = btn.querySelector('.toggle-icon');
+        i.classList.remove('fa-minus');
+        i.classList.add('fa-plus');
+      });
+
+      // If not already open → open this one
+      if (!isOpen) {
+        wrapper.style.height = content.scrollHeight + 'px';
+        button.classList.add('active');
+        icon.classList.remove('fa-plus');
+        icon.classList.add('fa-minus');
+      }
+    });
+  });
+</script>
+
+
+
+
+</body>
+</html>
+
+ 
