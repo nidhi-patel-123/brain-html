@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Navbar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- Swiper CSS CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../css/topbar.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&family=Playwrite+AU+SA:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+    * {
+ font-family: "Barlow" , sans-serif;
+}
+
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+
+
+</head>
+<body>
+<div>
+  <!-- -----------------------------top--------------------------- -->
+  <div class="topbar-one">
+    <div class="container-fluid">
+      <div class="topbar-one__inner">
+        <ul class="list-unstyled topbar-one__info ml-0">
+          <li class="topbar-one__info__item">
+            <i class="topbar-one__info__icon fas fa-map-marker-alt" aria-hidden="true"></i>
+            <a href="#" style="text-decoration: none;">440, Opera Business Hub, Surat.</a>
+          </li>
+          <li class="topbar-one__info__item">
+            <i class="topbar-one__info__icon fa-solid fa-envelope"></i>
+            <a href="mailto:info@brainartit.in" target="_blank" style="text-decoration: none;">info@brainartit.in</a>
+          </li>
+        </ul>
+
+        <div class="topbar-one__right">
+          <a href="tel:+91 93272 28578" class="topbar-one__right__call" style="text-decoration: none;">
+            <div class="topbar-one__right__call__icon">
+              <i class="fa-solid fa-phone-volume" aria-hidden="true"></i>
+            </div>
+            <p class="topbar-one__right__call__text">+91 93272 28578</p>
+          </a>
+
+          <div class="topbar-one__social">
+            <a href="https://www.linkedin.com/company/102210949/admin/dashboard/" target="_blank">
+              <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.facebook.com/people/Brainart-it-soution/61558498887261/" target="_blank">
+              <i class="fab fa-facebook-f" aria-hidden="true" style="padding: 1px 2px;"></i>
+            </a>
+            <a href="https://www.instagram.com/brainart_it_solution/" target="_blank">
+              <i class="fab fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="https://join.skype.com/invite/vHEhLX46XvDt" target="_blank">
+              <i class="fab fa-skype" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Navbar -->
+<nav class="z-50 p-1 Navbar-main" style="margin-top: -4px;">
+  <div class="container d-flex justify-content-between align-items-center mt-2 mb-2" style="padding-bottom: 0%;">
+    <img src="../images/logo-2-yellow.png" alt="Logo" class="LOGOSSS" />
+
+    <!-- Desktop Nav -->
+    <div class="d-none d-md-flex gap-5 align-items-center pp1ff">
+      <a href="../index.html" class="nav-link-animate " style="font-size: 18px;">Home</a>
+      <a href="../about.html" class="nav-link-animate" style="font-size: 18px;">About Us</a>
+
+      <!-- Dropdown -->
+<div class="position-relative dropdown-hover" style="position: relative; display: inline-block;">
+  <a href="../service.html" class="nav-link-animate dropdown-toggl border-0 bg-transparent d-inline-block" style="font-size: 18px; text-decoration: none;">
+    Services <i class="fa-solid fa-chevron-down" style="font-size: 16px;"></i>
+  </a>
+
+  <div class="dropdown-menu shadow bg-white py-3 px-2 mt--1" style="
+    width: 210px;
+    border-radius: 0%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: all 0.9s ease;
+    z-index: 999;
+  ">
+    <a href="../appdev.html" style="display: block; color: black; text-decoration: none; padding: 8px 16px; font-size: 18px;">App Development</a>
+    <a href="../webdev.html" style="display: block; color: black; text-decoration: none; padding: 8px 16px; font-size: 18px;">Web Development</a>
+    <a href="../gamedev.html" style="display: block; color: black; text-decoration: none; padding: 8px 16px; font-size: 18px;">Game Development</a>
+    <a href="../digital.html" style="display: block; color: black; text-decoration: none; padding: 8px 16px; font-size: 18px;">Digital Marketing</a>
+    <a href="../digital.html" style="display: block; color: black; text-decoration: none; padding: 8px 16px; font-size: 18px;">UI/UX Design</a>
+  </div>
+</div>
+
+
+      <a href="../career.html" class="nav-link-animate" style="font-size: 18px;">Career</a>
+      <a href="../portfolio.html" class="nav-link-animate" style="font-size: 18px;">Portfolio</a>
+      <a href="../contact.html" class="nav-link-animate" style="font-size: 18px;">Contact Us</a>
+    </div>
+
+    <!-- CTA Button -->
+    <div class="d-none d-md-block">
+      <a href="../takesolutin.html" class="MY_BTN" style="font-size: 17px;">Take Solution</a>
+    </div>
+
+    <!-- Mobile Toggle -->
+    <button class="d-md-none btn btn-link text-dark fs-3" onclick="toggleMobileMenu()">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+
+  <!-- Mobile Sidebar -->
+  <div class="mobile-sidebar bg-dark text-white px-3 py-4" id="mobileSidebar">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <img src="./images/logo-yellow.png" alt="Mobile Logo" class="mobilelogo" />
+      <button class="btn text-white fs-3" onclick="toggleMobileMenu()"><i class="fas fa-times"></i></button>
+    </div>
+
+    <nav class="d-flex flex-column gap-3">
+      <a href="../index.html" class="text-white text-decoration-none border-bottom pb-1 ">HOME</a>
+      <a href="../about.html" class="text-white text-decoration-none border-bottom pb-1">ABOUT US</a>
+      <a href="../career.html" class="text-white text-decoration-none border-bottom pb-1">CAREER</a>
+      <a href="../portfolio.html" class="text-white text-decoration-none border-bottom pb-1">PORTFOLIO</a>
+      <a href="../contact.html" class="text-white text-decoration-none border-bottom pb-1">CONTACT US</a>
+
+      <div>
+        <button style="margin-top: -10px;margin-left: -10px;"  class="btn w-100 text-white text-start d-flex justify-content-between align-items-center " onclick="toggleServiceDropdown()">
+          SERVICES
+          <i class="fas fa-angle-down" id="dropdownIcon"></i>
+        </button>
+        <div class="mt-2 d-none" id="mobileServiceDropdown">
+          <a href="../appdev.html" class="text-white d-block border-bottom pb-1 ps-3" style="text-decoration: none;">APP DEVELOPMENT</a>
+          <a href="../webdev.html" class="text-white d-block border-bottom pb-1 ps-3" style="text-decoration: none;">WEB DEVELOPMENT</a>
+          <a href="../gamedev.html" class="text-white d-block border-bottom pb-1 ps-3" style="text-decoration: none;">GAME DEVELOPMENT</a>
+          <a href="../digital.html" class="text-white d-block border-bottom pb-1 ps-3" style="text-decoration: none;">DIGITAL MARKETING</a>
+          <a href="../uiux.html" class="text-white d-block border-bottom pb-1 ps-3" style="text-decoration: none;">UI/UX DESIGN</a>
+        </div>
+      </div>
+
+      <a href="../takesolutin.html" class="MY_BTN mt-3 w-100">Take Solution</a>
+
+      <div class="location-mobile mt-3">
+        <i class="fa-solid fa-envelope"></i>
+        <a href="mailto:info@brainartit.in" class="text-white ms-2" style="text-decoration: none;">info@brainartit.in</a>
+      </div>
+      <div class="call-mobile mt-2">
+        <i class="fa-solid fa-phone"></i>
+        <a href="tel:+919327228578" class="text-white ms-2" style="text-decoration: none;">+91 93272 28578</a>
+      </div>
+
+      <div class="icon-div-mobile mt-3">
+        <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="text-white"><i class="fab fa-skype"></i></a>
+      </div>
+    </nav>
+  </div>
+</nav>
+<!-- -------------------------------hero-------------------------------------- -->
+<div class="position-relative w-100 text-white mt-5" style="height: 400px;">
+  <!-- Background Image -->
+  <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-cover bg-center" style="background-image: url('../images/abouts.jpg');object-fit: cover;background-size: cover;">
+    <!-- Black Overlay -->
+    <div class="position-absolute top-0 start-0 w-100 h-100 bg-black" style="opacity: 0.7;"></div>
+  </div>
+
+  <!-- Content -->
+  <div class="position-relative z-1 px-3 px-sm-4 px-md-5 d-flex flex-column justify-content-center h-100">
+    <h1 class="fw-bold mb-2" style="font-size: 32px;">
+      <span class="d-none d-sm-inline d-md-none" style="font-size: 40px;">Tic-Tac-Toe Pro</span>
+      <span class="d-none d-md-inline d-lg-none" style="font-size: 50px;">Tic-Tac-Toe Pro</span>
+      <span class="d-none d-lg-inline" style="font-size: 55px;">Tic-Tac-Toe Pro</span>
+    </h1>
+
+    <!-- Breadcrumb -->
+    <div class="d-flex align-items-center gap-2" style="font-size: 1rem;">
+      <span style="color: #ee8624;">Home</span>
+      <i class="fa-solid fa-angles-right"></i>
+      <span style="color: #ee8624;">Portfolio</span>
+      <i class="fa-solid fa-angles-right"></i>
+      <span class="text-light">Tic-Tac-Toe Pro</span>
+    </div>
+  </div>
+</div>
+<!-- ---------------------------------------------main--------------------------------- -->
+ <!-- Include Bootstrap and Font Awesome -->
+<!-- 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+-->
+
+<div class="container px-4 px-sm-5 mt-5">
+
+  <!-- Game Image -->
+  <div class="w-100 mx-auto mt-5 center" style="max-width: 1200px;">
+    <img src="../images/games/Frame 36.jpg" alt="Tic Tac Toe Game Preview" class="img-fluid rounded shadow mt-5 center">
+  </div>
+
+  <!-- Introduction -->
+  <div class="mx-auto mt-4" style="max-width: 1200px;">
+    <h1 class="h2 h2-sm fw-bold mt-5">Tic Tac Toe Pro: The Ultimate Gaming Experience</h1>
+    <p class="text-muted mt-3 fs-5 fs-sm-5">
+  At BrainArt IT Solution, we reimagined the timeless Tic Tac Toe game by developing Tic Tac Toe Pro: Ultimate Game—a feature-packed, dynamic mobile app designed for players of all ages. Our goal was to take a simple, classic game and transform it into an engaging, modern experience while preserving its charm and accessibility.
+    </p>
+  </div>
+
+  <!-- Dots -->
+  <div class="d-flex gap-2 mt-5 center" style="justify-content: center;">
+    <div class="rounded-circle" style="width:12px; height:12px;background-color: #9ca3af;"></div>
+     <div class="rounded-circle" style="width:12px; height:12px;background-color: #8a919f;"></div>
+ 
+    <div class="rounded-circle" style="width:12px; height:12px;background-color: #4b5563;"></div>
+  </div>
+
+  <!-- About the App -->
+  <div class="mx-auto mt-3" style="max-width: 1200px;">
+    <h1 class="h2 h2-sm fw-bold">About the App</h1>
+    <p class="text-muted mt-3 fs-5 fs-sm-5">
+We built Tic Tac Toe Pro using cutting-edge technology and a user-first approach, ensuring smooth performance, immersive gameplay, and an intuitive design. Whether it’s a quick 3x3 match or a strategic 6x6 battle, this app offers something for everyone
+    </p>
+  </div>
+
+<!-- Dots -->
+  <div class="d-flex gap-2 mt-5 center" style="justify-content: center;">
+    <div class="rounded-circle" style="width:12px; height:12px;background-color: #9ca3af;"></div>
+     <div class="rounded-circle" style="width:12px; height:12px;background-color: #8a919f;"></div>
+ 
+    <div class="rounded-circle" style="width:12px; height:12px;background-color: #4b5563;"></div>
+  </div>
+
+  <!-- Key Features -->
+  <div class="mx-auto mt-5" style="max-width: 1200px;">
+    <h1 class="h2 h2-sm fw-bold">Key Features We Delivered</h1>
+
+    <!-- Features List -->
+    <div class="mt-4">
+      <h5 class="fw-bold fs-4">Classic 3x3 Mode</h5>
+      <p class="text-muted fs-5">A faithful recreation of the traditional Tic Tac Toe for quick and fun gameplay.</p>
+
+      <h5 class="fw-bold mt-4 fs-4">Advanced 6x6 Mode</h5>
+      <p class="text-muted fs-5">A larger grid for strategy-driven matches, challenging players to think ahead.</p>
+
+      <h5 class="fw-bold mt-4 fs-4">Smart AI Integration</h5>
+      <p class="text-muted fs-5">An intelligent AI with adjustable difficulty levels, catering to both beginners and experts</p>
+
+      <h5 class="fw-bold mt-4 fs-4">Real-Time Multiplayer Mode</h5>
+      <p class="text-muted fs-5">Play against friends and family anytime, anywhere with seamless online multiplayer.</p>
+
+      <h5 class="fw-bold mt-4 fs-4">Sleek UI/UX Design</h5>
+      <p class="text-muted fs-5">A modern interface with vibrant themes, smooth animations, and intuitive controls.</p>
+
+      <h5 class="fw-bold mt-4 fs-4">Performance Tracking and Leaderboards</h5>
+      <p class="text-muted fs-5">Track progress, view stats, and compete on global leaderboards.</p>
+
+      <h5 class="fw-bold mt-4 fs-4">Customizable Features</h5>
+      <p class="text-muted fs-5">Personalize your experience with themes, board styles, and player icons.</p>
+    </div>
+  </div>
+
+ <!-- Dots -->
+  <div class="d-flex gap-2 mt-5 center" style="justify-content: center;">
+    <div class="rounded-circle" style="width:12px; height:12px;background-color: #9ca3af;"></div>
+     <div class="rounded-circle" style="width:12px; height:12px;background-color: #8a919f;"></div>
+ 
+    <div class="rounded-circle" style="width:12px; height:12px;background-color: #4b5563;"></div>
+  </div>
+
+  <!-- Why We Built It -->
+  <div class="mx-auto mt-5" style="max-width: 1200px;">
+    <h1 class="h2 h2-sm fw-bold">Why We Built It</h1>
+    <p class="text-muted mt-3 fs-5 fs-sm-5">
+ We wanted to bring the simplicity of Tic Tac Toe into the digital age with exciting new features and a polished user experience. Our goal was to deliver a fun, interactive, and competitive game that works seamlessly across all devices making it enjoyable for both casual gamers and serious players.
+    </p>
+  </div>
+
+ <!-- Dots -->
+  <div class="d-flex gap-2 mt-5 center" style="justify-content: center;">
+    <div class="rounded-circle" style="width:12px; height:12px;background-color: #9ca3af;"></div>
+     <div class="rounded-circle" style="width:12px; height:12px;background-color: #8a919f;"></div>
+ 
+    <div class="rounded-circle" style="width:12px; height:12px;background-color: #4b5563;"></div>
+  </div>
+
+  <!-- Conclusion -->
+  <div class="mx-auto mt-5" style="max-width: 1200px;">
+    <h1 class="h2 h2-sm fw-bold">The Result</h1>
+    <h5 class="fw-bold mt-3" style="font-size: 22px;">
+      <span style="color: #113169;">With Tic Tac Toe Pro:</span>
+      we’ve transformed a classic game into a modern masterpiece, blending nostalgia with innovation.
+    </h5>
+  </div>
+
+ <!-- Dots -->
+  <div class="d-flex gap-2 mt-5 center" style="justify-content: center;">
+    <div class="rounded-circle" style="width:12px; height:12px;background-color: #9ca3af;"></div>
+     <div class="rounded-circle" style="width:12px; height:12px;background-color: #8a919f;"></div>
+ 
+    <div class="rounded-circle" style="width:12px; height:12px;background-color: #4b5563;"></div>
+  </div>
+
+  <!-- Final Call -->
+  <div class="mx-auto mt-5" style="max-width: 1200px;">
+    <h1 class="h2 h2-sm fw-bold">Have an App Idea? Let’s Build It Together!</h1>
+    <p class="text-muted mt-3 fs-5 fs-sm-5">
+    Looking to develop an engaging and high-quality mobile app? BrainArt IT Solution specializes in custom app development to bring your ideas to life. 🚀 Let’s create something amazing Contact us today!
+    </p>
+  </div>
+
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="scrpt.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script>
+  new WOW().init();
+</script>
+<!-- Swiper JS CDN -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+  const dropdown = document.querySelector('.dropdown-hover');
+  const menu = dropdown.querySelector('.dropdown-menu');
+
+  dropdown.addEventListener('mouseenter', () => {
+    menu.style.opacity = '1';
+    menu.style.visibility = 'visible';
+    menu.style.transform = 'translateY(0)';
+  });
+
+  dropdown.addEventListener('mouseleave', () => {
+    menu.style.opacity = '0';
+    menu.style.visibility = 'hidden';
+    menu.style.transform = 'translateY(-20px)';
+  });
+</script>
+</body>
+</html>
+
+ 
