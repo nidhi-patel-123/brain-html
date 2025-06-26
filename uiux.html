@@ -1,1668 +1,899 @@
-
-<!doctype html>
-<html lang="en-US">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Navbar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- Swiper CSS CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<!-- Include Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <!-- Include this in <head> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
-	<title>Home Two &#8211; Ostech</title>
-<meta name='robots' content='max-image-preview:large' />
-<link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
-<link rel='dns-prefetch' href='//fonts.googleapis.com' />
-<link rel="alternate" type="application/rss+xml" title="Ostech &raquo; Feed" href="https://ostechwp.pixydrops.com/feed/" />
-<link rel="alternate" type="application/rss+xml" title="Ostech &raquo; Comments Feed" href="https://ostechwp.pixydrops.com/comments/feed/" />
-<script>
-window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/ostechwp.pixydrops.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.5.5"}};
-/*! This file is auto-generated */
-!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\u2b1b","\ud83d\udc26\u200b\u2b1b")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
-</script>
-<style id='wp-emoji-styles-inline-css'>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/topbar.css">
+ <link rel="stylesheet" href="css/service.css">
+ <link rel="stylesheet" href="cssservice/app.css">
+ <link rel="stylesheet" href="css/footer.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&family=Playwrite+AU+SA:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-	img.wp-smiley, img.emoji {
-		display: inline !important;
-		border: none !important;
-		box-shadow: none !important;
-		height: 1em !important;
-		width: 1em !important;
-		margin: 0 0.07em !important;
-		vertical-align: -0.1em !important;
-		background: none !important;
-		padding: 0 !important;
-	}
-</style>
-<style id='classic-theme-styles-inline-css'>
-/*! This file is auto-generated */
-.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
-</style>
-<style id='global-styles-inline-css'>
-body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
-.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
-:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
-:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
-.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
-</style>
-<link rel='stylesheet' id='contact-form-7-css' href='https://ostechwp.pixydrops.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.9.5' media='all' />
-<link rel='stylesheet' id='layerdrops-toolbar-css-css' href='https://ostechwp.pixydrops.com/wp-content/plugins/layerdrops-toolbar/assets/css/layerdrops-toolbar.css?ver=1750310367' media='all' />
-<style id='woocommerce-inline-inline-css'>
-.woocommerce form .form-row .required { visibility: visible; }
-</style>
-<link rel='stylesheet' id='slick-css' href='https://ostechwp.pixydrops.com/wp-content/plugins/woo-smart-quick-view/assets/libs/slick/slick.css?ver=6.5.5' media='all' />
-<link rel='stylesheet' id='perfect-scrollbar-css' href='https://ostechwp.pixydrops.com/wp-content/plugins/woo-smart-quick-view/assets/libs/perfect-scrollbar/css/perfect-scrollbar.min.css?ver=6.5.5' media='all' />
-<link rel='stylesheet' id='perfect-scrollbar-wpc-css' href='https://ostechwp.pixydrops.com/wp-content/plugins/woo-smart-quick-view/assets/libs/perfect-scrollbar/css/custom-theme.css?ver=6.5.5' media='all' />
-<link rel='stylesheet' id='magnific-popup-css' href='https://ostechwp.pixydrops.com/wp-content/plugins/woo-smart-quick-view/assets/libs/magnific-popup/magnific-popup.css?ver=6.5.5' media='all' />
-<link rel='stylesheet' id='woosq-feather-css' href='https://ostechwp.pixydrops.com/wp-content/plugins/woo-smart-quick-view/assets/libs/feather/feather.css?ver=6.5.5' media='all' />
-<link rel='stylesheet' id='woosq-icons-css' href='https://ostechwp.pixydrops.com/wp-content/plugins/woo-smart-quick-view/assets/css/icons.css?ver=4.0.4' media='all' />
-<link rel='stylesheet' id='woosq-frontend-css' href='https://ostechwp.pixydrops.com/wp-content/plugins/woo-smart-quick-view/assets/css/frontend.css?ver=4.0.4' media='all' />
-<link rel='stylesheet' id='woosw-icons-css' href='https://ostechwp.pixydrops.com/wp-content/plugins/woo-smart-wishlist/assets/css/icons.css?ver=4.8.6' media='all' />
-<link rel='stylesheet' id='woosw-frontend-css' href='https://ostechwp.pixydrops.com/wp-content/plugins/woo-smart-wishlist/assets/css/frontend.css?ver=4.8.6' media='all' />
-<style id='woosw-frontend-inline-css'>
-.woosw-popup .woosw-popup-inner .woosw-popup-content .woosw-popup-content-bot .woosw-notice { background-color: #5fbd74; } .woosw-popup .woosw-popup-inner .woosw-popup-content .woosw-popup-content-bot .woosw-popup-content-bot-inner a:hover { color: #5fbd74; border-color: #5fbd74; } 
-</style>
-<link rel='stylesheet' id='elementor-icons-css' href='https://ostechwp.pixydrops.com/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.29.0' media='all' />
-<link rel='stylesheet' id='elementor-frontend-css' href='https://ostechwp.pixydrops.com/wp-content/plugins/elementor/assets/css/frontend-lite.min.css?ver=3.21.7' media='all' />
-<link rel='stylesheet' id='swiper-css' href='https://ostechwp.pixydrops.com/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5' media='all' />
-<link rel='stylesheet' id='elementor-post-4-css' href='https://ostechwp.pixydrops.com/wp-content/uploads/elementor/css/post-4.css?ver=1716466769' media='all' />
-<link rel='stylesheet' id='elementor-global-css' href='https://ostechwp.pixydrops.com/wp-content/uploads/elementor/css/global.css?ver=1716466769' media='all' />
-<link rel='stylesheet' id='elementor-post-17-css' href='https://ostechwp.pixydrops.com/wp-content/uploads/elementor/css/post-17.css?ver=1716466968' media='all' />
-<link rel='stylesheet' id='animate-css' href='https://ostechwp.pixydrops.com/wp-content/plugins/ostech-addon/assets/vendors/animate/animate.min.css?ver=1712146398' media='all' />
-<link rel='stylesheet' id='custom-animate-css' href='https://ostechwp.pixydrops.com/wp-content/plugins/ostech-addon/assets/vendors/animate/custom-animate.css?ver=1712146398' media='all' />
-<link rel='stylesheet' id='bootstrap-select-css' href='https://ostechwp.pixydrops.com/wp-content/plugins/ostech-addon/assets/vendors/bootstrap-select/css/bootstrap-select.min.css?ver=1712146398' media='all' />
-<link rel='stylesheet' id='bxslider-css' href='https://ostechwp.pixydrops.com/wp-content/plugins/ostech-addon/assets/vendors/bxslider/jquery.bxslider.css?ver=1712146398' media='all' />
-<link rel='stylesheet' id='jarallax-css' href='https://ostechwp.pixydrops.com/wp-content/plugins/ostech-addon/assets/vendors/jarallax/jarallax.css?ver=1712146398' media='all' />
-<link rel='stylesheet' id='jquery-magnific-popup-css' href='https://ostechwp.pixydrops.com/wp-content/plugins/ostech-addon/assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css?ver=1712146398' media='all' />
-<link rel='stylesheet' id='odometer-css' href='https://ostechwp.pixydrops.com/wp-content/plugins/ostech-addon/assets/vendors/odometer/odometer.min.css?ver=1712146398' media='all' />
-<link rel='stylesheet' id='owl-carousel-css' href='https://ostechwp.pixydrops.com/wp-content/plugins/ostech-addon/assets/vendors/owl-carousel/owl.carousel.min.css?ver=1712146398' media='all' />
-<link rel='stylesheet' id='owl-theme-css' href='https://ostechwp.pixydrops.com/wp-content/plugins/ostech-addon/assets/vendors/owl-carousel/owl.theme.default.min.css?ver=1712146398' media='all' />
-<link rel='stylesheet' id='reey-font-css' href='https://ostechwp.pixydrops.com/wp-content/plugins/ostech-addon/assets/vendors/reey-font/stylesheet.css?ver=1712146398' media='all' />
-<link rel='stylesheet' id='alagambe-font-css' href='https://ostechwp.pixydrops.com/wp-content/plugins/ostech-addon/assets/vendors/alagambe-font/stylesheet.css?ver=1712146398' media='all' />
-<link rel='stylesheet' id='timepicker-css' href='https://ostechwp.pixydrops.com/wp-content/plugins/ostech-addon/assets/vendors/timepicker/timePicker.css?ver=1712146398' media='all' />
-<link rel='stylesheet' id='jquery-ui-css' href='https://ostechwp.pixydrops.com/wp-content/plugins/ostech-addon/assets/vendors/jquery-ui/jquery-ui.css?ver=1712146398' media='all' />
-<link rel='stylesheet' id='ostech-addon-style-css' href='https://ostechwp.pixydrops.com/wp-content/plugins/ostech-addon/assets/css/ostech-addon.css?ver=1712146398' media='all' />
-<link rel='stylesheet' id='ostech-fonts-css' href='//fonts.googleapis.com/css?family=Barlow%3A400%2C400i%2C500%2C500i%2C600%2C600i%2C700%2C700i%2C800%26subset%3Dlatin%2Clatin-ext' media='all' />
-<link rel='stylesheet' id='flaticons-css' href='https://ostechwp.pixydrops.com/wp-content/themes/ostech/assets/vendors/flaticons/css/flaticon.css?ver=1.1' media='all' />
-<link rel='stylesheet' id='ostech-icons-css' href='https://ostechwp.pixydrops.com/wp-content/themes/ostech/assets/vendors/ostech-icons/style.css?ver=1.1' media='all' />
-<link rel='stylesheet' id='bootstrap-css' href='https://ostechwp.pixydrops.com/wp-content/themes/ostech/assets/vendors/bootstrap/css/bootstrap.min.css?ver=5.0.0' media='all' />
-<link rel='stylesheet' id='fontawesome-css' href='https://ostechwp.pixydrops.com/wp-content/themes/ostech/assets/vendors/fontawesome/css/all.min.css?ver=5.15.1' media='all' />
-<link rel='stylesheet' id='ostech-style-css' href='https://ostechwp.pixydrops.com/wp-content/themes/ostech/style.css?ver=1750310367' media='all' />
-<style id='ostech-style-inline-css'>
-:root {
-			
-		}.page-header__bg { background-image: url(https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/page-header-bg-1-1.jpg); } .page-header__bg::before { background-image: url(); } .preloader .preloader__image { background-image: url(https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/loader.png); } .page-header__bg { background-image: url(https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/page-header-bg-1-1.jpg); }
-@font-face {
-			font-family: "star";
-			src: url("https://ostechwp.pixydrops.com/wp-content/plugins/woocommerce/assets/fonts/star.eot");
-			src: url("https://ostechwp.pixydrops.com/wp-content/plugins/woocommerce/assets/fonts/star.eot?#iefix") format("embedded-opentype"),
-				url("https://ostechwp.pixydrops.com/wp-content/plugins/woocommerce/assets/fonts/star.woff") format("woff"),
-				url("https://ostechwp.pixydrops.com/wp-content/plugins/woocommerce/assets/fonts/star.ttf") format("truetype"),
-				url("https://ostechwp.pixydrops.com/wp-content/plugins/woocommerce/assets/fonts/star.svg#star") format("svg");
-			font-weight: normal;
-			font-style: normal;
-		}
-</style>
-<link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap&#038;ver=6.5.5' media='all' />
-<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><script type="text/template" id="tmpl-variation-template">
-	<div class="woocommerce-variation-description">{{{ data.variation.variation_description }}}</div>
-	<div class="woocommerce-variation-price">{{{ data.variation.price_html }}}</div>
-	<div class="woocommerce-variation-availability">{{{ data.variation.availability_html }}}</div>
-</script>
-<script type="text/template" id="tmpl-unavailable-variation-template">
-	<p>Sorry, this product is unavailable. Please choose a different combination.</p>
-</script><script src="https://ostechwp.pixydrops.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
-<script src="https://ostechwp.pixydrops.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.2/js.cookie.min.js?ver=1750310367" id="js-cookie-js" data-wp-strategy="defer"></script>
-<script src="https://ostechwp.pixydrops.com/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.8.9.3" id="jquery-blockui-js" data-wp-strategy="defer"></script>
-<script id="wc-add-to-cart-js-extra">
-var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https:\/\/ostechwp.pixydrops.com\/ostech-cart\/","is_cart":"","cart_redirect_after_add":"no"};
-</script>
-<script src="https://ostechwp.pixydrops.com/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=8.9.3" id="wc-add-to-cart-js" defer data-wp-strategy="defer"></script>
-<script id="woocommerce-js-extra">
-var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
-</script>
-<script src="https://ostechwp.pixydrops.com/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=8.9.3" id="woocommerce-js" defer data-wp-strategy="defer"></script>
-<script src="https://ostechwp.pixydrops.com/wp-includes/js/underscore.min.js?ver=1.13.4" id="underscore-js"></script>
-<script id="wp-util-js-extra">
-var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
-</script>
-<script src="https://ostechwp.pixydrops.com/wp-includes/js/wp-util.min.js?ver=6.5.5" id="wp-util-js"></script>
-<link rel="https://api.w.org/" href="https://ostechwp.pixydrops.com/wp-json/" /><link rel="alternate" type="application/json" href="https://ostechwp.pixydrops.com/wp-json/wp/v2/pages/17" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://ostechwp.pixydrops.com/xmlrpc.php?rsd" />
-<meta name="generator" content="WordPress 6.5.5" />
-<meta name="generator" content="WooCommerce 8.9.3" />
-<link rel="canonical" href="https://ostechwp.pixydrops.com/home-two/" />
-<link rel='shortlink' href='https://ostechwp.pixydrops.com/?p=17' />
-<link rel="alternate" type="application/json+oembed" href="https://ostechwp.pixydrops.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fostechwp.pixydrops.com%2Fhome-two%2F" />
-<link rel="alternate" type="text/xml+oembed" href="https://ostechwp.pixydrops.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fostechwp.pixydrops.com%2Fhome-two%2F&#038;format=xml" />
-	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
-	<meta name="generator" content="Elementor 3.21.7; features: e_optimized_assets_loading, e_optimized_css_loading, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
-<link rel="icon" href="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/cropped-favicon-32x32-1-32x32.png" sizes="32x32" />
-<link rel="icon" href="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/cropped-favicon-32x32-1-192x192.png" sizes="192x192" />
-<link rel="apple-touch-icon" href="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/cropped-favicon-32x32-1-180x180.png" />
-<meta name="msapplication-TileImage" content="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/cropped-favicon-32x32-1-270x270.png" />
+    * {
+ font-family: "Barlow" , sans-serif;
+}
+
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+
+
 </head>
+<body>
+<div>
+  <!-- -----------------------------top--------------------------- -->
+  <div class="topbar-one">
+    <div class="container-fluid">
+      <div class="topbar-one__inner">
+        <ul class="list-unstyled topbar-one__info ml-0">
+          <li class="topbar-one__info__item">
+            <i class="topbar-one__info__icon fas fa-map-marker-alt" aria-hidden="true"></i>
+            <a href="#" style="text-decoration: none;">440, Opera Business Hub, Surat.</a>
+          </li>
+          <li class="topbar-one__info__item">
+            <i class="topbar-one__info__icon fa-solid fa-envelope"></i>
+            <a href="mailto:info@brainartit.in" target="_blank" style="text-decoration: none;">info@brainartit.in</a>
+          </li>
+        </ul>
 
-<body class="page-template page-template-elementor_header_footer page page-id-17 theme-ostech woocommerce-no-js woocommerce-active elementor-default elementor-template-full-width elementor-kit-4 elementor-page elementor-page-17">
-	
-				<!-- Preloader -->
-		<div class="preloader">
-			<div class="preloader__image"></div>
-		</div>
-		<!-- /.preloader -->
-
-	<div id="page" class="site page-wrapper">
-		<a class="skip-link screen-reader-text" href="#primary">Skip to content</a>
-
-		
-	
-                    <!-- the loop -->
-                            		<div data-elementor-type="wp-post" data-elementor-id="167" class="elementor elementor-167">
-				<div class="elementor-element elementor-element-4d9ea30 e-con-full e-flex e-con e-parent" data-id="4d9ea30" data-element_type="container">
-				<div class="elementor-element elementor-element-1597b0e elementor-widget elementor-widget-ostech-header" data-id="1597b0e" data-element_type="widget" data-widget_type="ostech-header.default">
-				<div class="elementor-widget-container">
-			
-	<div class="topbar-one">
-		<div class="container-fluid">
-			<div class="topbar-one__inner">
-				<ul class="list-unstyled topbar-one__info ml-0">
-											<li class="topbar-one__info__item">
-							<i aria-hidden="true" class="topbar-one__info__icon fas fa-map-marker-alt"></i>							30 Commercial Road Fratton, Australia 						</li>
-											<li class="topbar-one__info__item">
-							<i aria-hidden="true" class="topbar-one__info__icon  icon-email"></i>							<a href="mailto:needhelp@company.com">needhelp@company.com</a>						</li>
-									</ul>
-				<div class="topbar-one__right">
-											<a href="tel:+92-3800-8060" class="topbar-one__right__call">
-							<div class="topbar-one__right__call__icon">
-								<i aria-hidden="true" class="icon-telephone"></i>							</div>
-							<p class="topbar-one__right__call__text">+92 3800 8060</p>
-						</a>
-																<div class="topbar-one__social">
-															<a   href="https://facebook.com/">
-									<i aria-hidden="true" class="fab fa-facebook-f"></i>								</a>
-															<a   href="https://twitter.com/">
-									<i aria-hidden="true" class=" icon-x-twitter"></i>								</a>
-															<a   href="https://pinterest.com/">
-									<i aria-hidden="true" class=" icon-pinterest-p"></i>								</a>
-															<a   href="https://youtube.com/">
-									<i aria-hidden="true" class=" icon-youtube"></i>								</a>
-													</div>
-									</div>
-			</div>
-		</div>
-	</div>
-
-	<header class="main-header main-header--two sticky-header sticky-header--normal">
-		<div class="container-fluid">
-			<div class="main-header__inner">
-				<div class="main-header__logo logo-ostech">
-					<a href="https://ostechwp.pixydrops.com/">
-						<img decoding="async" width="136" height="45" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/logo-dark.png" alt="Ostech">
-					</a>
-				</div><!-- /.main-header__logo -->
-				<div class="main-header__inner__item">
-					<nav class="main-header__nav main-menu">
-						<div class="menu-main-menu-container"><ul id="menu-main-menu" class="main-menu__list  "><li id="menu-item-28" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home megamenu megamenu-style-alt menu-item-has-children megamenu-hide menu-item-28"><a href="https://ostechwp.pixydrops.com">Home</a><ul class="sub-menu"><li>		<div data-elementor-type="wp-post" data-elementor-id="2223" class="elementor elementor-2223">
-				<div class="elementor-element elementor-element-08892d1 e-con-full e-flex e-con e-parent" data-id="08892d1" data-element_type="container">
-				<div class="elementor-element elementor-element-f5a710b elementor-widget elementor-widget-ostech-home-showcase-box" data-id="f5a710b" data-element_type="widget" data-widget_type="ostech-home-showcase-box.default">
-				<div class="elementor-widget-container">
-			    <section class="home-showcase">
-        <div class="container">
-            <div class="home-showcase__inner">
-                <div class="row">
-                                            <div class="col-md-6 col-lg-3">
-                            <div class="demo-one__card">
-                                <div class="demo-one__image">
-                                    <img decoding="async" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/home-showcase-1.jpg" alt="home-showcase-1" title="home-showcase-1" >                                    <div class="demo-one__btns">
-                                                                                    <a href="https://ostechwp.pixydrops.com/"  class="ostech-btn demo-one__btn">
-                                                <span>Multi Page</span>
-                                            </a><!-- /.thm-btn demo-one__btn -->
-                                                                                                                            <a href="https://ostechwp.pixydrops.com/one-page-home-one/"  class="ostech-btn demo-one__btn">
-                                                <span>One Page</span>
-                                            </a><!-- /.thm-btn demo-one__btn -->
-                                                                                                                    </div><!-- /.demo-one__btns -->
-                                </div><!-- /.demo-one__image -->
-                                <div class="demo-one__content">
-                                                                            <h3 class="demo-one__title">
-                                            <a href="https://ostechwp.pixydrops.com/">HOME PAGE 01</a>
-                                        </h3><!-- /.demo-one__title -->
-                                                                    </div><!-- /.demo-one__content -->
-                            </div><!-- /.demo-one__card -->
-                        </div><!-- /.col-md-6 col-lg-3 -->
-                                            <div class="col-md-6 col-lg-3">
-                            <div class="demo-one__card">
-                                <div class="demo-one__image">
-                                    <img decoding="async" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/home-showcase-2.jpg" alt="home-showcase-2" title="home-showcase-2" >                                    <div class="demo-one__btns">
-                                                                                    <a href="https://ostechwp.pixydrops.com/home-two/"  class="ostech-btn demo-one__btn">
-                                                <span>Multi Page</span>
-                                            </a><!-- /.thm-btn demo-one__btn -->
-                                                                                                                            <a href="https://ostechwp.pixydrops.com/one-page-home-two/"  class="ostech-btn demo-one__btn">
-                                                <span>One Page</span>
-                                            </a><!-- /.thm-btn demo-one__btn -->
-                                                                                                                    </div><!-- /.demo-one__btns -->
-                                </div><!-- /.demo-one__image -->
-                                <div class="demo-one__content">
-                                                                            <h3 class="demo-one__title">
-                                            <a href="https://ostechwp.pixydrops.com/home-two/">HOME PAGE 02</a>
-                                        </h3><!-- /.demo-one__title -->
-                                                                    </div><!-- /.demo-one__content -->
-                            </div><!-- /.demo-one__card -->
-                        </div><!-- /.col-md-6 col-lg-3 -->
-                                            <div class="col-md-6 col-lg-3">
-                            <div class="demo-one__card">
-                                <div class="demo-one__image">
-                                    <img decoding="async" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/home-showcase-3.jpg" alt="home-showcase-3" title="home-showcase-3" >                                    <div class="demo-one__btns">
-                                                                                    <a href="https://ostechwp.pixydrops.com/home-three/"  class="ostech-btn demo-one__btn">
-                                                <span>Multi Page</span>
-                                            </a><!-- /.thm-btn demo-one__btn -->
-                                                                                                                            <a href="https://ostechwp.pixydrops.com/one-page-home-three/"  class="ostech-btn demo-one__btn">
-                                                <span>One Page</span>
-                                            </a><!-- /.thm-btn demo-one__btn -->
-                                                                                                                    </div><!-- /.demo-one__btns -->
-                                </div><!-- /.demo-one__image -->
-                                <div class="demo-one__content">
-                                                                            <h3 class="demo-one__title">
-                                            <a href="https://ostechwp.pixydrops.com/home-three/">HOME PAGE 03</a>
-                                        </h3><!-- /.demo-one__title -->
-                                                                    </div><!-- /.demo-one__content -->
-                            </div><!-- /.demo-one__card -->
-                        </div><!-- /.col-md-6 col-lg-3 -->
-                                            <div class="col-md-6 col-lg-3">
-                            <div class="demo-one__card">
-                                <div class="demo-one__image">
-                                    <img decoding="async" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/home-showcase-4.jpg" alt="home-showcase-4" title="home-showcase-4" >                                    <div class="demo-one__btns">
-                                                                                    <a href="https://ostechwp.pixydrops.com/home-dark/"  class="ostech-btn demo-one__btn">
-                                                <span>View Page</span>
-                                            </a><!-- /.thm-btn demo-one__btn -->
-                                                                                                                                                            </div><!-- /.demo-one__btns -->
-                                </div><!-- /.demo-one__image -->
-                                <div class="demo-one__content">
-                                                                            <h3 class="demo-one__title">
-                                            <a href="https://ostechwp.pixydrops.com/home-dark/">HOME DARK</a>
-                                        </h3><!-- /.demo-one__title -->
-                                                                    </div><!-- /.demo-one__content -->
-                            </div><!-- /.demo-one__card -->
-                        </div><!-- /.col-md-6 col-lg-3 -->
-                                    </div><!-- /.row -->
-
-            </div><!-- /.home-showcase__inner -->
-        </div><!-- /.container -->
-    </section>
-		</div>
-				</div>
-				</div>
-				</div>
-		</li></ul></li>
-<li id="menu-item-44" class="menu-item menu-item-type-post_type menu-item-object-page megamenu-hide menu-item-44"><a href="https://ostechwp.pixydrops.com/about/">About</a></li>
-<li id="menu-item-45" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children megamenu-hide menu-item-45"><a href="https://ostechwp.pixydrops.com/services/">Services</a>
-<ul class="sub-menu">
-	<li id="menu-item-61" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-61"><a href="https://ostechwp.pixydrops.com/services/">Services</a></li>
-	<li id="menu-item-46" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-46"><a href="https://ostechwp.pixydrops.com/services-carousel/">Services Carousel</a></li>
-	<li id="menu-item-47" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47"><a href="https://ostechwp.pixydrops.com/development/">Development</a></li>
-	<li id="menu-item-48" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48"><a href="https://ostechwp.pixydrops.com/ui-ux-designing/">UI/UX Designing</a></li>
-	<li id="menu-item-49" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-49"><a href="https://ostechwp.pixydrops.com/digital-marketing/">Digital Marketing</a></li>
-	<li id="menu-item-50" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-50"><a href="https://ostechwp.pixydrops.com/data-analysis/">Data Analysis</a></li>
-	<li id="menu-item-51" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-51"><a href="https://ostechwp.pixydrops.com/cyber-security/">Cyber Security</a></li>
-	<li id="menu-item-52" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52"><a href="https://ostechwp.pixydrops.com/digital-experience/">Digital Experience</a></li>
-</ul>
-</li>
-<li id="menu-item-91" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children megamenu-hide menu-item-91"><a href="#">Pages</a>
-<ul class="sub-menu">
-	<li id="menu-item-92" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-92"><a href="https://ostechwp.pixydrops.com/team/">Team</a></li>
-	<li id="menu-item-93" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-93"><a href="https://ostechwp.pixydrops.com/team-carousel/">Team Carousel</a></li>
-	<li id="menu-item-94" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-94"><a href="https://ostechwp.pixydrops.com/team-details/">Team Details</a></li>
-	<li id="menu-item-95" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-95"><a href="https://ostechwp.pixydrops.com/packages/">Packages</a></li>
-	<li id="menu-item-96" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-96"><a href="https://ostechwp.pixydrops.com/packages-carousel/">Packages Carousel</a></li>
-	<li id="menu-item-97" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-97"><a href="https://ostechwp.pixydrops.com/project/">Project</a></li>
-	<li id="menu-item-98" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-98"><a href="https://ostechwp.pixydrops.com/project-carousel/">Project Carousel</a></li>
-	<li id="menu-item-99" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99"><a href="https://ostechwp.pixydrops.com/project-details/">Project Details</a></li>
-	<li id="menu-item-100" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-100"><a href="https://ostechwp.pixydrops.com/gallery/">Gallery</a>
-	<ul class="sub-menu">
-		<li id="menu-item-101" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-101"><a href="https://ostechwp.pixydrops.com/gallery/">Gallery Grid</a></li>
-		<li id="menu-item-102" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-102"><a href="https://ostechwp.pixydrops.com/gallery-filter/">Gallery filter</a></li>
-		<li id="menu-item-103" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-103"><a href="https://ostechwp.pixydrops.com/gallery-carousel/">Gallery Carousel</a></li>
-	</ul>
-</li>
-	<li id="menu-item-104" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-104"><a href="https://ostechwp.pixydrops.com/faqs/">FAQs</a></li>
-	<li id="menu-item-105" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-105"><a href="https://ostechwp.pixydrops.com/login/">Login</a></li>
-	<li id="menu-item-106" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-106"><a href="https://ostechwp.pixydrops.com/404-error/">404 Error</a></li>
-</ul>
-</li>
-<li id="menu-item-2642" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children megamenu-hide menu-item-2642"><a href="http://ostechwp.pixydrops.com/ostech-shop/">Shop</a>
-<ul class="sub-menu">
-	<li id="menu-item-2170" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children megamenu-hide menu-item-2170"><a href="#">Products</a>
-	<ul class="sub-menu">
-		<li id="menu-item-2171" class="menu-item menu-item-type-custom menu-item-object-custom megamenu-hide menu-item-2171"><a href="http://ostechwp.pixydrops.com/ostech-shop/?sidebar=full-width&#038;column=4&#038;product_per_page=8">No Sidebar</a></li>
-		<li id="menu-item-2172" class="menu-item menu-item-type-custom menu-item-object-custom megamenu-hide menu-item-2172"><a href="http://ostechwp.pixydrops.com/ostech-shop/?sidebar=right-align&#038;column=3&#038;product_per_page=9">Right Sidebar</a></li>
-		<li id="menu-item-2173" class="menu-item menu-item-type-custom menu-item-object-custom megamenu-hide menu-item-2173"><a href="http://ostechwp.pixydrops.com/ostech-shop/?sidebar=left-align&#038;column=3&#038;product_per_page=9">Left Sidebar</a></li>
-	</ul>
-</li>
-	<li id="menu-item-113" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-113"><a href="https://ostechwp.pixydrops.com/products-carousel/">Products Carousel</a></li>
-	<li id="menu-item-2174" class="menu-item menu-item-type-post_type menu-item-object-product megamenu-hide menu-item-2174"><a href="https://ostechwp.pixydrops.com/product/sofa-chair/">Products Details</a></li>
-	<li id="menu-item-2175" class="menu-item menu-item-type-custom menu-item-object-custom megamenu-hide menu-item-2175"><a href="http://ostechwp.pixydrops.com/ostech-cart/?auto_cart=Sofa%20Chair">Cart</a></li>
-	<li id="menu-item-2177" class="menu-item menu-item-type-custom menu-item-object-custom megamenu-hide menu-item-2177"><a href="http://ostechwp.pixydrops.com/ostech-checkout/?auto_cart=Sofa%20Chair">Checkout</a></li>
-</ul>
-</li>
-<li id="menu-item-136" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children megamenu-hide menu-item-136"><a href="#">Blog</a>
-<ul class="sub-menu">
-	<li id="menu-item-114" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-114"><a href="https://ostechwp.pixydrops.com/blog/">Blog</a>
-	<ul class="sub-menu">
-		<li id="menu-item-115" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-115"><a href="https://ostechwp.pixydrops.com/blog/">No Sidebar</a></li>
-		<li id="menu-item-126" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-126"><a href="https://ostechwp.pixydrops.com/blog-left-sidebar/">Left Sidebar</a></li>
-		<li id="menu-item-137" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-137"><a href="https://ostechwp.pixydrops.com/blog-right-sidebar/">Right Sidebar</a></li>
-	</ul>
-</li>
-	<li id="menu-item-127" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-127"><a href="https://ostechwp.pixydrops.com/blog-list/">Blog List</a>
-	<ul class="sub-menu">
-		<li id="menu-item-1163" class="menu-item menu-item-type-custom menu-item-object-custom megamenu-hide menu-item-1163"><a href="http://ostechwp.pixydrops.com/blog-list/?sidebar=full-width">No SIdebar</a></li>
-		<li id="menu-item-1165" class="menu-item menu-item-type-custom menu-item-object-custom megamenu-hide menu-item-1165"><a href="http://ostechwp.pixydrops.com/blog-list/?sidebar=right-align">Right Sidebar</a></li>
-		<li id="menu-item-1164" class="menu-item menu-item-type-custom menu-item-object-custom megamenu-hide menu-item-1164"><a href="http://ostechwp.pixydrops.com/blog-list/?sidebar=left-align">Left Sidebar</a></li>
-	</ul>
-</li>
-	<li id="menu-item-133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-133"><a href="https://ostechwp.pixydrops.com/blog-carousel/">Blog Carousel</a></li>
-	<li id="menu-item-1158" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children megamenu-hide menu-item-1158"><a href="#">Blog Details</a>
-	<ul class="sub-menu">
-		<li id="menu-item-1159" class="menu-item menu-item-type-custom menu-item-object-custom megamenu-hide menu-item-1159"><a href="http://ostechwp.pixydrops.com/improving-business-growth-with-new-technology/?sidebar=full-width">No Sidebar</a></li>
-		<li id="menu-item-1161" class="menu-item menu-item-type-custom menu-item-object-custom megamenu-hide menu-item-1161"><a href="http://ostechwp.pixydrops.com/improving-business-growth-with-new-technology/?sidebar=right-align">Right Sidebar</a></li>
-		<li id="menu-item-1160" class="menu-item menu-item-type-custom menu-item-object-custom megamenu-hide menu-item-1160"><a href="http://ostechwp.pixydrops.com/improving-business-growth-with-new-technology/?sidebar=left-align">Left Sidebar</a></li>
-	</ul>
-</li>
-</ul>
-</li>
-<li id="menu-item-134" class="menu-item menu-item-type-post_type menu-item-object-page megamenu-hide menu-item-134"><a href="https://ostechwp.pixydrops.com/contact/">Contact</a></li>
-</ul></div>					</nav><!-- /.main-header__nav -->
-					<div class="main-header__right">
-													<div class="main-header__right__btn">
-								<a href="https://ostechwp.pixydrops.com/contact/"  class="ostech-btn main-header__btn">Take Solution</a>
-							</div>
-																			<a href="#" class="search-toggler main-header__right__info__item"><i class="icon-search" aria-hidden="true"></i></a>
-																			<a href="https://ostechwp.pixydrops.com/ostech-cart/" class="main-header__right__info__item"><i class="icon-trolley-cart" aria-hidden="true"></i></a>
-												<div class="mobile-nav__btn mobile-nav__toggler">
-							<span></span> <span></span> <span></span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
-
-
-
-<div class="mobile-nav__wrapper">
-	<div class="mobile-nav__overlay mobile-nav__toggler"></div>
-	<!-- /.mobile-nav__overlay -->
-	<div class="mobile-nav__content">
-		<span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
-
-		<div class="logo-box logo-retina">
-			<a href="https://ostechwp.pixydrops.com/" aria-label="logo image">
-				<img decoding="async" width="136" height="45" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/logo-light.png" alt="Ostech" />
-			</a>
-		</div>
-		<!-- /.logo-box -->
-		<div class="mobile-nav__container"></div>
-		<!-- /.mobile-nav__container -->
-		<ul class="mobile-nav__contact list-unstyled ml-0">
-							<li>
-					<i class="fa fa-envelope"></i>
-					<a href="mailto:needhelp@ostech.com">needhelp@ostech.com</a>
-				</li>
-										<li>
-					<i class="fa fa-phone-alt"></i>
-					<a href="tel:666-888-0000">
-						666 888 0000					</a>
-				</li>
-					</ul><!-- /.mobile-nav__contact -->
-		<div class="mobile-nav__top">
-			<div class="mobile-nav__social">
-									<a href="https://facebook.com/" class="fab fa-facebook-f"></a>
-									<a href="https://twitter.com/" class="fab fa-twitter"></a>
-									<a href="https://linkedin.com/" class="fab fa-linkedin-in"></a>
-									<a href="https://instagram.com/" class="fab fa-instagram"></a>
-							</div><!-- /.mobile-nav__social -->
-		</div><!-- /.mobile-nav__top -->
-
-	</div>
-	<!-- /.mobile-nav__content -->
-</div>
-
-<div class="search-popup">
-	<div class="search-popup__overlay search-toggler"></div>
-	<!-- /.search-popup__overlay -->
-	<div class="search-popup__content">
-		<form role="search" method="get" class="search-popup__form" action="https://ostechwp.pixydrops.com/">
-			<input name="s" type="text" id="search" placeholder="Search Here..." />
-			<button type="submit" aria-label="search submit" class="ostech-btn">
-				<span class="ostech-btn__shape"></span><span class="ostech-btn__shape"></span><span class="ostech-btn__shape"></span><span class="ostech-btn__shape"></span>
-				<span class="ostech-btn__text"><i class="icon-search"></i></span>
-			</button>
-		</form>
-	</div>
-	<!-- /.search-popup__content -->
-</div>
-<!-- /.search-popup -->
-
-
-	<!-- back-to-top-start -->
-	<a href="#" data-target="html" class="scroll-to-target scroll-to-top">
-		<span class="scroll-to-top__text">back to top</span>
-		<span class="scroll-to-top__wrapper"><span class="scroll-to-top__inner"></span></span>
-	</a>
-		</div>
-				</div>
-				</div>
-				</div>
-		                        <!-- end of the loop -->
-
-            
-        
-		
-				<div data-elementor-type="wp-page" data-elementor-id="17" class="elementor elementor-17">
-				<div class="elementor-element elementor-element-4794c23 e-con-full e-flex e-con e-parent" data-id="4794c23" data-element_type="container">
-				<div class="elementor-element elementor-element-3861301 elementor-widget elementor-widget-ostech-main-slider" data-id="3861301" data-element_type="widget" data-widget_type="ostech-main-slider.default">
-				<div class="elementor-widget-container">
-				<!-- main-slider-start -->
-	<section class="main-slider-two">
-		<div class="main-slider-two__carousel ostech-owl__carousel owl-carousel" data-owl-options='{
-		"loop": true,
-		"animateOut": "fadeOut",
-		"animateIn": "fadeIn",
-		"items": 1,
-		"autoplay": true,
-		"autoplayTimeout": 7000,
-		"smartSpeed": 1000,
-		"nav": false,
-		"dots": true,
-		"margin": 0
-	    }'>
-							<!-- Item -->
-				<div class="item">
-					<div class="main-slider-two__item">
-						<div class="main-slider-two__bg" style="background-image: url(https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/slider-1-2.jpg);"></div>
-						<div class="container">
-							<div class="row">
-								<div class="col-md-12">
-									<div class="main-slider-two__content">
-										<h5 class="main-slider-two__sub-title">
-											IT Software Solution										</h5>
-										<!-- slider-sub-title -->
-										<h2 class="main-slider-two__title">
-											 IT Software <br> Tech &amp; Solutions											<span class="main-slider-two__title__overlay-group">
-												<span class="main-slider-two__title__overlay"></span>
-												<span class="main-slider-two__title__overlay"></span>
-												<span class="main-slider-two__title__overlay"></span>
-												<span class="main-slider-two__title__overlay"></span>
-												<span class="main-slider-two__title__overlay"></span>
-												<span class="main-slider-two__title__overlay"></span>
-											</span>
-										</h2>
-										<div class="main-slider-two__link">
-
-																							<a href="https://ostechwp.pixydrops.com/about/"  class="ostech-btn ostech-btn--base">
-													<span>Discover More</span>
-												</a><!-- slider-btn -->
-																																		<a href="https://ostechwp.pixydrops.com/services/"  class="ostech-btn ostech-btn--secondary">
-													<span>Take Service</span>
-												</a><!-- slider-btn -->
-																					</div>
-									</div>
-								</div>
-							</div>
-						</div>
-													<div class="main-slider-two__item__shape">
-								<img decoding="async" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/frame-hero-2-1.png" alt="frame-hero-2-1" title="frame-hero-2-1" >							</div>
-											</div>
-				</div>
-				<!-- Item -->
-							<!-- Item -->
-				<div class="item">
-					<div class="main-slider-two__item">
-						<div class="main-slider-two__bg" style="background-image: url(https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/slider-1-1.jpg);"></div>
-						<div class="container">
-							<div class="row">
-								<div class="col-md-12">
-									<div class="main-slider-two__content">
-										<h5 class="main-slider-two__sub-title">
-											IT Software Solution										</h5>
-										<!-- slider-sub-title -->
-										<h2 class="main-slider-two__title">
-											 IT Software <br> Tech &amp; Solutions											<span class="main-slider-two__title__overlay-group">
-												<span class="main-slider-two__title__overlay"></span>
-												<span class="main-slider-two__title__overlay"></span>
-												<span class="main-slider-two__title__overlay"></span>
-												<span class="main-slider-two__title__overlay"></span>
-												<span class="main-slider-two__title__overlay"></span>
-												<span class="main-slider-two__title__overlay"></span>
-											</span>
-										</h2>
-										<div class="main-slider-two__link">
-
-																							<a href="https://ostechwp.pixydrops.com/about/"  class="ostech-btn ostech-btn--base">
-													<span>Discover More</span>
-												</a><!-- slider-btn -->
-																																		<a href="https://ostechwp.pixydrops.com/services/"  class="ostech-btn ostech-btn--secondary">
-													<span>Take Service</span>
-												</a><!-- slider-btn -->
-																					</div>
-									</div>
-								</div>
-							</div>
-						</div>
-													<div class="main-slider-two__item__shape">
-								<img decoding="async" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/frame-hero-2-1.png" alt="frame-hero-2-1" title="frame-hero-2-1" >							</div>
-											</div>
-				</div>
-				<!-- Item -->
-							<!-- Item -->
-				<div class="item">
-					<div class="main-slider-two__item">
-						<div class="main-slider-two__bg" style="background-image: url(https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/slider-1-3.jpg);"></div>
-						<div class="container">
-							<div class="row">
-								<div class="col-md-12">
-									<div class="main-slider-two__content">
-										<h5 class="main-slider-two__sub-title">
-											IT Software Solution										</h5>
-										<!-- slider-sub-title -->
-										<h2 class="main-slider-two__title">
-											 IT Software <br> Tech &amp; Solutions											<span class="main-slider-two__title__overlay-group">
-												<span class="main-slider-two__title__overlay"></span>
-												<span class="main-slider-two__title__overlay"></span>
-												<span class="main-slider-two__title__overlay"></span>
-												<span class="main-slider-two__title__overlay"></span>
-												<span class="main-slider-two__title__overlay"></span>
-												<span class="main-slider-two__title__overlay"></span>
-											</span>
-										</h2>
-										<div class="main-slider-two__link">
-
-																							<a href="https://ostechwp.pixydrops.com/about/"  class="ostech-btn ostech-btn--base">
-													<span>Discover More</span>
-												</a><!-- slider-btn -->
-																																		<a href="https://ostechwp.pixydrops.com/services/"  class="ostech-btn ostech-btn--secondary">
-													<span>Take Service</span>
-												</a><!-- slider-btn -->
-																					</div>
-									</div>
-								</div>
-							</div>
-						</div>
-													<div class="main-slider-two__item__shape">
-								<img decoding="async" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/frame-hero-2-1.png" alt="frame-hero-2-1" title="frame-hero-2-1" >							</div>
-											</div>
-				</div>
-				<!-- Item -->
-					</div>
-	</section>
-	<!-- main-slider-end -->
-		</div>
-				</div>
-				</div>
-		<div class="elementor-element elementor-element-b6d0a4c e-con-full e-flex e-con e-parent" data-id="b6d0a4c" data-element_type="container">
-				<div class="elementor-element elementor-element-435bab8 elementor-widget elementor-widget-ostech-counter" data-id="435bab8" data-element_type="widget" data-widget_type="ostech-counter.default">
-				<div class="elementor-widget-container">
-			    <!--Funfact Start -->
-    <div class="funfact-two">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="funfact-two__inner">
-                                                    <div class="funfact-two__item  wow fadeInUp" data-wow-delay="500ms">
-                                <div class="funfact-two__item__funfact__item count-box">
-                                    <div class="funfact-two__item__funfact__item__icon">
-                                        <i aria-hidden="true" class="icon-expertise-1"></i>                                    </div>
-                                    <h2 class="funfact-two__item__funfact__item__count">
-                                        <span class="count-text" data-stop="99" data-speed="1500"></span>
-                                        <span>.0K</span>
-                                    </h2>
-                                    <p class="funfact-two__item__funfact__item__text">Satisfied Customer</p>
-                                </div>
-                            </div>
-                                                    <div class="funfact-two__item  wow fadeInUp" data-wow-delay="500ms">
-                                <div class="funfact-two__item__funfact__item count-box">
-                                    <div class="funfact-two__item__funfact__item__icon">
-                                        <i aria-hidden="true" class=" icon-technology-2"></i>                                    </div>
-                                    <h2 class="funfact-two__item__funfact__item__count">
-                                        <span class="count-text" data-stop="100" data-speed="1500"></span>
-                                        <span>%</span>
-                                    </h2>
-                                    <p class="funfact-two__item__funfact__item__text">Satisfice Service</p>
-                                </div>
-                            </div>
-                                            </div>
-                </div>
+        <div class="topbar-one__right">
+          <a href="tel:+91 93272 28578" class="topbar-one__right__call" style="text-decoration: none;">
+            <div class="topbar-one__right__call__icon">
+              <i class="fa-solid fa-phone-volume" aria-hidden="true"></i>
             </div>
+            <p class="topbar-one__right__call__text">+91 93272 28578</p>
+          </a>
+
+          <div class="topbar-one__social">
+            <a href="https://www.linkedin.com/company/102210949/admin/dashboard/" target="_blank">
+              <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.facebook.com/people/Brainart-it-soution/61558498887261/" target="_blank">
+              <i class="fab fa-facebook-f" aria-hidden="true" style="padding: 1px 2px;"></i>
+            </a>
+            <a href="https://www.instagram.com/brainart_it_solution/" target="_blank">
+              <i class="fab fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="https://join.skype.com/invite/vHEhLX46XvDt" target="_blank">
+              <i class="fab fa-skype" aria-hidden="true"></i>
+            </a>
+          </div>
         </div>
+      </div>
     </div>
-    <!-- Funfact End -->
-		</div>
-				</div>
-				</div>
-		<div class="elementor-element elementor-element-e6aa297 e-con-full e-flex e-con e-parent" data-id="e6aa297" data-element_type="container">
-				<div class="elementor-element elementor-element-51adee1 elementor-widget elementor-widget-ostech-about" data-id="51adee1" data-element_type="widget" data-widget_type="ostech-about.default">
-				<div class="elementor-widget-container">
-				<!-- About section Start -->
-	<section class="about-three">
-		<div class="container">
-			<div class="row gutter-y-30">
-				<div class="col-lg-6">
-					<div class="about-three__left wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="500ms">
-						<div class="about-three__thumb">
-							<div class="about-three__thumb__item about-three__thumb__item--one">
-								<img decoding="async" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/about-s-3-1.png" alt="about-s-3-1" title="about-s-3-1" >							</div>
-							<div class="about-three__thumb__item about-three__thumb__item--two">
-								<img decoding="async" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/about-3-1.png" alt="about-3-1" title="about-3-1" >							</div>
-
-
-							<div class="about-three__thumb__call">
-								<div class="about-three__thumb__call__icon">
-									<i aria-hidden="true" class="icon-chatting-1"></i>								</div>
-								<div class="about-three__thumb__call__content">
-									<span class="about-three__thumb__call__text">Call to anytime</span>
-									<h5 class="about-three__thumb__call__title"><a href="tel:+92-3080-808">+92 3080 808</a></h5>
-								</div>
-							</div>
-
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="about-three__right">
-						<div class="about-three__top">
-							<div class="sec-title wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='000ms'>
-								<div class="d-flex align-items-center justify-content-start">
-									<img decoding="async" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/sec-title-s-1.png" alt="sec-title-s-1" title="sec-title-s-1" class="sec-title__img" >									<h6 class="sec-title__tagline">ABOUT US
-</h6>								</div>
-								<h3 class="sec-title__title">Provide the Best Easy Solution for Your IT Problem</h3>							</div>
-							<p class="about-three__top__text">There are many variations of passages of Lorem Ipsum avalable, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>						</div>
-						<div class="about-three__feature wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
-															<div class="about-three__feature__item">
-									<div class="about-three__feature__top">
-										<div class="about-three__feature__top__icon">
-											<i aria-hidden="true" class=" icon-nanotechnology-1"></i>										</div>
-										<h4 class="about-three__feature__top__title">
-											Manage Tech
-Services										</h4>
-									</div>
-									<p class="about-three__feature__item__text">
-										There are many variations of passages of Lorem									</p>
-								</div>
-															<div class="about-three__feature__item">
-									<div class="about-three__feature__top">
-										<div class="about-three__feature__top__icon">
-											<i aria-hidden="true" class=" icon-it-service-1"></i>										</div>
-										<h4 class="about-three__feature__top__title">
-											
-It Consulting
-Solution										</h4>
-									</div>
-									<p class="about-three__feature__item__text">
-										There are many variations of passages of Lorem									</p>
-								</div>
-													</div>
-						<ul class="about-three__list list-unstyled wow fadeInUp ml-0" data-wow-duration="1000ms" data-wow-delay="500ms">
-															<li class="about-three__list__item">
-									<i aria-hidden="true" class="fas fa-check-circle"></i>									Many Variations Of Passages Of Lorem Ipsum								</li>
-															<li class="about-three__list__item">
-									<i aria-hidden="true" class="fas fa-check-circle"></i>									Many Variations Of Passages Of Lorem								</li>
-															<li class="about-three__list__item">
-									<i aria-hidden="true" class="fas fa-check-circle"></i>									Expert Many Variations Teacher								</li>
-													</ul>
-													<div class="about-three__link wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">
-								<a href="https://ostechwp.pixydrops.com/about/"  class="about-three__link__btn ostech-btn ostech-btn--secondary">
-									<span>Discover More</span>
-								</a>
-							</div>
-												<div class="about-three__award">
-							<i aria-hidden="true" class="icon-award"></i>							<p class="about-three__award__text">Award Winning Agency</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- About section End -->
-		</div>
-				</div>
-				</div>
-		<div class="elementor-element elementor-element-fca4f2b e-con-full e-flex e-con e-parent" data-id="fca4f2b" data-element_type="container">
-				<div class="elementor-element elementor-element-9a04762 elementor-widget elementor-widget-ostech-service" data-id="9a04762" data-element_type="widget" data-widget_type="ostech-service.default">
-				<div class="elementor-widget-container">
-				<!-- Service section Start -->
-	<section class="service-three">
-		<div class="service-three__bg" style="background-image: url(https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/service-shape-2-1.png);"></div>
-		<div class="container">
-							<div class="sec-title sec-title--two text-center wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='000ms'>
-											<div class="d-flex align-items-center justify-content-center">
-							<img decoding="async" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/sec-title-s-1.png" alt="sec-title-s-1" title="sec-title-s-1" class="sec-title__img" >							<h6 class="sec-title__tagline">SERVICE</h6>						</div>
-										<h3 class="sec-title__title">Services We’re providing to <br>
-Our Customers</h3>				</div>
-						<div class="service-three__carousel ostech-owl__carousel owl-theme owl-carousel" data-owl-options='{&quot;loop&quot;:true,&quot;margin&quot;:0,&quot;items&quot;:1,&quot;nav&quot;:false,&quot;dots&quot;:false,&quot;smartSpeed&quot;:700,&quot;autoplay&quot;:true,&quot;autoplayTimeout&quot;:5000,&quot;animateOut&quot;:&quot;&quot;,&quot;animateIn&quot;:&quot;&quot;,&quot;autoplayHoverPause&quot;:true,&quot;responsive&quot;:{&quot;0&quot;:{&quot;margin&quot;:0,&quot;items&quot;:1},&quot;575&quot;:{&quot;margin&quot;:0,&quot;items&quot;:1},&quot;767&quot;:{&quot;margin&quot;:0,&quot;items&quot;:2},&quot;992&quot;:{&quot;margin&quot;:0,&quot;items&quot;:2},&quot;1200&quot;:{&quot;margin&quot;:0,&quot;items&quot;:3}}}'>
-									<div class="item">
-						<div class="service-three__item">
-							<div class="service-three__item__inner">
-								<div class="service-three__item__icon">
-									<div class="service-three__item__icon__inner">
-										<i aria-hidden="true" class=" icon-software-1"></i>									</div>
-								</div>
-																	<div class="service-three__item__thumb">
-										<img decoding="async" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/service-3-1.png" alt="service-3-1" title="service-3-1" >									</div>
-																<div class="service-three__item__content">
-									<h3 class="service-three__item__title">
-										<a href="https://ostechwp.pixydrops.com/digital-marketing/">Product <br> Development</a>
-									</h3><!-- /.service-card-two__title -->
-
-																			<a href="https://ostechwp.pixydrops.com/digital-marketing/" class="service-three__item__link">
-											<span class="service-three__item__link__icon"></span>
-										</a><!-- /.blog-card__link -->
-																	</div>
-							</div>
-						</div>
-					</div>
-									<div class="item">
-						<div class="service-three__item">
-							<div class="service-three__item__inner">
-								<div class="service-three__item__icon">
-									<div class="service-three__item__icon__inner">
-										<i aria-hidden="true" class=" icon-layer-1"></i>									</div>
-								</div>
-																	<div class="service-three__item__thumb">
-										<img decoding="async" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/service-3-2.png" alt="service-3-2" title="service-3-2" >									</div>
-																<div class="service-three__item__content">
-									<h3 class="service-three__item__title">
-										<a href="https://ostechwp.pixydrops.com/digital-marketing/">UI/UX <br> Designing</a>
-									</h3><!-- /.service-card-two__title -->
-
-																			<a href="https://ostechwp.pixydrops.com/digital-marketing/" class="service-three__item__link">
-											<span class="service-three__item__link__icon"></span>
-										</a><!-- /.blog-card__link -->
-																	</div>
-							</div>
-						</div>
-					</div>
-									<div class="item">
-						<div class="service-three__item">
-							<div class="service-three__item__inner">
-								<div class="service-three__item__icon">
-									<div class="service-three__item__icon__inner">
-										<i aria-hidden="true" class=" icon-digital-marketing-1"></i>									</div>
-								</div>
-																	<div class="service-three__item__thumb">
-										<img decoding="async" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/service-3-3.png" alt="service-3-3" title="service-3-3" >									</div>
-																<div class="service-three__item__content">
-									<h3 class="service-three__item__title">
-										<a href="https://ostechwp.pixydrops.com/digital-marketing/">Digital <br> Marketing</a>
-									</h3><!-- /.service-card-two__title -->
-
-																			<a href="https://ostechwp.pixydrops.com/digital-marketing/" class="service-three__item__link">
-											<span class="service-three__item__link__icon"></span>
-										</a><!-- /.blog-card__link -->
-																	</div>
-							</div>
-						</div>
-					</div>
-									<div class="item">
-						<div class="service-three__item">
-							<div class="service-three__item__inner">
-								<div class="service-three__item__icon">
-									<div class="service-three__item__icon__inner">
-										<i aria-hidden="true" class="icon-analysis-1"></i>									</div>
-								</div>
-																	<div class="service-three__item__thumb">
-										<img decoding="async" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/service-1-4.png" alt="service-1-4" title="service-1-4" >									</div>
-																<div class="service-three__item__content">
-									<h3 class="service-three__item__title">
-										<a href="https://ostechwp.pixydrops.com/digital-marketing/">Data <br> Analysis</a>
-									</h3><!-- /.service-card-two__title -->
-
-																			<a href="https://ostechwp.pixydrops.com/digital-marketing/" class="service-three__item__link">
-											<span class="service-three__item__link__icon"></span>
-										</a><!-- /.blog-card__link -->
-																	</div>
-							</div>
-						</div>
-					</div>
-									<div class="item">
-						<div class="service-three__item">
-							<div class="service-three__item__inner">
-								<div class="service-three__item__icon">
-									<div class="service-three__item__icon__inner">
-										<i aria-hidden="true" class=" icon-cyber-security"></i>									</div>
-								</div>
-																	<div class="service-three__item__thumb">
-										<img decoding="async" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/service-1-5.png" alt="service-1-5" title="service-1-5" >									</div>
-																<div class="service-three__item__content">
-									<h3 class="service-three__item__title">
-										<a href="https://ostechwp.pixydrops.com/digital-marketing/">Cyber <br> Security</a>
-									</h3><!-- /.service-card-two__title -->
-
-																			<a href="https://ostechwp.pixydrops.com/digital-marketing/" class="service-three__item__link">
-											<span class="service-three__item__link__icon"></span>
-										</a><!-- /.blog-card__link -->
-																	</div>
-							</div>
-						</div>
-					</div>
-									<div class="item">
-						<div class="service-three__item">
-							<div class="service-three__item__inner">
-								<div class="service-three__item__icon">
-									<div class="service-three__item__icon__inner">
-										<i aria-hidden="true" class=" icon-cloud-computing"></i>									</div>
-								</div>
-																	<div class="service-three__item__thumb">
-										<img decoding="async" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/service-1-6.png" alt="service-1-6" title="service-1-6" >									</div>
-																<div class="service-three__item__content">
-									<h3 class="service-three__item__title">
-										<a href="https://ostechwp.pixydrops.com/digital-marketing/">Digital <br> Experience</a>
-									</h3><!-- /.service-card-two__title -->
-
-																			<a href="https://ostechwp.pixydrops.com/digital-marketing/" class="service-three__item__link">
-											<span class="service-three__item__link__icon"></span>
-										</a><!-- /.blog-card__link -->
-																	</div>
-							</div>
-						</div>
-					</div>
-							</div>
-		</div>
-	</section>
-	<!-- Service section End -->
-		</div>
-				</div>
-				</div>
-		<div class="elementor-element elementor-element-6a44e7a9 e-con-full e-flex e-con e-parent" data-id="6a44e7a9" data-element_type="container">
-				<div class="elementor-element elementor-element-7c03dbba elementor-widget elementor-widget-ostech-sponsors" data-id="7c03dbba" data-element_type="widget" data-widget_type="ostech-sponsors.default">
-				<div class="elementor-widget-container">
-			    <div class="client-carousel client-carousel--one">
-        <div class="container">
-            <div class="client-carousel__one ostech-owl__carousel owl-theme owl-carousel" data-owl-options='{&quot;loop&quot;:true,&quot;margin&quot;:0,&quot;items&quot;:1,&quot;nav&quot;:false,&quot;dots&quot;:false,&quot;smartSpeed&quot;:700,&quot;autoplay&quot;:true,&quot;autoplayTimeout&quot;:5000,&quot;autoplayHoverPause&quot;:true,&quot;responsive&quot;:{&quot;0&quot;:{&quot;margin&quot;:0,&quot;items&quot;:1},&quot;360&quot;:{&quot;margin&quot;:0,&quot;items&quot;:2},&quot;574&quot;:{&quot;margin&quot;:30,&quot;items&quot;:3},&quot;575&quot;:{&quot;margin&quot;:30,&quot;items&quot;:3},&quot;768&quot;:{&quot;margin&quot;:30,&quot;items&quot;:3},&quot;992&quot;:{&quot;margin&quot;:40,&quot;items&quot;:4},&quot;1200&quot;:{&quot;margin&quot;:140,&quot;items&quot;:5}}}'>
-                                    <div class="client-carousel__one__item">
-                        <img decoding="async" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/brand-2-1.png" alt="brand-2-1" title="brand-2-1" >                    </div><!-- /.owl-slide-item-->
-                                    <div class="client-carousel__one__item">
-                        <img decoding="async" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/brand-2-1.png" alt="brand-2-1" title="brand-2-1" >                    </div><!-- /.owl-slide-item-->
-                                    <div class="client-carousel__one__item">
-                        <img decoding="async" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/brand-2-1.png" alt="brand-2-1" title="brand-2-1" >                    </div><!-- /.owl-slide-item-->
-                                    <div class="client-carousel__one__item">
-                        <img decoding="async" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/brand-2-1.png" alt="brand-2-1" title="brand-2-1" >                    </div><!-- /.owl-slide-item-->
-                                    <div class="client-carousel__one__item">
-                        <img decoding="async" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/brand-2-1.png" alt="brand-2-1" title="brand-2-1" >                    </div><!-- /.owl-slide-item-->
-                                    <div class="client-carousel__one__item">
-                        <img decoding="async" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/brand-2-1.png" alt="brand-2-1" title="brand-2-1" >                    </div><!-- /.owl-slide-item-->
-                            </div><!-- /.thm-owl__slider -->
-        </div><!-- /.container -->
-    </div><!-- /.client-carousel -->
-		</div>
-				</div>
-				</div>
-		<div class="elementor-element elementor-element-e717122 e-con-full e-flex e-con e-parent" data-id="e717122" data-element_type="container">
-				<div class="elementor-element elementor-element-80815fc elementor-widget elementor-widget-ostech-choose" data-id="80815fc" data-element_type="widget" data-widget_type="ostech-choose.default">
-				<div class="elementor-widget-container">
-			    <!-- Why Choose section Start -->
-    <section class="why-choose-one">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="why-choose-one__left wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">
-                        <div class="why-choose-one__top">
-                            <div class="sec-title wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='000ms'>
-                                <div class="d-flex align-items-center justify-content-start">
-                                    <img decoding="async" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/sec-title-s-1.png" alt="sec-title-s-1" title="sec-title-s-1" class="sec-title__img" >                                    <h6 class="sec-title__tagline">WHY CHOOSE US</h6>                                </div>
-                                <h3 class="sec-title__title">Why You should Choose Our Technology Company?</h3>                            </div>
-                        </div>
-                        <div class="why-choose-one__feature">
-                                                            <div class="why-choose-one__feature__item wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">
-                                    <div class="why-choose-one__feature__item__content">
-                                        <div class="why-choose-one__feature__item__icon">
-                                            <i aria-hidden="true" class="icon-it-1"></i>                                        </div>
-                                        <h3 class="why-choose-one__feature__item__text">
-                                            Executing the Right Strategies with Precision                                        </h3>
-                                    </div>
-                                                                            <div class="why-choose-one__feature__item__link">
-                                            <a href="https://ostechwp.pixydrops.com/services/" class="why-choose-one__feature__item__link__btn">
-                                                <i aria-hidden="true" class="icon-arrow-left"></i>                                            </a>
-                                        </div>
-                                                                    </div>
-                                                            <div class="why-choose-one__feature__item wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">
-                                    <div class="why-choose-one__feature__item__content">
-                                        <div class="why-choose-one__feature__item__icon">
-                                            <i aria-hidden="true" class=" icon-future-1"></i>                                        </div>
-                                        <h3 class="why-choose-one__feature__item__text">
-                                            Smooth Solutions for Your Tech Troubles                                        </h3>
-                                    </div>
-                                                                            <div class="why-choose-one__feature__item__link">
-                                            <a href="https://ostechwp.pixydrops.com/services/" class="why-choose-one__feature__item__link__btn">
-                                                <i aria-hidden="true" class="icon-arrow-left"></i>                                            </a>
-                                        </div>
-                                                                    </div>
-                                                    </div>
-                                                    <div class="why-choose-one__link wow fadeInUp">
-                                <a href="https://ostechwp.pixydrops.com/contact/"  class="why-choose-one__link__btn ostech-btn">Get In Touch</a>
-                            </div>
-                                            </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="why-choose-one__right wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="500ms">
-                        <div class="why-choose-one__thumb">
-                            <img decoding="async" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/why-choos-us-3-1.png" alt="why-choos-us-3-1" title="why-choos-us-3-1" >                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="why-choose-one__shape wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="500ms">
-            <img decoding="async" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/why-choose-2-1.png" alt="why-choose-2-1" title="why-choose-2-1" >        </div>
-    </section>
-    <!-- Why Choose section End -->
-		</div>
-				</div>
-				</div>
-		<div class="elementor-element elementor-element-7414ea7 e-con-full e-flex e-con e-parent" data-id="7414ea7" data-element_type="container">
-				<div class="elementor-element elementor-element-8ac43fd elementor-widget elementor-widget-ostech-testimonials" data-id="8ac43fd" data-element_type="widget" data-widget_type="ostech-testimonials.default">
-				<div class="elementor-widget-container">
-			    <!-- testimonial-two section start -->
-    <section class="testimonial-two">
-        <div class="container">
-                            <div class="sec-title text-center wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='000ms'>
-                    <div class="d-flex align-items-center justify-content-center">
-                        <img decoding="async" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/sec-title-s-1.png" alt="sec-title-s-1" title="sec-title-s-1" class="sec-title__img" >                        <h6 class="sec-title__tagline">TESTIMONIAL</h6>                    </div>
-                    <h3 class="sec-title__title">What Customers are <br>
-Saying?</h3>                </div>
-                        <div class="testimonial-two__carousel ostech-owl__carousel owl-theme owl-carousel" data-owl-options='{&quot;loop&quot;:true,&quot;margin&quot;:0,&quot;items&quot;:1,&quot;nav&quot;:false,&quot;dots&quot;:false,&quot;smartSpeed&quot;:700,&quot;autoplay&quot;:true,&quot;autoplayTimeout&quot;:5000,&quot;animateOut&quot;:&quot;&quot;,&quot;animateIn&quot;:&quot;&quot;,&quot;autoplayHoverPause&quot;:true,&quot;responsive&quot;:{&quot;0&quot;:{&quot;margin&quot;:0,&quot;items&quot;:1},&quot;1200&quot;:{&quot;margin&quot;:30,&quot;items&quot;:2}}}'>
-                                    <div class="item">
-                        <div class="testimonial-two__item">
-                            <div class="testimonial-two__item__star">
-                                                                    <i class="icon-star"></i>
-                                                                    <i class="icon-star"></i>
-                                                                    <i class="icon-star"></i>
-                                                                    <i class="icon-star"></i>
-                                                                    <i class="icon-star"></i>
-                                                            </div>
-                            <p class="testimonial-two__item__text">There are many variations of passages lorem ipsum available, but the majority have suffered alteration in some form, </p>
-                            <div class="testimonial-two__item__author">
-                                <div class="testimonial-two__item__author__thumb">
-                                    <img decoding="async" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/testi-1-5.png" alt="testi-1-5" title="testi-1-5" >                                </div>
-                                <div class="testimonial-two__item__author__content">
-                                    <h3 class="testimonial-two__item__author__title">
-                                        Ronald Richards                                    </h3>
-                                    <span class="testimonial-two__item__author__deg">Customer</span>
-                                </div>
-                            </div>
-                            <div class="testimonial-two__item__quite">
-                                <i class="icon-quite"></i>
-                            </div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61 38">
-                                <path d="M61 37.6621C43.331 20.1523 12.9713 5.69967 0 0.662109H61V37.6621Z" />
-                            </svg>
-                        </div>
-                    </div>
-                                    <div class="item">
-                        <div class="testimonial-two__item">
-                            <div class="testimonial-two__item__star">
-                                                                    <i class="icon-star"></i>
-                                                                    <i class="icon-star"></i>
-                                                                    <i class="icon-star"></i>
-                                                                    <i class="icon-star"></i>
-                                                                    <i class="icon-star"></i>
-                                                            </div>
-                            <p class="testimonial-two__item__text">There are many variations of passages lorem ipsum available, but the majority have suffered alteration in some form, </p>
-                            <div class="testimonial-two__item__author">
-                                <div class="testimonial-two__item__author__thumb">
-                                    <img decoding="async" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/testi-1-6.png" alt="testi-1-6" title="testi-1-6" >                                </div>
-                                <div class="testimonial-two__item__author__content">
-                                    <h3 class="testimonial-two__item__author__title">
-                                        Leslie Alexander                                    </h3>
-                                    <span class="testimonial-two__item__author__deg">Customer</span>
-                                </div>
-                            </div>
-                            <div class="testimonial-two__item__quite">
-                                <i class="icon-quite"></i>
-                            </div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61 38">
-                                <path d="M61 37.6621C43.331 20.1523 12.9713 5.69967 0 0.662109H61V37.6621Z" />
-                            </svg>
-                        </div>
-                    </div>
-                                    <div class="item">
-                        <div class="testimonial-two__item">
-                            <div class="testimonial-two__item__star">
-                                                                    <i class="icon-star"></i>
-                                                                    <i class="icon-star"></i>
-                                                                    <i class="icon-star"></i>
-                                                                    <i class="icon-star"></i>
-                                                                    <i class="icon-star"></i>
-                                                            </div>
-                            <p class="testimonial-two__item__text">There are many variations of passages lorem ipsum available, but the majority have suffered alteration in some form, </p>
-                            <div class="testimonial-two__item__author">
-                                <div class="testimonial-two__item__author__thumb">
-                                    <img decoding="async" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/testi-1-2-1.png" alt="testi-1-2" title="testi-1-2" >                                </div>
-                                <div class="testimonial-two__item__author__content">
-                                    <h3 class="testimonial-two__item__author__title">
-                                        Ronald Richards                                    </h3>
-                                    <span class="testimonial-two__item__author__deg">Customer</span>
-                                </div>
-                            </div>
-                            <div class="testimonial-two__item__quite">
-                                <i class="icon-quite"></i>
-                            </div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61 38">
-                                <path d="M61 37.6621C43.331 20.1523 12.9713 5.69967 0 0.662109H61V37.6621Z" />
-                            </svg>
-                        </div>
-                    </div>
-                                    <div class="item">
-                        <div class="testimonial-two__item">
-                            <div class="testimonial-two__item__star">
-                                                                    <i class="icon-star"></i>
-                                                                    <i class="icon-star"></i>
-                                                                    <i class="icon-star"></i>
-                                                                    <i class="icon-star"></i>
-                                                                    <i class="icon-star"></i>
-                                                            </div>
-                            <p class="testimonial-two__item__text">There are many variations of passages lorem ipsum available, but the majority have suffered alteration in some form, </p>
-                            <div class="testimonial-two__item__author">
-                                <div class="testimonial-two__item__author__thumb">
-                                    <img decoding="async" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/testi-1-1-1.png" alt="testi-1-1" title="testi-1-1" >                                </div>
-                                <div class="testimonial-two__item__author__content">
-                                    <h3 class="testimonial-two__item__author__title">
-                                        Leslie Alexander                                    </h3>
-                                    <span class="testimonial-two__item__author__deg">Customer</span>
-                                </div>
-                            </div>
-                            <div class="testimonial-two__item__quite">
-                                <i class="icon-quite"></i>
-                            </div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61 38">
-                                <path d="M61 37.6621C43.331 20.1523 12.9713 5.69967 0 0.662109H61V37.6621Z" />
-                            </svg>
-                        </div>
-                    </div>
-                            </div>
-
-            <div class="testimonial-two__author">
-                <div class="testimonial-two__author__image testimonial-two__author__image--one">
-                    <img decoding="async" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/testi-1-1-1.png" alt="testi-1-1" title="testi-1-1" >                </div>
-                <div class="testimonial-two__author__image testimonial-two__author__image--two">
-                    <img decoding="async" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/testi-1-2-1.png" alt="testi-1-2" title="testi-1-2" >                </div>
-                <div class="testimonial-two__author__image testimonial-two__author__image--three">
-                    <img decoding="async" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/testi-1-3-1.png" alt="testi-1-3" title="testi-1-3" >                </div>
-                <div class="testimonial-two__author__image testimonial-two__author__image--fore">
-                    <img decoding="async" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/testi-1-4-1.png" alt="testi-1-4" title="testi-1-4" >                </div>
-            </div>
-        </div>
-    </section>
-    <!-- testimonial-two section End -->
-		</div>
-				</div>
-				</div>
-		<div class="elementor-element elementor-element-3c62095 e-con-full e-flex e-con e-parent" data-id="3c62095" data-element_type="container">
-				<div class="elementor-element elementor-element-75ccd7e elementor-widget elementor-widget-ostech-portfolio" data-id="75ccd7e" data-element_type="widget" data-widget_type="ostech-portfolio.default">
-				<div class="elementor-widget-container">
-			    <!-- testimonial-two section End -->
-    <section class="project-two">
-        <div class="container-fluid">
-                            <div class="sec-title text-center wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='000ms'>
-                    <div class="d-flex align-items-center justify-content-center">
-                        <img decoding="async" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/sec-title-s-1.png" alt="sec-title-s-1" title="sec-title-s-1" class="sec-title__img" >                        <h5 class="sec-title__tagline">LATEST PROJECT</h5>                    </div>
-                    <h2 class="sec-title__title">Our Recently Completed <br>
-Latest Projects</h2>                </div>
-                        <div class="row gutter-y-30">
-                                    <div class="col-lg-3 col-md-4 col-sm-12">
-                        <div class="project-two__item wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">
-                            <div class="project-two__thumb">
-                                <img decoding="async" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/project-2-1.png" alt="project-2-1" title="project-2-1" >                            </div>
-                            <div class="project-two__content">
-                                <h5 class="project-two__content__title">
-                                    <a class="" href="https://ostechwp.pixydrops.com/project-details/"  >Product Development</a>                                </h5>
-                                <p class="project-two__content__text">Technology</p>
-
-                                <a href="https://ostechwp.pixydrops.com/project-details/"  class="project-two__content__btn">
-                                    <span class="project-two__content__btn__icon"></span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-12">
-                        <div class="project-two__item wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">
-                            <div class="project-two__thumb">
-                                <img decoding="async" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/project-2-2.png" alt="project-2-2" title="project-2-2" >                            </div>
-                            <div class="project-two__content">
-                                <h5 class="project-two__content__title">
-                                    <a class=" " href="https://ostechwp.pixydrops.com/project-details/"  >UI/UX Development</a>                                </h5>
-                                <p class="project-two__content__text">Technology</p>
-
-                                <a href="https://ostechwp.pixydrops.com/project-details/"  class="project-two__content__btn">
-                                    <span class="project-two__content__btn__icon"></span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-12">
-                        <div class="project-two__item wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">
-                            <div class="project-two__thumb">
-                                <img decoding="async" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/project-2-3.png" alt="project-2-3" title="project-2-3" >                            </div>
-                            <div class="project-two__content">
-                                <h5 class="project-two__content__title">
-                                    <a class="  " href="https://ostechwp.pixydrops.com/project-details/"  >Digital Marketing</a>                                </h5>
-                                <p class="project-two__content__text">Technology</p>
-
-                                <a href="https://ostechwp.pixydrops.com/project-details/"  class="project-two__content__btn">
-                                    <span class="project-two__content__btn__icon"></span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                                    <div class="col-lg-3 col-md-4 col-sm-12">
-                        <div class="project-two__item wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">
-                            <div class="project-two__thumb">
-                                <img decoding="async" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/project-2-4.png" alt="project-2-4" title="project-2-4" >                            </div>
-                            <div class="project-two__content">
-                                <h5 class="project-two__content__title">
-                                    <a class="   " href="https://ostechwp.pixydrops.com/project-details/"  >Digital Experience</a>                                </h5>
-                                <p class="project-two__content__text">Technology</p>
-
-                                <a href="https://ostechwp.pixydrops.com/project-details/"  class="project-two__content__btn">
-                                    <span class="project-two__content__btn__icon"></span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                            </div>
-        </div>
-    </section>
-    <!-- testimonial-two section End -->
-		</div>
-				</div>
-				</div>
-		<div class="elementor-element elementor-element-3ce64d3 e-con-full e-flex e-con e-parent" data-id="3ce64d3" data-element_type="container">
-				<div class="elementor-element elementor-element-2d169e9 elementor-widget elementor-widget-ostech-pricing" data-id="2d169e9" data-element_type="widget" data-widget_type="ostech-pricing.default">
-				<div class="elementor-widget-container">
-			    <!-- Package section start -->
-    <section class="package-page package-page--two">
-        <div class="container">
-                            <div class="sec-title text-center wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='000ms'>
-                    <div class="d-flex align-items-center justify-content-center">
-                        <img decoding="async" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/sec-title-s-1.png" alt="sec-title-s-1" title="sec-title-s-1" class="sec-title__img" >                        <h6 class="sec-title__tagline">Pricing plane</h6>                    </div>
-                    <h3 class="sec-title__title">Our Recently Completed <br> Latest Projects </h3>                </div>
-                        <div class="row gutter-y-30">
-                                    <div class="col-md-6 col-lg-4">
-                        <div class="package-card price wow fadeInUp" data-wow-duration='700ms'>
-                            <div class="package-card__head">
-                                                                <div class="package-card__head__box">
-                                    <h2 class="package-card__head__title">Startup</h2>
-                                </div>
-                                <div class="package-card__head__content">
-                                    <p class="package-card__head__price"> <span class="sup">$</span> 30.<span class="sub">00</span></p>
-                                    <p class="package-card__head__month">Per month</p>
-                                </div>
-                            </div>
-                            <div class="package-card__content">
-                                <ul class="package-card__content__list list-unstyled ml-0">
-                                    <li class="package-card__content__list__item"> <i class="icon-mark"></i>Social Media Marketing</li>
-<li class="package-card__content__list__item"> <i class="icon-mark"></i>Digital Analysis</li>
-<li class="package-card__content__list__item"> <i class="icon-mark"></i>Web Development</li>
-<li class="package-card__content__list__item"> <i class="icon-mark"></i>Technical Support</li>                                </ul>
-                                                                    <div class="package-card__content__link">
-                                        <a href="https://ostechwp.pixydrops.com/contact/"  class="package-card__content__link__btn ostech-btn ostech-btn--secondary">
-                                            Select Plan                                        </a>
-                                    </div>
-                                                            </div>
-                            <div class="package-card__shape">
-                                <img decoding="async" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/price-1-1.png" alt="price-1-1" title="price-1-1" >                            </div>
-                        </div>
-                    </div>
-                                    <div class="col-md-6 col-lg-4">
-                        <div class="package-card price wow fadeInUp" data-wow-duration='700ms'>
-                            <div class="package-card__head">
-                                                                    <p class="package-card__head__top">Recommended</p>
-                                                                <div class="package-card__head__box">
-                                    <h2 class="package-card__head__title">Business</h2>
-                                </div>
-                                <div class="package-card__head__content">
-                                    <p class="package-card__head__price"> <span class="sup">$</span> 60.<span class="sub">00</span></p>
-                                    <p class="package-card__head__month">Per month</p>
-                                </div>
-                            </div>
-                            <div class="package-card__content">
-                                <ul class="package-card__content__list list-unstyled ml-0">
-                                    <li class="package-card__content__list__item"> <i class="icon-mark"></i>Social Media Marketing</li>
-<li class="package-card__content__list__item"> <i class="icon-mark"></i>Digital Analysis</li>
-<li class="package-card__content__list__item"> <i class="icon-mark"></i>Web Development</li>
-<li class="package-card__content__list__item"> <i class="icon-mark"></i>Technical Support</li>                                </ul>
-                                                                    <div class="package-card__content__link">
-                                        <a href="https://ostechwp.pixydrops.com/contact/"  class="package-card__content__link__btn ostech-btn ostech-btn--secondary">
-                                            Select Plan                                        </a>
-                                    </div>
-                                                            </div>
-                            <div class="package-card__shape">
-                                <img decoding="async" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/price-1-1.png" alt="price-1-1" title="price-1-1" >                            </div>
-                        </div>
-                    </div>
-                                    <div class="col-md-6 col-lg-4">
-                        <div class="package-card price wow fadeInUp" data-wow-duration='700ms'>
-                            <div class="package-card__head">
-                                                                <div class="package-card__head__box">
-                                    <h2 class="package-card__head__title">Premium</h2>
-                                </div>
-                                <div class="package-card__head__content">
-                                    <p class="package-card__head__price"> <span class="sup">$</span> 90.<span class="sub">00</span></p>
-                                    <p class="package-card__head__month">Per month</p>
-                                </div>
-                            </div>
-                            <div class="package-card__content">
-                                <ul class="package-card__content__list list-unstyled ml-0">
-                                    <li class="package-card__content__list__item"> <i class="icon-mark"></i>Social Media Marketing</li>
-<li class="package-card__content__list__item"> <i class="icon-mark"></i>Digital Analysis</li>
-<li class="package-card__content__list__item"> <i class="icon-mark"></i>Web Development</li>
-<li class="package-card__content__list__item"> <i class="icon-mark"></i>Technical Support</li>                                </ul>
-                                                                    <div class="package-card__content__link">
-                                        <a href="https://ostechwp.pixydrops.com/contact/"  class="package-card__content__link__btn ostech-btn ostech-btn--secondary">
-                                            Select Plan                                        </a>
-                                    </div>
-                                                            </div>
-                            <div class="package-card__shape">
-                                <img decoding="async" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/price-1-1.png" alt="price-1-1" title="price-1-1" >                            </div>
-                        </div>
-                    </div>
-                            </div><!-- /.row -->
-        </div>
-    </section>
-    <!-- Package section End -->
-
-		</div>
-				</div>
-				</div>
-		<div class="elementor-element elementor-element-e36bd3d e-con-full e-flex e-con e-parent" data-id="e36bd3d" data-element_type="container">
-				<div class="elementor-element elementor-element-9623e67 elementor-widget elementor-widget-ostech-contact-form" data-id="9623e67" data-element_type="widget" data-widget_type="ostech-contact-form.default">
-				<div class="elementor-widget-container">
-				<!-- Contact section Start -->
-	<section class="contact-two">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-4">
-					<div class="contact-two__left">
-						<div class="contact-two__thumb wow fadeInLeft" data-wow-duration="1500ms" data-wow-delay="500ms">
-							<img decoding="async" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/contact-1-2.png" alt="contact-1-2" title="contact-1-2" >						</div>
-					</div>
-				</div>
-				<div class="col-lg-8">
-					<div class="contact-two__right wow fadeInRight" data-wow-duration="1500ms" data-wow-delay="500ms">
-						<div class="contact-two__top">
-							<div class="contact-two__top__content">
-								<div class="sec-title sec-title--three text-center wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='000ms'>
-																			<div class="d-flex align-items-center justify-content-center">
-											<img decoding="async" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/sec-title-s-2.png" alt="sec-title-s-2" title="sec-title-s-2" class="sec-title__img" >											<h6 class="sec-title__tagline">Contact with us</h6>										</div>
-																		<h3 class="sec-title__title">Feel Free to Write us</h3>								</div>
-							</div>
-						</div>
-						<div class="contact-two__content">
-							<div class="contact-two__form__inner">
-								<div class="contact-two__form contact-form-validated form-one wow fadeInUp">
-									<div class="wpcf7 no-js" id="wpcf7-f1088-p17-o1" lang="en-US" dir="ltr">
-<div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
-<form action="/home-two/#wpcf7-f1088-p17-o1" method="post" class="wpcf7-form init" aria-label="Contact form" novalidate="novalidate" data-status="init">
-<div style="display: none;">
-<input type="hidden" name="_wpcf7" value="1088" />
-<input type="hidden" name="_wpcf7_version" value="5.9.5" />
-<input type="hidden" name="_wpcf7_locale" value="en_US" />
-<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f1088-p17-o1" />
-<input type="hidden" name="_wpcf7_container_post" value="17" />
-<input type="hidden" name="_wpcf7_posted_data_hash" value="" />
+  </div>
 </div>
-<div class="form-one__group">
-    <div class="form-one__control form-one__control--full">
-         <span class="wpcf7-form-control-wrap" data-name="text-854"><input size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Your Name" value="" type="text" name="text-854" /></span>
-    </div><!-- /.form-one__control form-one__control__full -->
-    <div class="form-one__control form-one__control--full">
-        <span class="wpcf7-form-control-wrap" data-name="email-774"><input size="40" class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email Address" value="" type="email" name="email-774" /></span>
-    </div><!-- /.form-one__control form-one__control__full -->
-    <div class="form-one__control form-one__control--full">
-        <span class="wpcf7-form-control-wrap" data-name="text-855"><input size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Subject" value="" type="text" name="text-855" /></span>
-    </div><!-- /.form-one__control form-one__control__full -->
-    <div class="form-one__control form-one__control--full">
-        <span class="wpcf7-form-control-wrap" data-name="textarea-955"><textarea cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Write a Message" name="textarea-955"></textarea></span>
-    </div><!-- /.form-one__control -->
-    <div class="form-one__control form-one__control--full">
-        <button type="submit" class="ostech-btn">Send a Message</button>
-    </div><!-- /.form-one__control -->
-</div><!-- /.form-one__group --><div class="wpcf7-response-output" aria-hidden="true"></div>
-</form>
-</div>								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-					<div class="contact-two__shape">
-				<img decoding="async" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/benefit-shape-1-1.png" alt="benefit-shape-1-1" title="benefit-shape-1-1" >			</div>
-			</section>
-	<!-- Contact section End -->
-		</div>
-				</div>
-				</div>
-		<div class="elementor-element elementor-element-ac1ca2a e-con-full e-flex e-con e-parent" data-id="ac1ca2a" data-element_type="container">
-				<div class="elementor-element elementor-element-e138709 elementor-widget elementor-widget-ostech-blog" data-id="e138709" data-element_type="widget" data-widget_type="ostech-blog.default">
-				<div class="elementor-widget-container">
-				<!-- Blog section Start -->
-	<section class="blog-one blog-one--page">
-		<div class="container">
-							<div class="sec-title text-center wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='000ms'>
-											<div class="d-flex align-items-center justify-content-center">
-							<img decoding="async" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/sec-title-s-1.png" alt="sec-title-s-1" title="sec-title-s-1" class="sec-title__img" >							<h6 class="sec-title__tagline">ARTICLE</h6>						</div>
-										<h3 class="sec-title__title">Latest News &amp; Articles from <br>
-the Blog Posts</h3>				</div>
-						<div class="row gutter-y-30">
-									<div class="col-md-6 col-lg-4">
-						<div class="blog-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='000ms'>
-															<div class="blog-card__image">
-									<img fetchpriority="high" decoding="async" width="370" height="290" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/blog-1-8-370x290.jpg" class="attachment-ostech_blog_370X290 size-ostech_blog_370X290 wp-post-image" alt="blog-1-8" />									<img fetchpriority="high" decoding="async" width="370" height="290" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/blog-1-8-370x290.jpg" class="attachment-ostech_blog_370X290 size-ostech_blog_370X290 wp-post-image" alt="blog-1-8" />									<a href="https://ostechwp.pixydrops.com/sustainable-tech-solutions-for-a-greener/" class="blog-card__image__link"></a>
-									<div class="blog-card__date"><span>08</span>May</div>
-								</div>
-														<div class="blog-card__content">
-								<ul class="list-unstyled blog-card__meta ml-0">
-									<li>
-										<a href="https://ostechwp.pixydrops.com/author/zhx2kuzlnsu491o5/"><img decoding="async" src="https://secure.gravatar.com/avatar/fe53264b3ea357c295e5f3df6530c65e?s=31&#038;d=mm&#038;r=g" alt="Ostech">
-											OstechWP</a>
-									</li>
-																			<li><span class="comments-link"><i class="icon-bubble-chat-1"></i> <a href="https://ostechwp.pixydrops.com/sustainable-tech-solutions-for-a-greener/#comments">2 Comments<span class="screen-reader-text"> on Sustainable Tech Solutions for a Greener</span></a></span></li>
-																	</ul>
-								<div class="blog-card__content__inner">
-																		<h3 class="blog-card__title"><a href="https://ostechwp.pixydrops.com/sustainable-tech-solutions-for-a-greener/">Sustainable Tech Solutions for a Greener</a></h3>
-									<a href="https://ostechwp.pixydrops.com/sustainable-tech-solutions-for-a-greener/" class="blog-card__link">Read More										<i aria-hidden="true" class="icon-arrow-left"></i>									</a><!-- /.blog-card__link -->
-								</div>
-							</div>
-						</div>
-					</div>
-									<div class="col-md-6 col-lg-4">
-						<div class="blog-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='000ms'>
-															<div class="blog-card__image">
-									<img loading="lazy" decoding="async" width="370" height="290" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/blog-1-7-370x290.jpg" class="attachment-ostech_blog_370X290 size-ostech_blog_370X290 wp-post-image" alt="blog-1-7" />									<img loading="lazy" decoding="async" width="370" height="290" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/blog-1-7-370x290.jpg" class="attachment-ostech_blog_370X290 size-ostech_blog_370X290 wp-post-image" alt="blog-1-7" />									<a href="https://ostechwp.pixydrops.com/the-evolution-of-smart-homes-tech-upgrades/" class="blog-card__image__link"></a>
-									<div class="blog-card__date"><span>08</span>May</div>
-								</div>
-														<div class="blog-card__content">
-								<ul class="list-unstyled blog-card__meta ml-0">
-									<li>
-										<a href="https://ostechwp.pixydrops.com/author/zhx2kuzlnsu491o5/"><img decoding="async" src="https://secure.gravatar.com/avatar/fe53264b3ea357c295e5f3df6530c65e?s=31&#038;d=mm&#038;r=g" alt="Ostech">
-											OstechWP</a>
-									</li>
-																			<li><span class="comments-link"><i class="icon-bubble-chat-1"></i> <a href="https://ostechwp.pixydrops.com/the-evolution-of-smart-homes-tech-upgrades/#comments">2 Comments<span class="screen-reader-text"> on The Evolution of Smart Homes: Tech Upgrades</span></a></span></li>
-																	</ul>
-								<div class="blog-card__content__inner">
-																		<h3 class="blog-card__title"><a href="https://ostechwp.pixydrops.com/the-evolution-of-smart-homes-tech-upgrades/">The Evolution of Smart Homes: Tech Upgrades</a></h3>
-									<a href="https://ostechwp.pixydrops.com/the-evolution-of-smart-homes-tech-upgrades/" class="blog-card__link">Read More										<i aria-hidden="true" class="icon-arrow-left"></i>									</a><!-- /.blog-card__link -->
-								</div>
-							</div>
-						</div>
-					</div>
-									<div class="col-md-6 col-lg-4">
-						<div class="blog-card wow fadeInUp" data-wow-duration='1500ms' data-wow-delay='000ms'>
-															<div class="blog-card__image">
-									<img loading="lazy" decoding="async" width="370" height="290" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/blog-1-6-370x290.jpg" class="attachment-ostech_blog_370X290 size-ostech_blog_370X290 wp-post-image" alt="blog-1-6" />									<img loading="lazy" decoding="async" width="370" height="290" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/blog-1-6-370x290.jpg" class="attachment-ostech_blog_370X290 size-ostech_blog_370X290 wp-post-image" alt="blog-1-6" />									<a href="https://ostechwp.pixydrops.com/must-have-gadgets-for-tech-enthusiasts/" class="blog-card__image__link"></a>
-									<div class="blog-card__date"><span>08</span>May</div>
-								</div>
-														<div class="blog-card__content">
-								<ul class="list-unstyled blog-card__meta ml-0">
-									<li>
-										<a href="https://ostechwp.pixydrops.com/author/zhx2kuzlnsu491o5/"><img decoding="async" src="https://secure.gravatar.com/avatar/fe53264b3ea357c295e5f3df6530c65e?s=31&#038;d=mm&#038;r=g" alt="Ostech">
-											OstechWP</a>
-									</li>
-																			<li><span class="comments-link"><i class="icon-bubble-chat-1"></i> <a href="https://ostechwp.pixydrops.com/must-have-gadgets-for-tech-enthusiasts/#comments">2 Comments<span class="screen-reader-text"> on Must-Have Gadgets for Tech Enthusiasts</span></a></span></li>
-																	</ul>
-								<div class="blog-card__content__inner">
-																		<h3 class="blog-card__title"><a href="https://ostechwp.pixydrops.com/must-have-gadgets-for-tech-enthusiasts/">Must-Have Gadgets for Tech Enthusiasts</a></h3>
-									<a href="https://ostechwp.pixydrops.com/must-have-gadgets-for-tech-enthusiasts/" class="blog-card__link">Read More										<i aria-hidden="true" class="icon-arrow-left"></i>									</a><!-- /.blog-card__link -->
-								</div>
-							</div>
-						</div>
-					</div>
-															</div>
-		</div>
-	</section>
-	<!-- Blog section End -->
 
 
-		</div>
-				</div>
-				</div>
-				</div>
-		
+<!-- Navbar -->
+<!-- Navbar -->
+<nav class="z-50 p-1 Navbar-main" style="margin-top: -4px;">
+  <div class="container d-flex justify-content-between align-items-center mt-2 mb-2" style="padding-bottom: 0%;">
+    <img src="./images/logo-2-yellow.png" alt="Logo" class="LOGOSSS" />
+
+    <!-- Desktop Nav -->
+    <div class="d-none d-md-flex gap-5 align-items-center pp1ff">
+      <a href="index.html" class="nav-link-animate " style="font-size: 18px;">Home</a>
+      <a href="about.html" class="nav-link-animate" style="font-size: 18px;">About Us</a>
+
+      <!-- Dropdown -->
+<div class="position-relative dropdown-hover" style="position: relative; display: inline-block;">
+  <a href="service.html" class="nav-link-animate dropdown-toggl border-0 bg-transparent d-inline-block" style="font-size: 18px; text-decoration: none;">
+    Services <i class="fa-solid fa-chevron-down" style="font-size: 16px;"></i>
+  </a>
+
+  <div class="dropdown-menu shadow bg-white py-3 px-2 mt--1" style="
+    width: 210px;
+    border-radius: 0%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: all 0.9s ease;
+    z-index: 999;
+  ">
+    <a href="appdev.html" style="display: block; color: black; text-decoration: none; padding: 8px 16px; font-size: 18px;">App Development</a>
+    <a href="webdev.html" style="display: block; color: black; text-decoration: none; padding: 8px 16px; font-size: 18px;">Web Development</a>
+    <a href="gamedev.html" style="display: block; color: black; text-decoration: none; padding: 8px 16px; font-size: 18px;">Game Development</a>
+    <a href="digital.html" style="display: block; color: black; text-decoration: none; padding: 8px 16px; font-size: 18px;">Digital Marketing</a>
+    <a href="uiux.html" style="display: block; color: black; text-decoration: none; padding: 8px 16px; font-size: 18px;">UI/UX Design</a>
+  </div>
+</div>
 
 
-</div><!-- #page -->
+      <a href="career.html" class="nav-link-animate" style="font-size: 18px;">Career</a>
+      <a href="portfolio.html" class="nav-link-animate" style="font-size: 18px;">Portfolio</a>
+      <a href="contact.html" class="nav-link-animate" style="font-size: 18px;">Contact Us</a>
+    </div>
 
-<div class="footer-wrapper">
-	
+    <!-- CTA Button -->
+    <div class="d-none d-md-block">
+      <a href="takesolutin.html" class="MY_BTN" style="font-size: 17px;">Take Solution</a>
+    </div>
 
+    <!-- Mobile Toggle -->
+    <button class="d-md-none btn btn-link text-dark fs-3" onclick="toggleMobileMenu()">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+
+  <!-- Mobile Sidebar -->
+  <div class="mobile-sidebar bg-dark text-white px-3 py-4" id="mobileSidebar">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <img src="./images/logo-yellow.png" alt="Mobile Logo" class="mobilelogo" />
+      <button class="btn text-white fs-3" onclick="toggleMobileMenu()"><i class="fas fa-times"></i></button>
+    </div>
+
+    <nav class="d-flex flex-column gap-3">
+      <a href="index.html" class="text-white text-decoration-none border-bottom pb-1 ">HOME</a>
+      <a href="about.html" class="text-white text-decoration-none border-bottom pb-1">ABOUT US</a>
+      <a href="career.html" class="text-white text-decoration-none border-bottom pb-1">CAREER</a>
+      <a href="portfolio.html" class="text-white text-decoration-none border-bottom pb-1">PORTFOLIO</a>
+      <a href="contact.html" class="text-white text-decoration-none border-bottom pb-1">CONTACT US</a>
+
+      <div>
+        <button style="margin-top: -10px;margin-left: -10px;"  class="btn w-100 text-white text-start d-flex justify-content-between align-items-center " onclick="toggleServiceDropdown()">
+          SERVICES
+          <i class="fas fa-angle-down" id="dropdownIcon"></i>
+        </button>
+        <div class="mt-2 d-none" id="mobileServiceDropdown">
+          <a href="appdev.html" class="text-white d-block border-bottom pb-1 ps-3" style="text-decoration: none;">APP DEVELOPMENT</a>
+          <a href="webdev.html" class="text-white d-block border-bottom pb-1 ps-3" style="text-decoration: none;">WEB DEVELOPMENT</a>
+          <a href="gamedev.html" class="text-white d-block border-bottom pb-1 ps-3" style="text-decoration: none;">GAME DEVELOPMENT</a>
+          <a href="digital.html" class="text-white d-block border-bottom pb-1 ps-3" style="text-decoration: none;">DIGITAL MARKETING</a>
+          <a href="uiux.html" class="text-white d-block border-bottom pb-1 ps-3" style="text-decoration: none;">UI/UX DESIGN</a>
+        </div>
+      </div>
+
+      <a href="takesolutin.html" class="MY_BTN mt-3 w-100">Take Solution</a>
+
+      <div class="location-mobile mt-3">
+        <i class="fa-solid fa-envelope"></i>
+        <a href="mailto:info@brainartit.in" class="text-white ms-2" style="text-decoration: none;">info@brainartit.in</a>
+      </div>
+      <div class="call-mobile mt-2">
+        <i class="fa-solid fa-phone"></i>
+        <a href="tel:+919327228578" class="text-white ms-2" style="text-decoration: none;">+91 93272 28578</a>
+      </div>
+
+      <div class="icon-div-mobile mt-3">
+        <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="text-white"><i class="fab fa-skype"></i></a>
+      </div>
+    </nav>
+  </div>
+</nav>
+
+
+<!-- -------------------------hero----------------------------------------- -->
+ <!-- Hero Section -->
+<div class="position-relative w-100 mt-5" style="height: 400px;">
+  <!-- Background Image -->
+  <div class="position-absolute top-0 start-0 w-100 h-100 bg-cover bg-center" style="background-image: url('./images/main-slider/uiux.jpg'); background-position: top;background-size: cover;">
+    <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0,0,0,0.7);"></div>
+  </div>
+
+  <!-- Content -->
+  <div class="position-relative z-2 text-white h-100 d-flex align-items-center px-3 px-sm-4 px-md-5 text-center text-sm-start">
+    <div>
+      <h1 class="fw-bold display-5 display-sm-4 display-md-3">UI/UX Design
+</h1>
+      <div class="d-flex align-items-center justify-content-center justify-content-sm-start gap-2 mt-3 small">
+        <span style="color: #ee8624;font-size: 18px;">Home</span>
+        <i class="fa-solid fa-angles-right"></i>
+        <span style="color: #ee8624;font-size: 18px;">Service</span>
+        <i class="fa-solid fa-angles-right"></i>
+        <span class="" style="font-size: 18px;">UI/UX Design
+</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- --------------------------------------111111111111111--------------------------- -->
+<div class="d-flex flex-column flex-md-row align-items-center justify-content-center px-4 px-md-5 px-lg-5 mt-5 container">
+  <div class="w-100 max-w-1000 bg-white d-flex flex-column flex-md-row align-items-stretch shadow-md gap-md-3">
     
-                    <!-- the loop -->
-                            		<div data-elementor-type="wp-post" data-elementor-id="686" class="elementor elementor-686">
-				<div class="elementor-element elementor-element-0fd1ebf e-con-full main-footer e-flex e-con e-parent" data-id="0fd1ebf" data-element_type="container">
-		<div class="elementor-element elementor-element-1031e5a e-con-full e-flex e-con e-child" data-id="1031e5a" data-element_type="container">
-				<div class="elementor-element elementor-element-4c56894 elementor-widget elementor-widget-ostech-shape" data-id="4c56894" data-element_type="widget" data-widget_type="ostech-shape.default">
-				<div class="elementor-widget-container">
-			            <div class="main-footer__shape">
-            <img decoding="async" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/footer-shape.png" alt="footer-shape" title="footer-shape" >        </div>
-                <div class="main-footer__earth">
-            <img decoding="async" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/earth-footer.png" alt="earth-footer" title="earth-footer" >        </div>
-    		</div>
-				</div>
-				</div>
-		<div class="elementor-element elementor-element-6cda86a e-con-full e-flex e-con e-child" data-id="6cda86a" data-element_type="container">
-				<div class="elementor-element elementor-element-7de70c6 elementor-widget elementor-widget-footer-top" data-id="7de70c6" data-element_type="widget" data-widget_type="footer-top.default">
-				<div class="elementor-widget-container">
-			    <div class="main-footer__top">
-        <div class="container">
-            <div class="main-footer__top__inner">
-                <div class="main-footer__top__logo">
-                    <a class="footer__logo ostech-logo" href="https://ostechwp.pixydrops.com/">
-                        <img loading="lazy" decoding="async" width="120" height="39" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/logo-light.png" alt="Ostech">
-                    </a>
-                </div>
-                <div class="main-footer__top__social">
-                                            <a   href="https://facebook.com/">
-                            <i aria-hidden="true" class="fab fa-facebook-f"></i>                        </a>
-                                            <a   href="https://twitter.com/">
-                            <i aria-hidden="true" class=" icon-x-twitter"></i>                        </a>
-                                            <a   href="https://pinterest.com/">
-                            <i aria-hidden="true" class=" icon-pinterest-p"></i>                        </a>
-                                            <a   href="https://youtube.com/">
-                            <i aria-hidden="true" class=" icon-youtube"></i>                        </a>
-                                    </div>
-            </div>
+    <!-- Left Menu -->
+    <div class="w-100 left-menu" style="max-width: 400px; background-color: #EE8624; padding: 1rem;">
+      <!-- All Service Header -->
+      <div class="position-relative">
+        <div class="bg-black text-white fw-bold fs-5 p-3">All Service</div>
+        <div style="
+          position: absolute;
+          left: 1rem;
+          bottom: -0.5rem;
+          width: 0;
+          height: 0;
+          border-left: 8px solid transparent;
+          border-right: 8px solid transparent;
+          border-top: 8px solid black;">
         </div>
-    </div>
-		</div>
-				</div>
-				</div>
-		<div class="elementor-element elementor-element-a2d1b0e main-footer__middle e-flex e-con-boxed e-con e-child" data-id="a2d1b0e" data-element_type="container">
-					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-c4bc3ce e-con-full e-flex e-con e-child" data-id="c4bc3ce" data-element_type="container">
-				<div class="elementor-element elementor-element-786878f elementor-widget elementor-widget-footer-about" data-id="786878f" data-element_type="widget" data-widget_type="footer-about.default">
-				<div class="elementor-widget-container">
-			    <!-- /.footer-subscribe-widget -->
-    <div class="footer-widget footer-widget--about">
-        <h2 class="footer-widget__title">ABOUT</h2>
+      </div>
 
-        <p class="footer-widget__text">There are many variations passages
-of Lorem Ipsum available, but the majority have suffered alteration</p>
+      <!-- Selected Service -->
+      <div class="bg-black text-white fw-semibold p-3 mt-3 w-100 d-flex align-items-center justify-content-between">
+   UI/UX Design
 
-        <form data-url="https://xyz.us18.list-manage.com/subscribe/post?u=20e91746ef818cd941998c598&amp;id=cc0ee8140e" class="footer-widget__newsletter mc-form">
-            <input type="email" name="EMAIL" placeholder="Email">
-            <button type="submit" class="icon-right-arrow"><span class="sr-only"></span></button>
-        </form>
-        <div class="mc-form__response"></div>
+        <div style="
+          width: 0;
+          height: 0;
+          border-left: 10px solid transparent;
+          border-right: 10px solid transparent;
+          border-top: 10px solid white;">
+        </div>
+      </div>
+
+      <!-- Dynamic Menu Items -->
+   <div class="mt-3 d-flex flex-column gap-2 flex-grow-1">
+
+  <!-- Repeatable hover box -->
+  <div class="d-flex align-items-center justify-content-between" style="
+    position: relative;
+    padding: 19px 30px;
+    background-color: white;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    transition: color 0.3s ease;
+    z-index: 1;
+  " onmouseover="
+    this.children[0].style.transform = 'scaleX(1)';
+    this.children[1].style.color = 'white';
+    this.children[2].style.color = 'black';
+  " onmouseout="
+    this.children[0].style.transform = 'scaleX(0)';
+    this.children[1].style.color = 'black';
+    this.children[2].style.color = 'gray';
+  ">
+    <div style="
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-color: black;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
+      z-index: 0;
+    "></div>
+    <span style="position: relative; z-index: 1; color: black; transition: color 0.3s ease;">
+
+
+User Research and Analysis
+</span>
+    <i class="fa fa-arrow-right" style="position: relative; z-index: 1; color: gray; transition: color 0.3s ease;"></i>
+  </div>
+
+  <!-- Repeat for each item -->
+
+<div class="d-flex align-items-center justify-content-between" style="
+  position: relative; padding: 19px 30px; background-color: white; overflow: hidden; cursor: pointer;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); transition: color 0.3s ease; z-index: 1;
+" onmouseover="
+  this.children[0].style.transform = 'scaleX(1)';
+  this.children[1].style.color = 'white';
+  this.children[2].style.color = 'black';
+" onmouseout="
+  this.children[0].style.transform = 'scaleX(0)';
+  this.children[1].style.color = 'black';
+  this.children[2].style.color = 'gray';
+">
+  <div style="content: ''; position: absolute; inset: 0; background-color: black; transform: scaleX(0);
+    transform-origin: left; transition: transform 0.3s ease; z-index: 0;">
+  </div>
+  <span style="position: relative; z-index: 1; color: black; transition: color 0.3s ease;">
+   
+
+Custom User Experience Design
+  </span>
+  <i class="fa fa-arrow-right" style="position: relative; z-index: 1; color: gray; transition: color 0.3s ease;"></i>
+</div>
+
+
+  <div class="d-flex align-items-center justify-content-between" style="
+    position: relative;     padding: 19px 30px; background-color: white; overflow: hidden; cursor: pointer;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); transition: color 0.3s ease; z-index: 1;
+  " onmouseover="
+    this.children[0].style.transform = 'scaleX(1)';
+    this.children[1].style.color = 'white';
+    this.children[2].style.color = 'black';
+  " onmouseout="
+    this.children[0].style.transform = 'scaleX(0)';
+    this.children[1].style.color = 'black';
+    this.children[2].style.color = 'gray';
+  ">
+    <div style="content: ''; position: absolute; inset: 0; background-color: black; transform: scaleX(0);
+      transform-origin: left; transition: transform 0.3s ease; z-index: 0;">
+    </div>
+    <span style="position: relative; z-index: 1; color: black; transition: color 0.3s ease;">
+
+
+
+UI and Interaction Design Wireframing
+</span>
+    <i class="fa fa-arrow-right" style="position: relative; z-index: 1; color: gray; transition: color 0.3s ease;"></i>
+  </div>
+
+  <div class="d-flex align-items-center justify-content-between" style="
+    position: relative;     padding: 19px 30px; background-color: white; overflow: hidden; cursor: pointer;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); transition: color 0.3s ease; z-index: 1;
+  " onmouseover="
+    this.children[0].style.transform = 'scaleX(1)';
+    this.children[1].style.color = 'white';
+    this.children[2].style.color = 'black';
+  " onmouseout="
+    this.children[0].style.transform = 'scaleX(0)';
+    this.children[1].style.color = 'black';
+    this.children[2].style.color = 'gray';
+  ">
+    <div style="content: ''; position: absolute; inset: 0; background-color: black; transform: scaleX(0);
+      transform-origin: left; transition: transform 0.3s ease; z-index: 0;">
+    </div>
+    <span style="position: relative; z-index: 1; color: black; transition: color 0.3s ease;">
+
+
+
+Wireframing and Interactive Prototyping
+</span>
+    <i class="fa fa-arrow-right" style="position: relative; z-index: 1; color: gray; transition: color 0.3s ease;"></i>
+  </div>
+
+  <div class="d-flex align-items-center justify-content-between" style="
+    position: relative;     padding: 19px 30px; background-color: white; overflow: hidden; cursor: pointer;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); transition: color 0.3s ease; z-index: 1;
+  " onmouseover="
+    this.children[0].style.transform = 'scaleX(1)';
+    this.children[1].style.color = 'white';
+    this.children[2].style.color = 'black';
+  " onmouseout="
+    this.children[0].style.transform = 'scaleX(0)';
+    this.children[1].style.color = 'black';
+    this.children[2].style.color = 'gray';
+  ">
+    <div style="content: ''; position: absolute; inset: 0; background-color: black; transform: scaleX(0);
+      transform-origin: left; transition: transform 0.3s ease; z-index: 0;">
+    </div>
+    <span style="position: relative; z-index: 1; color: black; transition: color 0.3s ease;">
+
+
+Web and Mobile App UX/UI Design
+</span>
+    <i class="fa fa-arrow-right" style="position: relative; z-index: 1; color: gray; transition: color 0.3s ease;"></i>
+  </div>
+
+  <div class="d-flex align-items-center justify-content-between" style="
+    position: relative;     padding: 19px 30px; background-color: white; overflow: hidden; cursor: pointer;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); transition: color 0.3s ease; z-index: 1;
+  " onmouseover="
+    this.children[0].style.transform = 'scaleX(1)';
+    this.children[1].style.color = 'white';
+    this.children[2].style.color = 'black';
+  " onmouseout="
+    this.children[0].style.transform = 'scaleX(0)';
+    this.children[1].style.color = 'black';
+    this.children[2].style.color = 'gray';
+  ">
+    <div style="content: ''; position: absolute; inset: 0; background-color: black; transform: scaleX(0);
+      transform-origin: left; transition: transform 0.3s ease; z-index: 0;">
+    </div>
+    <span style="position: relative; z-index: 1; color: black; transition: color 0.3s ease;">
+
+Usability Testing
+</span>
+    <i class="fa fa-arrow-right" style="position: relative; z-index: 1; color: gray; transition: color 0.3s ease;"></i>
+  </div>
+
+</div>
+
     </div>
 
-    <!-- /.footer-subscribe-widget -->
-		</div>
-				</div>
-				</div>
-		<div class="elementor-element elementor-element-8e1d19d e-con-full e-flex e-con e-child" data-id="8e1d19d" data-element_type="container">
-				<div class="elementor-element elementor-element-b826f92 elementor-widget elementor-widget-footer-nav-menu" data-id="b826f92" data-element_type="widget" data-widget_type="footer-nav-menu.default">
-				<div class="elementor-widget-container">
-			    <h2 class="footer-widget__title">LINKS</h2>
-            <div class="menu-footer-menu-container"><ul id="menu-footer-menu" class="list-unstyled footer-widget__links ml-0"><li id="menu-item-784" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-784"><a href="https://ostechwp.pixydrops.com/about/">About Us</a></li>
-<li id="menu-item-785" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-785"><a href="https://ostechwp.pixydrops.com/team/">Meet Our Team</a></li>
-<li id="menu-item-786" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-786"><a href="https://ostechwp.pixydrops.com/blog-list/">Latest News</a></li>
-<li id="menu-item-787" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-787"><a href="https://ostechwp.pixydrops.com/project/">Our Project</a></li>
-<li id="menu-item-788" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-788"><a href="https://ostechwp.pixydrops.com/contact/">Contact</a></li>
-</ul></div>    		</div>
-				</div>
-				</div>
-		<div class="elementor-element elementor-element-7704987 e-con-full e-flex e-con e-child" data-id="7704987" data-element_type="container">
-				<div class="elementor-element elementor-element-2d406ae elementor-widget elementor-widget-footer-time" data-id="2d406ae" data-element_type="widget" data-widget_type="footer-time.default">
-				<div class="elementor-widget-container">
-			    <div class="footer-widget footer-widget--instagram">
-        <h3 class="footer-widget__title">Gallery</h3>
-        <div class="footer-widget__instagram">
-                            <a href="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/1.jpg" class="img-popup">
-                    <img decoding="async" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/1.jpg" alt="1" title="1" >                </a>
-                            <a href="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/2.jpg" class="img-popup">
-                    <img decoding="async" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/2.jpg" alt="2" title="2" >                </a>
-                            <a href="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/3.jpg" class="img-popup">
-                    <img decoding="async" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/3.jpg" alt="3" title="3" >                </a>
-                            <a href="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/4.jpg" class="img-popup">
-                    <img decoding="async" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/4.jpg" alt="4" title="4" >                </a>
-                            <a href="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/5.jpg" class="img-popup">
-                    <img decoding="async" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/5.jpg" alt="5" title="5" >                </a>
-                            <a href="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/6.jpg" class="img-popup">
-                    <img decoding="async" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/6.jpg" alt="6" title="6" >                </a>
-                    </div>
+    <!-- Right Image -->
+    <div class="w-100 flex-md-fill ps-0 ps-md-2 pe-0 pe-md-2 mt-4 mt-md-0">
+      <img
+        src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/service-d-1-1.png"
+        alt="Services"
+        class="w-100 h-100 rounded-1 object-fit-cover"
+        style="max-height: 700px;"
+      />
     </div>
-		</div>
-				</div>
-				</div>
-		<div class="elementor-element elementor-element-c7291e7 e-con-full e-flex e-con e-child" data-id="c7291e7" data-element_type="container">
-				<div class="elementor-element elementor-element-296b1e3 elementor-widget elementor-widget-footer-contact" data-id="296b1e3" data-element_type="widget" data-widget_type="footer-contact.default">
-				<div class="elementor-widget-container">
-			    <div class="footer-widget footer-widget--contact">
-        <h3 class="footer-widget__title">CONTACT</h3>
-        <ul class="list-unstyled footer-widget__contact ml-0">
-                            <li class="footer-widget__contact__item">
-                    <div class="footer-widget__contact__icon">
-                        <i aria-hidden="true" class="icon-call   "></i>                    </div>
-                    <div class="footer-widget__contact__inner">
-                        <a href="tel:+92-3800-8060" class="footer-widget__contact__text">+92 3800 8060</a>
-                                            <a href="tel:+21-9555-0114" class="footer-widget__contact__text">+21 9555-0114</a>                    </div>
-                </li>
-                            <li class="footer-widget__contact__item">
-                    <div class="footer-widget__contact__icon">
-                        <i aria-hidden="true" class=" icon-Earth"></i>                    </div>
-                    <div class="footer-widget__contact__inner">
-                        <a href="https://themeforest.net/user/bracket-web" class="footer-widget__contact__text">mitc@example.com</a>
-                                            <a href="https://themeforest.net/user/bracket-web" class="footer-widget__contact__text">www.website.com</a>                    </div>
-                </li>
-                            <li class="footer-widget__contact__item">
-                    <div class="footer-widget__contact__icon">
-                        <i aria-hidden="true" class=" icon-Pin"></i>                    </div>
-                    <div class="footer-widget__contact__inner">
-                        <p class="footer-widget__contact__text">6391 Elgin st. delaware <br> new york. usa</p>                    </div>
-                </li>
-                    </ul>
-        <div class="footer-widget__thumb">
-            <img decoding="async" src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/footer-1-1.png" alt="footer-1-1" title="footer-1-1" >        </div>
-    </div>
-		</div>
-				</div>
-				</div>
-					</div>
-				</div>
-				</div>
-		<div class="elementor-element elementor-element-9ab6771 e-con-full e-flex e-con e-parent" data-id="9ab6771" data-element_type="container">
-				<div class="elementor-element elementor-element-60df0bd elementor-widget elementor-widget-footer-copyright" data-id="60df0bd" data-element_type="widget" data-widget_type="footer-copyright.default">
-				<div class="elementor-widget-container">
-			    <!-- /.main-footer copyright -->
-    <div class="main-footer__bottom">
-        <div class="main-footer__bottom__inner">
-            <p class="main-footer__copyright">
-                 © Copyright <span class="dynamic-year"></span> by Ostech WordPress Theme            </p>
-        </div><!-- /.main-footer__inner -->
-    </div>
-    <!-- /.main-footer copyright -->
-		</div>
-				</div>
-				</div>
-				</div>
-		                        <!-- end of the loop -->
+  </div>
+</div>
 
-            
-        </div><!-- /.footer-wrapper -->
 
-<div id="woosw_wishlist" class="woosw-popup woosw-popup-center"></div>	<script>
-		(function () {
-			var c = document.body.className;
-			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
-			document.body.className = c;
-		})();
-	</script>
-	<link rel='stylesheet' id='wc-blocks-style-css' href='https://ostechwp.pixydrops.com/wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks.css?ver=wc-8.9.3' media='all' />
-<link rel='stylesheet' id='elementor-post-167-css' href='https://ostechwp.pixydrops.com/wp-content/uploads/elementor/css/post-167.css?ver=1716466968' media='all' />
-<link rel='stylesheet' id='elementor-post-2223-css' href='https://ostechwp.pixydrops.com/wp-content/uploads/elementor/css/post-2223.css?ver=1716466770' media='all' />
-<link rel='stylesheet' id='elementor-post-686-css' href='https://ostechwp.pixydrops.com/wp-content/uploads/elementor/css/post-686.css?ver=1716466770' media='all' />
-<script src="https://ostechwp.pixydrops.com/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.9.5" id="swv-js"></script>
-<script id="contact-form-7-js-extra">
-var wpcf7 = {"api":{"root":"https:\/\/ostechwp.pixydrops.com\/wp-json\/","namespace":"contact-form-7\/v1"},"cached":"1"};
+
+<!-- -------------------------------------------------------------------------------- -->
+<div class="container mt-5 px-5">
+  <h1 class="h3 h-md4 fw-bold text-dark" style="font-size: 30px;">
+UI/UX Design
+  </h1>
+  <p class="mt-3 text-secondary small small-md fw-normal lh" style="font-size: 18px;">
+We craft user-friendly, visually appealing designs that enhance user experience and engagement. Our expert UI/UX designers at BrainArt IT Solution focus on creating intuitive and interactive interfaces that drive conversions and improve usability.
+  </p>
+
+  <h2 class="h5 h-md5 fw-bold text-dark mt-4" style="font-size: 30px;">
+   Designing Experiences That Inspire
+  </h2>
+  <p class="mt-3 text-secondary small small-md fw-normal" style="font-size: 18px;">
+We create seamless, engaging, and responsive designs tailored to your brand and user needs. From wireframing to final execution, we ensure a flawless user experience that keeps your audience engaged.
+  </p>
+</div>
+
+<section class="py-5 text-[#333333]">
+  <div class="container px-3 px-md-5" style="margin-top: -50px;">
+<h2 class="fs-4 fs-md-5 fw-bold mb-4 text-center text-md-start mt-4">
+
+      Why Choose BrainArt IT Solution?
+    </h2>
+    <div class="row gy-4 justify-content-center">
+      
+      <!-- Box 1 -->
+      <div class="col-12 col-md-6">
+        <div class="d-flex flex-column flex-md-row bg-white shadow overflow-hidden iit-11 group h-100">
+          <div class="p-3 d-flex align-items-center justify-content-center position-relative itt-a-1 icon-box mx-auto mx-md-0" style="width: 120px; max-width: 112px;">
+            <img src="./images/NewIcon/digital-service.png" alt="" class="it-img11 position-absolute img-fluid" />
+            <img src="./images/NewIcon/digital-service (2).png" alt="" class="it-img22 position-absolute img-fluid" />
+          </div>
+          <div class="p-4 flex-grow-1 text-center text-md-start">
+            <h3 class="fw-bold fs-5">Managed Tech Services</h3>
+            <p class="text-secondary mb-0" style="font-size: 18px;">
+              Comprehensive IT management and support <br class="d-none d-md-block"> solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Box 2 -->
+      <div class="col-12 col-md-6">
+        <div class="d-flex flex-column flex-md-row bg-white shadow overflow-hidden iit-11 group h-100">
+          <div class="p-3 d-flex align-items-center justify-content-center position-relative itt-a-1 icon-box mx-auto mx-md-0" style="width: 120px; max-width: 112px;">
+            <img src="./images/NewIcon/it-service.png" alt="" class="it-img11 position-absolute" style="width: 50px;" />
+            <img src="./images/NewIcon/it-service (2).png" alt="" class="it-img22 position-absolute" style="width: 50px;" />
+          </div>
+          <div class="p-4 flex-grow-1 text-center text-md-start">
+            <h3 class="fw-bold fs-5">IT Consulting Solutions</h3>
+            <p class="text-secondary mb-0" style="font-size: 18px;">
+              Strategic consulting to enhance your business  <br class="d-none d-md-block"> technology infrastructure.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="py-1 bg-white text-black">
+  <div class="container mx-auto">
+    <div class="row align-items-center px-5">
+      
+      <!-- Image Column -->
+      <div class="col-12 col-lg-6">
+        <img
+          src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/service-s-1-1.png"
+          alt="Benefits"
+          class="shadow-md w-100"
+          style=" height: 350px; object-fit: cover;"
+        />
+      </div>
+
+      <!-- Content Column -->
+     <div class="col-12 col-lg-6">
+  <div class="d-flex align-items-start flex-wrap gap-3">
+    
+    <!-- Heading -->
+    <h2 class="text-2xl fw-bold m-0">Our Few Benefits</h2>
+    
+    <!-- Paragraph -->
+    <p class="m-0" style="font-size: 18px;color: #4b5563;" >
+We deliver high-quality UI/UX designs that enhance user engagement, improve usability, and drive conversions.</p>
+    
+    <!-- Benefits List -->
+    <ul class="align-items-center flex-wrap gap-3 list-unstyled ">
+      <li class=" align-items-center gap-2 text-gray-700">
+        <i class="fa-solid fa-circle-check text-[#ee8624] fs-5 mt-2" style="color: #EE8624;"></i>
+        <span  style="font-size: 18px;color: #4b5563;">Intuitive & Engaging Designs</span>
+      </li>
+      <li class="d-flex align-items-center gap-2 text-gray-700 mt-2">
+        <i class="fa-solid fa-circle-check text-[#ee8624] fs-5 mt-2" style="color: #EE8624;"></i>
+         <span  style="font-size: 18px;color: #4b5563;">Enhanced User Experience</span>
+      </li>
+       <li class="d-flex align-items-center gap-2 text-gray-700 mt-2">
+        <i class="fa-solid fa-circle-check text-[#ee8624] fs-5 mt-2" style="color: #EE8624;"></i>
+          <span  style="font-size: 18px;color: #4b5563;">Faster Load Times & Performance</span>
+      </li>
+      <li class="d-flex align-items-center gap-2 text-gray-700 mt-2">
+        <i class="fa-solid fa-circle-check text-[#ee8624] fs-5 mt-2" style="color: #EE8624;"></i>
+         <span  style="font-size: 18px;color: #4b5563;">Mobile & Web-Friendly Interfaces</span>
+      </li>
+      <li class="d-flex align-items-center gap-2 text-gray-700 mt-2">
+        <i class="fa-solid fa-circle-check text-[#ee8624] fs-5 mt-2" style="color: #EE8624;"></i>
+        <span  style="font-size: 18px;color: #4b5563;">A/B Testing & Optimization</span>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+</section>
+
+
+<section class="py-5 px-5 d-flex justify-content-center align-items-start">
+  <div class="w-100" style="max-width: 1200px;">
+    <h2 class="fw-bold mb-4 fs-3">Frequently Asked Questions (FAQs)</h2>
+
+    <div class="accordion" id="faqAccordion">
+
+      <!-- FAQ 1 -->
+      <div class="accordion-item border mb-3" style="border-radius: 0%;">
+        <h2 class="accordion-header">
+          <button class="accordion-button d-flex justify-content-between align-items-center px-4 py-4 text-start collapsed" type="button">
+            <span class="flex-grow-1" style="font-size: 18px;">What is UI/UX design?</span>
+            <i class="fa fa-plus ms-3 toggle-icon"></i>
+          </button>
+        </h2>
+        <div class="accordion-body-wrapper" style="border-radius: 0%;">
+          <div class="accordion-body px-4 py-4 text-muted" style="border-radius: 0%;font-size: 17px;">
+UI (User Interface) design focuses on the look and feel of an application, while UX (User Experience) design ensures smooth and meaningful interactions for users.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 2 -->
+   <div class="accordion-item border mb-3" style="border-radius: 0%;">
+        <h2 class="accordion-header">
+          <button class="accordion-button d-flex justify-content-between align-items-center px-4 py-4 text-start collapsed" type="button">
+            <span class="flex-grow-1" style="font-size: 18px;">Why is UI/UX important for my business?</span>
+            <i class="fa fa-plus ms-3 toggle-icon"></i>
+          </button>
+        </h2>
+        <div class="accordion-body-wrapper" style="border-radius: 0%;">
+          <div class="accordion-body px-4 py-4 text-muted" style="border-radius: 0%;font-size: 17px;">
+Good UI/UX design improves user engagement, enhances brand perception, and increases conversion rates, leading to business growth.          </div>
+        </div>
+      </div>
+
+      <!-- ---------------faq 3------------ -->
+   <div class="accordion-item border mb-3" style="border-radius: 0%;">
+        <h2 class="accordion-header">
+          <button class="accordion-button d-flex justify-content-between align-items-center px-4 py-4 text-start collapsed" type="button">
+            <span class="flex-grow-1" style="font-size: 18px;">What UI/UX design services do you offer?</span>
+            <i class="fa fa-plus ms-3 toggle-icon"></i>
+          </button>
+        </h2>
+        <div class="accordion-body-wrapper" style="border-radius: 0%;">
+          <div class="accordion-body px-4 py-4 text-muted" style="border-radius: 0%;font-size: 17px;">
+We provide user research, wireframing, prototyping, interaction design, usability testing, and complete UI/UX design solutions for websites and mobile apps.
+          </div>
+        </div>
+      </div>
+
+          <!-- ---------------faq 4------------ -->
+   <div class="accordion-item border mb-3" style="border-radius: 0%;">
+        <h2 class="accordion-header">
+          <button class="accordion-button d-flex justify-content-between align-items-center px-4 py-4 text-start collapsed" type="button">
+            <span class="flex-grow-1" style="font-size: 18px;">Do you offer UI/UX redesign services?</span>
+            <i class="fa fa-plus ms-3 toggle-icon"></i>
+          </button>
+        </h2>
+        <div class="accordion-body-wrapper" style="border-radius: 0%;">
+          <div class="accordion-body px-4 py-4 text-muted" style="border-radius: 0%;font-size: 17px;">
+Yes! If your current design needs improvement, we can revamp it to enhance usability and overall experience.
+        </div>
+      </div>
+    </div>
+
+             <!-- ---------------faq 5------------ -->
+   <div class="accordion-item border mb-3" style="border-radius: 0%;">
+        <h2 class="accordion-header">
+          <button class="accordion-button d-flex justify-content-between align-items-center px-4 py-4 text-start collapsed" type="button">
+            <span class="flex-grow-1" style="font-size: 18px;">How do you ensure a great user experience?</span>
+            <i class="fa fa-plus ms-3 toggle-icon"></i>
+          </button>
+        </h2>
+        <div class="accordion-body-wrapper" style="border-radius: 0%;">
+          <div class="accordion-body px-4 py-4 text-muted" style="border-radius: 0%;font-size: 17px;">
+We conduct user research, usability testing, and A/B testing to refine designs based on real user feedback.      </div>
+      </div>
+    </div>
+
+                 <!-- ---------------faq 6------------ -->
+   <div class="accordion-item border mb-3" style="border-radius: 0%;">
+        <h2 class="accordion-header">
+          <button class="accordion-button d-flex justify-content-between align-items-center px-4 py-4 text-start collapsed" type="button">
+            <span class="flex-grow-1" style="font-size: 18px;">Which tools do you use for UI/UX design?</span>
+            <i class="fa fa-plus ms-3 toggle-icon"></i>
+          </button>
+        </h2>
+        <div class="accordion-body-wrapper" style="border-radius: 0%;">
+          <div class="accordion-body px-4 py-4 text-muted" style="border-radius: 0%;font-size: 17px;">
+We use industry-leading tools like Figma, Adobe XD, Sketch, and InVision to create high-quality designs.
+       </div>
+      </div>
+    </div>
+
+                     <!-- ---------------faq 7------------ -->
+   <div class="accordion-item border mb-3" style="border-radius: 0%;">
+        <h2 class="accordion-header">
+          <button class="accordion-button d-flex justify-content-between align-items-center px-4 py-4 text-start collapsed" type="button">
+            <span class="flex-grow-1" style="font-size: 18px;">How can I get started with UI/UX design services?</span>
+            <i class="fa fa-plus ms-3 toggle-icon"></i>
+          </button>
+        </h2>
+        <div class="accordion-body-wrapper" style="border-radius: 0%;">
+          <div class="accordion-body px-4 py-4 text-muted" style="border-radius: 0%;font-size: 17px;">
+Simply contact us, and we’ll schedule a consultation to understand your requirements and create a design strategy that fits your business needs.     </div>
+      </div>
+    </div>
+
+
+</section>
+
+
+
+<!-- --------------------------footer-------------------------------- -->
+ <!-- Footer Start -->
+<footer class="main-footer">
+  <div class="bg-image"></div>
+
+  <div class="widgets-section">
+    <div class="containerrr">
+      <div class="row footer-responsive">
+
+        <!-- About Widget -->
+        <div class="footer-column col-xl-3 col-lg-12 col-md-6 col-sm-12">
+          <div class="footer-widget about-widget">
+            <div class="logo">
+              <a href="index.html" style="text-decoration: none;">
+                <img src="images/background/footer-logo.png" alt="Footer Logo" style="width: 200px;" />
+              </a>
+            </div>
+            <div class="text">
+              BrainArt IT Solution is a leading software development company offering top-notch app development,
+              web development, and design services.
+            </div>
+           <ul class="social-icon-two d-flex gap-2" style="padding-left: 0; margin: 0;">
+  <li style="list-style: none;">
+    <a href="https://www.linkedin.com/company/brainart-it-solution/" target="_blank" style="text-decoration: none;">
+      <i class="fa-brands fa-linkedin-in"></i>
+    </a>
+  </li>
+  <li style="list-style: none;">
+    <a href="https://www.instagram.com/brainart_it_solution/" target="_blank" style="text-decoration: none;">
+      <i class="fab fa-instagram"></i>
+    </a>
+  </li>
+  <li style="list-style: none;">
+    <a href="https://www.facebook.com/people/Brainart-it-soution/" target="_blank" style="text-decoration: none;">
+      <i class="fab fa-facebook"></i>
+    </a>
+  </li>
+  <li style="list-style: none;">
+    <a href="https://join.skype.com/invite/vHEhLX46XvDt" target="_blank" style="text-decoration: none;">
+      <i class="fab fa-skype"></i>
+    </a>
+  </li>
+</ul>
+
+          </div>
+        </div>
+
+        <!-- Company Links -->
+        <div class="footer-column col-xl-3 col-lg-4 col-md-6 col-sm-12" style="text-decoration: none;">
+          <div class="footer-widget">
+            <h3 class="widget-title">Company</h3>
+      <ul class="user-links" style="padding-left: 0; margin-bottom: 0;">
+  <li style="list-style: none;">
+    <a href="about.html" style="text-decoration: none;">About Us</a>
+  </li>
+  <li style="list-style: none;">
+    <a href="services.html" style="text-decoration: none;">Services</a>
+  </li>
+  <li style="list-style: none;">
+    <a href="career.html" style="text-decoration: none;">Career</a>
+  </li>
+  <li style="list-style: none;">
+    <a href="portfolio.html" style="text-decoration: none;">Portfolio</a>
+  </li>
+  <li style="list-style: none;">
+    <a href="contact.html" style="text-decoration: none;">Contact Us</a>
+  </li>
+</ul>
+
+          </div>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-column col-xl-3 col-lg-4 col-md-6 col-sm-12">
+          <div class="footer-widget contact-widget">
+            <h3 class="widget-title">Contact</h3>
+            <div class="widget-content">
+              <div class="text">
+                440, Opera Business Hub, Lajamni Chowk, Digital Valley, Surat, Gujarat -394101
+              </div>
+           <ul class="contact-info" style="padding-left: 0; margin-bottom: 0;">
+  <li style="list-style: none; text-decoration: none;">
+    <i class="fa fa-envelope"></i>
+    <a href="mailto:info@brainartit.in" style="text-decoration: none;">info@brainartit.in</a>
+  </li>
+  <li style="list-style: none; text-decoration: none;">
+    <i class="fa fa-phone-square"></i>
+    <a href="tel:+919327228578" style="text-decoration: none;">+91 93272 28578</a>
+  </li>
+</ul>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery -->
+        <div class="footer-column col-xl-3 col-lg-4 col-md-6 col-sm-12">
+          <div class="footer-widget">
+            <h3 class="widget-title">Gallery</h3>
+            <div class="row d-flex g-2">
+              <div class="col-4"><img src="images/footer/8.png" alt="" /></div>
+              <div class="col-4"><img src="images/footer/2.jpeg" alt="" /></div>
+              <div class="col-4"><img src="images/footer/7.png" alt="" /></div>
+              <div class="col-4"><img src="images/footer/1.jpeg" alt="" /></div>
+              <div class="col-4"><img src="images/footer/3 1.png" alt="" /></div>
+              <div class="col-4"><img src="images/footer/4.png" alt="" /></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Copyright -->
+<div style="padding: 10px; background-color: black;">
+  <p style="text-align: center; margin-bottom: 0px; color: white;">
+    © 2025 BrainArt IT Solution All Rights Reserved
+  </p>
+</div>
+<!-- Footer End -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="scrpt.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script>
+  new WOW().init();
 </script>
-<script src="https://ostechwp.pixydrops.com/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.9.5" id="contact-form-7-js"></script>
-<script src="https://ostechwp.pixydrops.com/wp-content/plugins/layerdrops-toolbar/assets/js/jQuery.style.switcher.min.js?ver=1750310367" id="jquery-style-switcher-js"></script>
-<script src="https://ostechwp.pixydrops.com/wp-content/plugins/layerdrops-toolbar/assets/js/color-switcher.js?ver=1750310367" id="layerdrops-toolbar-color-switcher-js"></script>
-<script src="https://ostechwp.pixydrops.com/wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js?ver=8.9.3" id="sourcebuster-js-js"></script>
-<script id="wc-order-attribution-js-extra">
-var wc_order_attribution = {"params":{"lifetime":1.0e-5,"session":30,"ajaxurl":"https:\/\/ostechwp.pixydrops.com\/wp-admin\/admin-ajax.php","prefix":"wc_order_attribution_","allowTracking":true},"fields":{"source_type":"current.typ","referrer":"current_add.rf","utm_campaign":"current.cmp","utm_source":"current.src","utm_medium":"current.mdm","utm_content":"current.cnt","utm_id":"current.id","utm_term":"current.trm","session_entry":"current_add.ep","session_start_time":"current_add.fd","session_pages":"session.pgs","session_count":"udata.vst","user_agent":"udata.uag"}};
+<!-- Swiper JS CDN -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Swiper Initialization -->
+<script>
+  const swiper = new Swiper('.review-swiper', {
+    modules: [Swiper.Autoplay, Swiper.Pagination],
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    spaceBetween: 20,
+    slidesPerView: 1,
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
+    },
+  });
 </script>
-<script src="https://ostechwp.pixydrops.com/wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min.js?ver=8.9.3" id="wc-order-attribution-js"></script>
-<script id="wc-add-to-cart-variation-js-extra">
-var wc_add_to_cart_variation_params = {"wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_no_matching_variations_text":"Sorry, no products matched your selection. Please choose a different combination.","i18n_make_a_selection_text":"Please select some product options before adding this product to your cart.","i18n_unavailable_text":"Sorry, this product is unavailable. Please choose a different combination."};
+<!-- JS Slick Carousel -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script>
+  $(document).ready(function () {
+    $('.latest-project-slider').slick({
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      responsive: [
+        { breakpoint: 1024, settings: { slidesToShow: 2 } },
+        { breakpoint: 768, settings: { slidesToShow: 1 } },
+        { breakpoint: 480, settings: { slidesToShow: 1 } }
+      ]
+    });
+  });
 </script>
-<script src="https://ostechwp.pixydrops.com/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart-variation.min.js?ver=8.9.3" id="wc-add-to-cart-variation-js" data-wp-strategy="defer"></script>
-<script src="https://ostechwp.pixydrops.com/wp-content/plugins/woo-smart-quick-view/assets/libs/slick/slick.min.js?ver=4.0.4" id="slick-js"></script>
-<script src="https://ostechwp.pixydrops.com/wp-content/plugins/woo-smart-quick-view/assets/libs/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js?ver=4.0.4" id="perfect-scrollbar-js"></script>
-<script src="https://ostechwp.pixydrops.com/wp-content/plugins/woo-smart-quick-view/assets/libs/magnific-popup/jquery.magnific-popup.min.js?ver=4.0.4" id="magnific-popup-js"></script>
-<script id="woosq-frontend-js-extra">
-var woosq_vars = {"ajax_url":"https:\/\/ostechwp.pixydrops.com\/wp-admin\/admin-ajax.php","nonce":"8dcc1b4a85","view":"popup","effect":"mfp-3d-unfold","scrollbar":"yes","auto_close":"yes","hashchange":"no","cart_redirect":"no","cart_url":"https:\/\/ostechwp.pixydrops.com\/ostech-cart\/","close":"Close (Esc)","next_prev":"yes","next":"Next (Right arrow key)","prev":"Previous (Left arrow key)","thumbnails_effect":"no","related_slick_params":"{\"slidesToShow\":2,\"slidesToScroll\":2,\"dots\":true,\"arrows\":false,\"adaptiveHeight\":true,\"rtl\":false}","thumbnails_slick_params":"{\"slidesToShow\":1,\"slidesToScroll\":1,\"dots\":true,\"arrows\":true,\"adaptiveHeight\":false,\"rtl\":false}","thumbnails_zoom_params":"{\"duration\":120,\"magnify\":1}","quick_view":"0"};
+<!-- Include Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<!-- Bootstrap Bundle JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const buttons = document.querySelectorAll('.accordion-button');
+
+  buttons.forEach(button => {
+    const wrapper = button.parentElement.nextElementSibling;
+    const content = wrapper.firstElementChild;
+    const icon = button.querySelector('.toggle-icon');
+
+    button.addEventListener('click', () => {
+      const isOpen = wrapper.style.height && wrapper.style.height !== '0px';
+
+      // Close all
+      document.querySelectorAll('.accordion-body-wrapper').forEach(w => {
+        w.style.height = '0px';
+      });
+      document.querySelectorAll('.accordion-button').forEach(btn => {
+        btn.classList.remove('active');
+        const i = btn.querySelector('.toggle-icon');
+        i.classList.remove('fa-minus');
+        i.classList.add('fa-plus');
+      });
+
+      // If not already open → open this one
+      if (!isOpen) {
+        wrapper.style.height = content.scrollHeight + 'px';
+        button.classList.add('active');
+        icon.classList.remove('fa-plus');
+        icon.classList.add('fa-minus');
+      }
+    });
+  });
 </script>
-<script src="https://ostechwp.pixydrops.com/wp-content/plugins/woo-smart-quick-view/assets/js/frontend.js?ver=4.0.4" id="woosq-frontend-js"></script>
-<script id="woosw-frontend-js-extra">
-var woosw_vars = {"ajax_url":"https:\/\/ostechwp.pixydrops.com\/wp-admin\/admin-ajax.php","nonce":"b29fc5f33e","menu_action":"open_page","perfect_scrollbar":"yes","wishlist_url":"https:\/\/ostechwp.pixydrops.com\/ostech-wishlist\/","button_action":"list","message_position":"right-top","button_action_added":"popup","empty_confirm":"This action cannot be undone. Are you sure?","delete_confirm":"This action cannot be undone. Are you sure?","copied_text":"Copied the wishlist link:","menu_text":"Wishlist","button_text":"Add to wishlist","button_text_added":"Browse wishlist","button_normal_icon":"woosw-icon-5","button_added_icon":"woosw-icon-8","button_loading_icon":"woosw-icon-4"};
+
+<script>
+  const dropdown = document.querySelector('.dropdown-hover');
+  const menu = dropdown.querySelector('.dropdown-menu');
+
+  dropdown.addEventListener('mouseenter', () => {
+    menu.style.opacity = '1';
+    menu.style.visibility = 'visible';
+    menu.style.transform = 'translateY(0)';
+  });
+
+  dropdown.addEventListener('mouseleave', () => {
+    menu.style.opacity = '0';
+    menu.style.visibility = 'hidden';
+    menu.style.transform = 'translateY(-20px)';
+  });
 </script>
-<script src="https://ostechwp.pixydrops.com/wp-content/plugins/woo-smart-wishlist/assets/js/frontend.js?ver=4.8.6" id="woosw-frontend-js"></script>
-<script src="https://ostechwp.pixydrops.com/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2" id="jquery-ui-core-js"></script>
-<script src="https://ostechwp.pixydrops.com/wp-includes/js/jquery/ui/datepicker.min.js?ver=1.13.2" id="jquery-ui-datepicker-js"></script>
-<script id="jquery-ui-datepicker-js-after">
-jQuery(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Close","currentText":"Today","monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Previous","dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"dateFormat":"MM d, yy","firstDay":1,"isRTL":false});});
-</script>
-<script src="https://ostechwp.pixydrops.com/wp-content/themes/ostech/assets/vendors/bootstrap/js/bootstrap.min.js?ver=5.0.0" id="bootstrap-js"></script>
-<script src="https://ostechwp.pixydrops.com/wp-content/plugins/ostech-addon/assets/vendors/bootstrap-select/js/bootstrap-select.min.js?ver=1712146398" id="bootstrap-select-js"></script>
-<script src="https://ostechwp.pixydrops.com/wp-content/plugins/ostech-addon/assets/vendors/bxslider/jquery.bxslider.min.js?ver=1712146398" id="jquery-bxslider-js"></script>
-<script src="https://ostechwp.pixydrops.com/wp-content/plugins/ostech-addon/assets/vendors/countdown/countdown.min.js?ver=1712146398" id="countdown-js"></script>
-<script src="https://ostechwp.pixydrops.com/wp-content/plugins/ostech-addon/assets/vendors/jarallax/jarallax.min.js?ver=1712146398" id="jarallax-js"></script>
-<script src="https://ostechwp.pixydrops.com/wp-content/plugins/ostech-addon/assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js?ver=1712146398" id="jquery-ajaxchimp-js"></script>
-<script src="https://ostechwp.pixydrops.com/wp-content/plugins/ostech-addon/assets/vendors/jquery-appear/jquery.appear.min.js?ver=1712146398" id="jquery-appear-js"></script>
-<script src="https://ostechwp.pixydrops.com/wp-content/plugins/ostech-addon/assets/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js?ver=1712146398" id="jquery-magnific-popup-js"></script>
-<script src="https://ostechwp.pixydrops.com/wp-content/plugins/ostech-addon/assets/vendors/odometer/odometer.min.js?ver=1712146398" id="odometer-js"></script>
-<script src="https://ostechwp.pixydrops.com/wp-content/plugins/ostech-addon/assets/vendors/owl-carousel/owl.carousel.min.js?ver=1712146398" id="owl-carousel-js"></script>
-<script src="https://ostechwp.pixydrops.com/wp-content/plugins/ostech-addon/assets/vendors/jquery-circle-progress/jquery.circle-progress.min.js?ver=1712146398" id="jquery-circle-progress-js"></script>
-<script src="https://ostechwp.pixydrops.com/wp-content/plugins/ostech-addon/assets/vendors/swiper/swiper.min.js?ver=1712146398" id="swiper-js"></script>
-<script src="https://ostechwp.pixydrops.com/wp-content/plugins/ostech-addon/assets/vendors/wow/wow.js?ver=1712146398" id="wow-js"></script>
-<script src="https://ostechwp.pixydrops.com/wp-content/plugins/ostech-addon/assets/vendors/sharer/sharer.min.js?ver=1712146398" id="sharer-js"></script>
-<script src="https://ostechwp.pixydrops.com/wp-content/plugins/ostech-addon/assets/vendors/timepicker/timePicker.js?ver=1712146398" id="timepicker-js"></script>
-<script src="https://ostechwp.pixydrops.com/wp-content/plugins/ostech-addon/assets/vendors/circleType/jquery.circleType.js?ver=1712146398" id="circletype-js"></script>
-<script src="https://ostechwp.pixydrops.com/wp-content/plugins/ostech-addon/assets/vendors/circleType/jquery.lettering.min.js?ver=1712146398" id="circleletter-js"></script>
-<script id="ostech-addon-script-js-extra">
-var ostech_login_object = {"ajaxurl":"https:\/\/ostechwp.pixydrops.com\/wp-admin\/admin-ajax.php","login_redirect_url":"https:\/\/ostechwp.pixydrops.com\/","registration_redirect_url":"https:\/\/ostechwp.pixydrops.com\/","message":"<strong>Error:<\/strong>Please use valid userName or password","check_login":"no","str_login":"Please login to add favorite!"};
-</script>
-<script src="https://ostechwp.pixydrops.com/wp-content/plugins/ostech-addon/assets/js/ostech-addon.js?ver=1716472155" id="ostech-addon-script-js"></script>
-<script src="https://ostechwp.pixydrops.com/wp-content/themes/ostech/assets/vendors/isotope/isotope.js?ver=2.1.1" id="isotope-js"></script>
-<script src="https://ostechwp.pixydrops.com/wp-includes/js/imagesloaded.min.js?ver=5.0.0" id="imagesloaded-js"></script>
-<script src="https://ostechwp.pixydrops.com/wp-content/themes/ostech/assets/js/ostech-theme.js?ver=1750310367" id="ostech-theme-js"></script>
-<script src="https://ostechwp.pixydrops.com/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.21.7" id="elementor-webpack-runtime-js"></script>
-<script src="https://ostechwp.pixydrops.com/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.21.7" id="elementor-frontend-modules-js"></script>
-<script src="https://ostechwp.pixydrops.com/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2" id="elementor-waypoints-js"></script>
-<script id="elementor-frontend-js-before">
-var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselWrapperAriaLabel":"Carousel | Horizontal scrolling: Arrow Left & Right","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.21.7","is_static":false,"experimentalFeatures":{"e_optimized_assets_loading":true,"e_optimized_css_loading":true,"additional_custom_breakpoints":true,"container":true,"e_swiper_latest":true,"container_grid":true,"home_screen":true,"ai-layout":true,"landing-pages":true},"urls":{"assets":"https:\/\/ostechwp.pixydrops.com\/wp-content\/plugins\/elementor\/assets\/"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":17,"title":"Home%20Two%20%E2%80%93%20Ostech","excerpt":"","featuredImage":false}};
-</script>
-<script src="https://ostechwp.pixydrops.com/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.21.7" id="elementor-frontend-js"></script>
+
 
 </body>
-
 </html>
 
-<!-- Page cached by LiteSpeed Cache 7.1 on 2025-06-19 05:19:28 -->
+ 

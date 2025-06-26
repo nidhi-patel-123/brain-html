@@ -73,7 +73,7 @@
 
 
 <!-- Navbar -->
-<nav class="z-50 p-1 Navbar-main" style="margin-top: -2px;">
+<nav class="z-50 p-1 Navbar-main" style="margin-top: -4px;">
   <div class="container d-flex justify-content-between align-items-center mt-2 mb-2" style="padding-bottom: 0%;">
     <img src="./images/logo-2-yellow.png" alt="Logo" class="LOGOSSS" />
 
@@ -83,17 +83,31 @@
       <a href="about.html" class="nav-link-animate active" style="font-size: 18px;">About Us</a>
 
       <!-- Dropdown -->
-   <!-- Dropdown -->
-<div class="position-relative dropdown-hover">
-  <a href="service.html" class="nav-link-animate dropdown-toggl border-0 bg-transparent d-inline-block" style="font-size: 18px;">Services <i class="fa-solid fa-chevron-down" style="font-size: 16px;"></i></a>
-  <div class="dropdown-menu shadow bg-white py-4 px-2 mt-2" style="width: 210px;border-radius: 0%;">
-    <a href="appdev.html" class="d-block text-decoration-none text-dark px-3 py-2 hover-orange" style="font-size: 18px;">App Development</a>
-    <a href="webdev.html" class="d-block text-decoration-none text-dark px-3 py-2 hover-orange" style="font-size: 18px;">Web Development</a>
-    <a href="gamedev.html" class="d-block text-decoration-none text-dark px-3 py-2 hover-orange" style="font-size: 18px;">Game Development</a>
-    <a href="digital.html" class="d-block text-decoration-none text-dark px-3 py-2 hover-orange" style="font-size: 18px;">Digital Marketing</a>
-    <a href="uiux.html" class="d-block text-decoration-none text-dark px-3 py-2 hover-orange" style="font-size: 18px;">UI/UX Design</a>
+<div class="position-relative dropdown-hover" style="position: relative; display: inline-block;">
+  <a href="service.html" class="nav-link-animate dropdown-toggl border-0 bg-transparent d-inline-block" style="font-size: 18px; text-decoration: none;">
+    Services <i class="fa-solid fa-chevron-down" style="font-size: 16px;"></i>
+  </a>
+
+  <div class="dropdown-menu shadow bg-white py-3 px-2 mt--1" style="
+    width: 210px;
+    border-radius: 0%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: all 0.9s ease;
+    z-index: 999;
+  ">
+    <a href="appdev.html" style="display: block; color: black; text-decoration: none; padding: 8px 16px; font-size: 18px;">App Development</a>
+    <a href="webdev.html" style="display: block; color: black; text-decoration: none; padding: 8px 16px; font-size: 18px;">Web Development</a>
+    <a href="gamedev.html" style="display: block; color: black; text-decoration: none; padding: 8px 16px; font-size: 18px;">Game Development</a>
+    <a href="digital.html" style="display: block; color: black; text-decoration: none; padding: 8px 16px; font-size: 18px;">Digital Marketing</a>
+    <a href="uiux.html" style="display: block; color: black; text-decoration: none; padding: 8px 16px; font-size: 18px;">UI/UX Design</a>
   </div>
 </div>
+
 
       <a href="career.html" class="nav-link-animate" style="font-size: 18px;">Career</a>
       <a href="portfolio.html" class="nav-link-animate" style="font-size: 18px;">Portfolio</a>
@@ -102,7 +116,7 @@
 
     <!-- CTA Button -->
     <div class="d-none d-md-block">
-      <a href="contact.html" class="MY_BTN" style="font-size: 17px;">Take Solution</a>
+      <a href="takesolutin.html" class="MY_BTN" style="font-size: 17px;">Take Solution</a>
     </div>
 
     <!-- Mobile Toggle -->
@@ -120,10 +134,10 @@
 
     <nav class="d-flex flex-column gap-3">
       <a href="index.html" class="text-white text-decoration-none border-bottom pb-1 ">HOME</a>
-      <a href="#" class="text-white text-decoration-none border-bottom pb-1">ABOUT US</a>
-      <a href="#" class="text-white text-decoration-none border-bottom pb-1">CAREER</a>
-      <a href="#" class="text-white text-decoration-none border-bottom pb-1">PORTFOLIO</a>
-      <a href="#" class="text-white text-decoration-none border-bottom pb-1">CONTACT US</a>
+      <a href="about.html" class="text-white text-decoration-none border-bottom pb-1">ABOUT US</a>
+      <a href="career.html" class="text-white text-decoration-none border-bottom pb-1">CAREER</a>
+      <a href="portfolio.html" class="text-white text-decoration-none border-bottom pb-1">PORTFOLIO</a>
+      <a href="contact.html" class="text-white text-decoration-none border-bottom pb-1">CONTACT US</a>
 
       <div>
         <button style="margin-top: -10px;margin-left: -10px;"  class="btn w-100 text-white text-start d-flex justify-content-between align-items-center " onclick="toggleServiceDropdown()">
@@ -131,15 +145,15 @@
           <i class="fas fa-angle-down" id="dropdownIcon"></i>
         </button>
         <div class="mt-2 d-none" id="mobileServiceDropdown">
-          <a href="#" class="text-white d-block border-bottom pb-1 ps-3" style="text-decoration: none;">APP DEVELOPMENT</a>
-          <a href="#" class="text-white d-block border-bottom pb-1 ps-3" style="text-decoration: none;">WEB DEVELOPMENT</a>
-          <a href="#" class="text-white d-block border-bottom pb-1 ps-3" style="text-decoration: none;">GAME DEVELOPMENT</a>
-          <a href="#" class="text-white d-block border-bottom pb-1 ps-3" style="text-decoration: none;">DIGITAL MARKETING</a>
-          <a href="#" class="text-white d-block border-bottom pb-1 ps-3" style="text-decoration: none;">UI/UX DESIGN</a>
+          <a href="appdev.html" class="text-white d-block border-bottom pb-1 ps-3" style="text-decoration: none;">APP DEVELOPMENT</a>
+          <a href="webdev.html" class="text-white d-block border-bottom pb-1 ps-3" style="text-decoration: none;">WEB DEVELOPMENT</a>
+          <a href="gamedev.html" class="text-white d-block border-bottom pb-1 ps-3" style="text-decoration: none;">GAME DEVELOPMENT</a>
+          <a href="digital.html" class="text-white d-block border-bottom pb-1 ps-3" style="text-decoration: none;">DIGITAL MARKETING</a>
+          <a href="uiux.html" class="text-white d-block border-bottom pb-1 ps-3" style="text-decoration: none;">UI/UX DESIGN</a>
         </div>
       </div>
 
-      <a href="#" class="MY_BTN mt-3 w-100">Take Solution</a>
+      <a href="takesolutin.html" class="MY_BTN mt-3 w-100">Take Solution</a>
 
       <div class="location-mobile mt-3">
         <i class="fa-solid fa-envelope"></i>
@@ -175,26 +189,20 @@
 <!-- Swiper JS CDN -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-<!-- Swiper Initialization -->
 <script>
-  const swiper = new Swiper('.review-swiper', {
-    modules: [Swiper.Autoplay, Swiper.Pagination],
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
-    loop: true,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    spaceBetween: 20,
-    slidesPerView: 1,
-    breakpoints: {
-      768: {
-        slidesPerView: 2,
-      },
-    },
+  const dropdown = document.querySelector('.dropdown-hover');
+  const menu = dropdown.querySelector('.dropdown-menu');
+
+  dropdown.addEventListener('mouseenter', () => {
+    menu.style.opacity = '1';
+    menu.style.visibility = 'visible';
+    menu.style.transform = 'translateY(0)';
+  });
+
+  dropdown.addEventListener('mouseleave', () => {
+    menu.style.opacity = '0';
+    menu.style.visibility = 'hidden';
+    menu.style.transform = 'translateY(-20px)';
   });
 </script>
 </body>

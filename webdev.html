@@ -84,27 +84,42 @@
 
 
 <!-- Navbar -->
-<nav class="z-50 p-1 Navbar-main" style="margin-top: -5px;">
+<!-- Navbar -->
+<nav class="z-50 p-1 Navbar-main" style="margin-top: -4px;">
   <div class="container d-flex justify-content-between align-items-center mt-2 mb-2" style="padding-bottom: 0%;">
     <img src="./images/logo-2-yellow.png" alt="Logo" class="LOGOSSS" />
 
     <!-- Desktop Nav -->
     <div class="d-none d-md-flex gap-5 align-items-center pp1ff">
-      <a href="index.html" class="nav-link-animate" style="font-size: 18px;">Home</a>
+      <a href="index.html" class="nav-link-animate " style="font-size: 18px;">Home</a>
       <a href="about.html" class="nav-link-animate" style="font-size: 18px;">About Us</a>
 
       <!-- Dropdown -->
-   <!-- Dropdown -->
-<div class="position-relative dropdown-hover">
-  <a href="service.html" class="nav-link-animate dropdown-toggl border-0 bg-transparent d-inline-block" style="font-size: 18px;">Services <i class="fa-solid fa-chevron-down" style="font-size: 16px;"></i></a>
-  <div class="dropdown-menu shadow bg-white py-4 px-2 mt-2" style="width: 210px;border-radius: 0%;">
-    <a href="appdev.html" class="d-block text-decoration-none text-dark px-3 py-2 hover-orange" style="font-size: 18px;">App Development</a>
-    <a href="webdev.html" class="d-block text-decoration-none text-dark px-3 py-2 hover-orange" style="font-size: 18px;">Web Development</a>
-    <a href="gamedev.html" class="d-block text-decoration-none text-dark px-3 py-2 hover-orange" style="font-size: 18px;">Game Development</a>
-    <a href="digital.html" class="d-block text-decoration-none text-dark px-3 py-2 hover-orange" style="font-size: 18px;">Digital Marketing</a>
-    <a href="uiux.html" class="d-block text-decoration-none text-dark px-3 py-2 hover-orange" style="font-size: 18px;">UI/UX Design</a>
+<div class="position-relative dropdown-hover" style="position: relative; display: inline-block;">
+  <a href="service.html" class="nav-link-animate dropdown-toggl border-0 bg-transparent d-inline-block" style="font-size: 18px; text-decoration: none;">
+    Services <i class="fa-solid fa-chevron-down" style="font-size: 16px;"></i>
+  </a>
+
+  <div class="dropdown-menu shadow bg-white py-3 px-2 mt--1" style="
+    width: 210px;
+    border-radius: 0%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: all 0.9s ease;
+    z-index: 999;
+  ">
+    <a href="appdev.html" style="display: block; color: black; text-decoration: none; padding: 8px 16px; font-size: 18px;">App Development</a>
+    <a href="webdev.html" style="display: block; color: black; text-decoration: none; padding: 8px 16px; font-size: 18px;">Web Development</a>
+    <a href="gamedev.html" style="display: block; color: black; text-decoration: none; padding: 8px 16px; font-size: 18px;">Game Development</a>
+    <a href="digital.html" style="display: block; color: black; text-decoration: none; padding: 8px 16px; font-size: 18px;">Digital Marketing</a>
+    <a href="uiux.html" style="display: block; color: black; text-decoration: none; padding: 8px 16px; font-size: 18px;">UI/UX Design</a>
   </div>
 </div>
+
 
       <a href="career.html" class="nav-link-animate" style="font-size: 18px;">Career</a>
       <a href="portfolio.html" class="nav-link-animate" style="font-size: 18px;">Portfolio</a>
@@ -113,7 +128,7 @@
 
     <!-- CTA Button -->
     <div class="d-none d-md-block">
-      <a href="contact.html" class="MY_BTN" style="font-size: 17px;">Take Solution</a>
+      <a href="takesolutin.html" class="MY_BTN" style="font-size: 17px;">Take Solution</a>
     </div>
 
     <!-- Mobile Toggle -->
@@ -150,7 +165,7 @@
         </div>
       </div>
 
-      <a href="contact.html" class="MY_BTN mt-3 w-100">Take Solution</a>
+      <a href="takesolutin.html" class="MY_BTN mt-3 w-100">Take Solution</a>
 
       <div class="location-mobile mt-3">
         <i class="fa-solid fa-envelope"></i>
@@ -183,13 +198,13 @@
   <!-- Content -->
   <div class="position-relative z-2 text-white h-100 d-flex align-items-center px-3 px-sm-4 px-md-5 text-center text-sm-start">
     <div>
-      <h1 class="fw-bold display-5 display-sm-4 display-md-3">App Development</h1>
+      <h1 class="fw-bold display-5 display-sm-4 display-md-3">Web Development</h1>
       <div class="d-flex align-items-center justify-content-center justify-content-sm-start gap-2 mt-3 small">
         <span style="color: #ee8624;font-size: 18px;">Home</span>
         <i class="fa-solid fa-angles-right"></i>
         <span style="color: #ee8624;font-size: 18px;">Service</span>
         <i class="fa-solid fa-angles-right"></i>
-        <span class="" style="font-size: 18px;">Mobile App Development</span>
+        <span class="" style="font-size: 18px;">Web Development</span>
       </div>
     </div>
   </div>
@@ -218,7 +233,7 @@
 
       <!-- Selected Service -->
       <div class="bg-black text-white fw-semibold p-3 mt-3 w-100 d-flex align-items-center justify-content-between">
-        Mobile App Development
+        Web Development
         <div style="
           width: 0;
           height: 0;
@@ -260,7 +275,7 @@
       transition: transform 0.3s ease;
       z-index: 0;
     "></div>
-    <span style="position: relative; z-index: 1; color: black; transition: color 0.3s ease;">Native App Development</span>
+    <span style="position: relative; z-index: 1; color: black; transition: color 0.3s ease;">Custom Web Development</span>
     <i class="fa fa-arrow-right" style="position: relative; z-index: 1; color: gray; transition: color 0.3s ease;"></i>
   </div>
 
@@ -281,7 +296,7 @@
   <div style="content: ''; position: absolute; inset: 0; background-color: black; transform: scaleX(0);
     transform-origin: left; transition: transform 0.3s ease; z-index: 0;">
   </div>
-  <span style="position: relative; z-index: 1; color: black; transition: color 0.3s ease;">Hybrid App Development</span>
+  <span style="position: relative; z-index: 1; color: black; transition: color 0.3s ease;">Open Source Web Development</span>
   <i class="fa fa-arrow-right" style="position: relative; z-index: 1; color: gray; transition: color 0.3s ease;"></i>
 </div>
 
@@ -301,7 +316,8 @@
     <div style="content: ''; position: absolute; inset: 0; background-color: black; transform: scaleX(0);
       transform-origin: left; transition: transform 0.3s ease; z-index: 0;">
     </div>
-    <span style="position: relative; z-index: 1; color: black; transition: color 0.3s ease;">Progressive Web Apps</span>
+    <span style="position: relative; z-index: 1; color: black; transition: color 0.3s ease;">
+Front-End Web Development</span>
     <i class="fa fa-arrow-right" style="position: relative; z-index: 1; color: gray; transition: color 0.3s ease;"></i>
   </div>
 
@@ -320,7 +336,8 @@
     <div style="content: ''; position: absolute; inset: 0; background-color: black; transform: scaleX(0);
       transform-origin: left; transition: transform 0.3s ease; z-index: 0;">
     </div>
-    <span style="position: relative; z-index: 1; color: black; transition: color 0.3s ease;">App Migrations & Integrations</span>
+    <span style="position: relative; z-index: 1; color: black; transition: color 0.3s ease;">
+Back-End Web Development</span>
     <i class="fa fa-arrow-right" style="position: relative; z-index: 1; color: gray; transition: color 0.3s ease;"></i>
   </div>
 
@@ -339,7 +356,8 @@
     <div style="content: ''; position: absolute; inset: 0; background-color: black; transform: scaleX(0);
       transform-origin: left; transition: transform 0.3s ease; z-index: 0;">
     </div>
-    <span style="position: relative; z-index: 1; color: black; transition: color 0.3s ease;">App Support & Maintenance</span>
+    <span style="position: relative; z-index: 1; color: black; transition: color 0.3s ease;">
+CMS Web Development</span>
     <i class="fa fa-arrow-right" style="position: relative; z-index: 1; color: gray; transition: color 0.3s ease;"></i>
   </div>
 
@@ -358,7 +376,7 @@
     <div style="content: ''; position: absolute; inset: 0; background-color: black; transform: scaleX(0);
       transform-origin: left; transition: transform 0.3s ease; z-index: 0;">
     </div>
-    <span style="position: relative; z-index: 1; color: black; transition: color 0.3s ease;">Custom App Development</span>
+    <span style="position: relative; z-index: 1; color: black; transition: color 0.3s ease;">Progressive Web Development</span>
     <i class="fa fa-arrow-right" style="position: relative; z-index: 1; color: gray; transition: color 0.3s ease;"></i>
   </div>
 
@@ -382,204 +400,277 @@
 
 <!-- -------------------------------------------------------------------------------- -->
 <div class="container mt-5 px-5">
-  <div class="row">
-    <!-- Empty column (4 of 12) -->
-    <div class="col-lg-4 d-none d-lg-block"></div>
+  <h1 class="h3 h-md4 fw-bold text-dark" style="font-size: 30px;">
+   Web Development
+  </h1>
+  <p class="mt-3 text-secondary small small-md fw-normal lh" style="font-size: 18px;">
+   BrainArt IT Solution is a top website design and web development company in India & USA delivering the best web development services to craft bespoke websites, web applications, web-tools, etc. to global businesses and startups with 100% project delivery.
+  </p>
 
-    <!-- Content column (7 of 12) -->
-    <div class="col-12 col-lg-7">
-      <h1 class="h3 h-md4 fw-bold text-dark" style="font-size: 30px;">
-        Mobile App Development
-      </h1>
-      <p class="mt-3 text-secondary small small-md fw-normal lh" style="font-size: 18px;">
-        We create mobile apps that help businesses work more efficiently and connect better with their customers.
-        Our skilled developers at BrainArt IT Solution specialize in building high-quality Android, iOS,
-        and cross-platform apps to meet your needs.
-      </p>
-
-      <h2 class="h5 h-md5 fw-bold text-dark mt-4" style="font-size: 30px;">
-        Mobile-First Approach for Better Results
-      </h2>
-      <p class="mt-3 text-secondary small small-md fw-normal" style="font-size: 18px;">
-        We create smooth and efficient mobile experiences that improve operations and keep customers happy.
-        Our expertise ensures your app works seamlessly across all platforms.
-      </p>
-    </div>
-  </div>
+  <h2 class="h5 h-md5 fw-bold text-dark mt-4" style="font-size: 30px;">
+    Web-First Approach for Better Results
+  </h2>
+  <p class="mt-3 text-secondary small small-md fw-normal" style="font-size: 18px;">
+  We build fast, secure, and user-friendly websites that enhance business efficiency and customer engagement. Our expertise ensures seamless performance across all devices and browsers.
+  </p>
 </div>
-
 
 <section class="py-5 text-[#333333]">
   <div class="container px-3 px-md-5" style="margin-top: -50px;">
-    <div class="row">
-      <!-- Empty space (4 columns on large screens) -->
-      <div class="d-none d-lg-block col-lg-4"></div>
+<h2 class="fs-4 fs-md-5 fw-bold mb-4 text-center text-md-start mt-4">
 
-      <!-- Content (7 columns on large screens, full on mobile) -->
-      <div class="col-12 col-lg-7">
-        <h2 class="fs-4 fs-md-5 fw-bold mb-4 text-center text-md-start mt-4">
-          Why Choose BrainArt IT Solution?
-        </h2>
-
-        <div class="row gy-4 justify-content-center">
-          <!-- Box 1 -->
-          <div class="col-12 col-md-6">
-            <div class="d-flex flex-column flex-md-row bg-white shadow overflow-hidden iit-11 group h-100">
-              <div class="p-3 d-flex align-items-center justify-content-center position-relative itt-a-1 icon-box mx-auto mx-md-0" style="width: 120px; max-width: 112px;">
-                <img src="./images/NewIcon/digital-service.png" alt="" class="it-img11 position-absolute img-fluid" />
-                <img src="./images/NewIcon/digital-service (2).png" alt="" class="it-img22 position-absolute img-fluid" />
-              </div>
-              <div class="p-4 flex-grow-1 text-center text-md-start">
-                <h6 class="fw-bold fs-5">Managed Tech Services</h3>
-                <p class="text-secondary mb-0" style="font-size: 14px;">
-                  Comprehensive IT management and support <br class="d-none d-md-block"> solutions.
-                </p>
-              </div>
-            </div>
+      Why Choose BrainArt IT Solution?
+    </h2>
+    <div class="row gy-4 justify-content-center">
+      
+      <!-- Box 1 -->
+      <div class="col-12 col-md-6">
+        <div class="d-flex flex-column flex-md-row bg-white shadow overflow-hidden iit-11 group h-100">
+          <div class="p-3 d-flex align-items-center justify-content-center position-relative itt-a-1 icon-box mx-auto mx-md-0" style="width: 120px; max-width: 112px;">
+            <img src="./images/NewIcon/digital-service.png" alt="" class="it-img11 position-absolute img-fluid" />
+            <img src="./images/NewIcon/digital-service (2).png" alt="" class="it-img22 position-absolute img-fluid" />
           </div>
-
-          <!-- Box 2 -->
-          <div class="col-12 col-md-6">
-            <div class="d-flex flex-column flex-md-row bg-white shadow overflow-hidden iit-11 group h-100">
-              <div class="p-3 d-flex align-items-center justify-content-center position-relative itt-a-1 icon-box mx-auto mx-md-0" style="width: 120px; max-width: 112px;">
-                <img src="./images/NewIcon/it-service.png" alt="" class="it-img11 position-absolute" style="width: 50px;" />
-                <img src="./images/NewIcon/it-service (2).png" alt="" class="it-img22 position-absolute" style="width: 50px;" />
-              </div>
-              <div class="p-4 flex-grow-1 text-center text-md-start">
-                <h6 class="fw-bold fs-5">IT Consulting Solutions</h3>
-                <p class="text-secondary mb-0" style="font-size: 14px;">
-                  Strategic consulting to enhance your business  <br class="d-none d-md-block"> technology infrastructure.
-                </p>
-              </div>
-            </div>
+          <div class="p-4 flex-grow-1 text-center text-md-start">
+            <h3 class="fw-bold fs-5">Managed Tech Services</h3>
+            <p class="text-secondary mb-0" style="font-size: 18px;">
+              Comprehensive IT management and support <br class="d-none d-md-block"> solutions.
+            </p>
           </div>
-
         </div>
-      </div> <!-- /col-7 -->
-    </div> <!-- /row -->
-  </div> <!-- /container -->
+      </div>
+
+      <!-- Box 2 -->
+      <div class="col-12 col-md-6">
+        <div class="d-flex flex-column flex-md-row bg-white shadow overflow-hidden iit-11 group h-100">
+          <div class="p-3 d-flex align-items-center justify-content-center position-relative itt-a-1 icon-box mx-auto mx-md-0" style="width: 120px; max-width: 112px;">
+            <img src="./images/NewIcon/it-service.png" alt="" class="it-img11 position-absolute" style="width: 50px;" />
+            <img src="./images/NewIcon/it-service (2).png" alt="" class="it-img22 position-absolute" style="width: 50px;" />
+          </div>
+          <div class="p-4 flex-grow-1 text-center text-md-start">
+            <h3 class="fw-bold fs-5">IT Consulting Solutions</h3>
+            <p class="text-secondary mb-0" style="font-size: 18px;">
+              Strategic consulting to enhance your business  <br class="d-none d-md-block"> technology infrastructure.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </section>
 
 
 <section class="py-1 bg-white text-black">
   <div class="container mx-auto">
-    <div class="row px-5">
+    <div class="row align-items-center px-5">
       
-      <!-- Empty space on large screens -->
-      <div class="d-none d-lg-block col-lg-4"></div>
-
-      <!-- Combined Content & Image Column -->
-      <div class="col-12 col-lg-7">
-        <div class="row align-items-center">
-          
-          <!-- Image -->
-          <div class="col-12 col-md-6 mb-4 mb-md-0">
-            <img
-              src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/service-s-1-1.png"
-              alt="Benefits"
-              class="shadow-md w-100"
-              style="height: 350px; object-fit: cover;"
-            />
-          </div>
-
-          <!-- Text Content -->
-          <div class="col-12 col-md-6">
-            <div class="d-flex align-items-start flex-column gap-3">
-              <!-- Heading -->
-              <h2 class="text-2xl fw-bold m-0">Our Few Benefits</h2>
-
-              <!-- Paragraph -->
-              <p class="text-gray-600 m-0" style="font-size: 18px;">
-                We create powerful, user-friendly mobile apps for seamless performance and better engagement.
-              </p>
-
-              <!-- Benefits List -->
-              <ul class="list-unstyled m-0">
-                <li class="d-flex align-items-center gap-2 text-gray-700 mt-1">
-                  <i class="fa-solid fa-circle-check fs-5" style="color: #EE8624;"></i>
-                  <span style="font-size: 18px;">Cross-Platform Compatibility</span>
-                </li>
-                <li class="d-flex align-items-center gap-2 text-gray-700 mt-1">
-                  <i class="fa-solid fa-circle-check fs-5" style="color: #EE8624;"></i>
-                  <span style="font-size: 18px;">Smooth Performance</span>
-                </li>
-                <li class="d-flex align-items-center gap-2 text-gray-700 mt-1">
-                  <i class="fa-solid fa-circle-check fs-5" style="color: #EE8624;"></i>
-                  <span style="font-size: 18px;">Ongoing Support</span>
-                </li>
-                <li class="d-flex align-items-center gap-2 text-gray-700 mt-1">
-                  <i class="fa-solid fa-circle-check fs-5" style="color: #EE8624;"></i>
-                  <span style="font-size: 18px;">On-time Delivery</span>
-                </li>
-                <li class="d-flex align-items-center gap-2 text-gray-700 mt-1">
-                  <i class="fa-solid fa-circle-check fs-5" style="color: #EE8624;"></i>
-                  <span style="font-size: 18px;">Cost Efficient</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-        </div> <!-- inner row -->
-      </div> <!-- col-7 -->
-
-    </div> <!-- outer row -->
-  </div> <!-- container -->
-</section>
-
-
-
-<section class="py-5 px-5 d-flex justify-content-center align-items-start">
-  <div class="w-100" style="max-width: 1200px;">
-    <div class="row">
-      
-      <!-- Empty space on large screen -->
-      <div class="d-none d-lg-block col-lg-4"></div>
-      
-      <!-- FAQ content area -->
-      <div class="col-12 col-lg-7">
-        <h2 class="fw-bold mb-4 fs-3">Frequently Asked Questions (FAQs)</h2>
-
-        <div class="accordion" id="faqAccordion">
-
-          <!-- FAQ 1 -->
-          <div class="accordion-item border mb-3" style="border-radius: 0%;">
-            <h2 class="accordion-header">
-              <button class="accordion-button d-flex justify-content-between align-items-center px-4 py-4 text-start collapsed" type="button">
-                <span class="flex-grow-1" style="font-size: 18px;">What is mobile app development?</span>
-                <i class="fa fa-plus ms-3 toggle-icon"></i>
-              </button>
-            </h2>
-            <div class="accordion-body-wrapper" style="border-radius: 0%;">
-              <div class="accordion-body px-4 py-4 text-muted" style="border-radius: 0%;font-size: 17px;">
-                Mobile app development is the process of creating software applications specifically designed to run on mobile devices such as smartphones and tablets. This includes both native apps and cross-platform applications.
-              </div>
-            </div>
-          </div>
-
-          <!-- FAQ 2 -->
-          <div class="accordion-item border mb-3" style="border-radius: 0%;">
-            <h2 class="accordion-header">
-              <button class="accordion-button d-flex justify-content-between align-items-center px-4 py-4 text-start collapsed" type="button">
-                <span class="flex-grow-1" style="font-size: 18px;">What platforms do you develop apps for?</span>
-                <i class="fa fa-plus ms-3 toggle-icon"></i>
-              </button>
-            </h2>
-            <div class="accordion-body-wrapper" style="border-radius: 0%;">
-              <div class="accordion-body px-4 py-4 text-muted" style="border-radius: 0%;font-size: 17px;">
-                We develop apps for various platforms, including iOS, Android, and cross-platform solutions that work on both operating systems, ensuring maximum reach and compatibility.
-              </div>
-            </div>
-          </div>
-
-          <!-- Add rest of the FAQs here (3 to 10) using same pattern -->
-          <!-- ... (Your existing FAQ 3 to 10 markup goes here without change) -->
-
-        </div>
+      <!-- Image Column -->
+      <div class="col-12 col-lg-6">
+        <img
+          src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/service-s-1-1.png"
+          alt="Benefits"
+          class="shadow-md w-100"
+          style=" height: 350px; object-fit: cover;"
+        />
       </div>
+
+      <!-- Content Column -->
+     <div class="col-12 col-lg-6">
+  <div class="d-flex align-items-start flex-wrap gap-3">
+    
+    <!-- Heading -->
+    <h2 class="text-2xl fw-bold m-0">Our Few Benefits</h2>
+    
+    <!-- Paragraph -->
+    <p class="m-0" style="font-size: 18px;color: #4b5563;" >
+We craft high-performance, user-friendly websites that drive engagement and business growth.    </p>
+    
+    <!-- Benefits List -->
+    <ul class="align-items-center flex-wrap gap-3 list-unstyled ">
+      <li class=" align-items-center gap-2 text-gray-700">
+        <i class="fa-solid fa-circle-check text-[#ee8624] fs-5 mt-2" style="color: #EE8624;"></i>
+        <span  style="font-size: 18px;color: #4b5563;">Custom Web Solutions</span>
+      </li>
+      <li class="d-flex align-items-center gap-2 text-gray-700 mt-2">
+        <i class="fa-solid fa-circle-check text-[#ee8624] fs-5 mt-2" style="color: #EE8624;"></i>
+         <span  style="font-size: 18px;color: #4b5563;">Fast & Responsive Design</span>
+      </li>
+       <li class="d-flex align-items-center gap-2 text-gray-700 mt-2">
+        <i class="fa-solid fa-circle-check text-[#ee8624] fs-5 mt-2" style="color: #EE8624;"></i>
+          <span  style="font-size: 18px;color: #4b5563;">SEO-Friendly Structure</span>
+      </li>
+      <li class="d-flex align-items-center gap-2 text-gray-700 mt-2">
+        <i class="fa-solid fa-circle-check text-[#ee8624] fs-5 mt-2" style="color: #EE8624;"></i>
+         <span  style="font-size: 18px;color: #4b5563;">Secure & Scalable</span>
+      </li>
+      <li class="d-flex align-items-center gap-2 text-gray-700 mt-2">
+        <i class="fa-solid fa-circle-check text-[#ee8624] fs-5 mt-2" style="color: #EE8624;"></i>
+        <span  style="font-size: 18px;color: #4b5563;">Ongoing Support & Maintenance</span>
+      </li>
+       <li class="d-flex align-items-center gap-2 text-gray-700 mt-2">
+        <i class="fa-solid fa-circle-check text-[#ee8624] fs-5 mt-2" style="color: #EE8624;"></i>
+        <span  style="font-size: 18px;color: #4b5563;">Timely Project Delivery</span>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
     </div>
   </div>
 </section>
 
+
+<section class="py-5 px-5 d-flex justify-content-center align-items-start">
+  <div class="w-100" style="max-width: 1200px;">
+    <h2 class="fw-bold mb-4 fs-3">Frequently Asked Questions (FAQs)</h2>
+
+    <div class="accordion" id="faqAccordion">
+
+      <!-- FAQ 1 -->
+      <div class="accordion-item border mb-3" style="border-radius: 0%;">
+        <h2 class="accordion-header">
+          <button class="accordion-button d-flex justify-content-between align-items-center px-4 py-4 text-start collapsed" type="button">
+            <span class="flex-grow-1" style="font-size: 18px;">What is Web development?</span>
+            <i class="fa fa-plus ms-3 toggle-icon"></i>
+          </button>
+        </h2>
+        <div class="accordion-body-wrapper" style="border-radius: 0%;">
+          <div class="accordion-body px-4 py-4 text-muted" style="border-radius: 0%;font-size: 17px;">
+        Web development refers to creating and maintaining websites and web applications. It helps businesses establish a strong online presence, improve customer engagement,and drive more leads or sales through a user-friendly digital experience.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 2 -->
+   <div class="accordion-item border mb-3" style="border-radius: 0%;">
+        <h2 class="accordion-header">
+          <button class="accordion-button d-flex justify-content-between align-items-center px-4 py-4 text-start collapsed" type="button">
+            <span class="flex-grow-1" style="font-size: 18px;">How long does it take to develop a website?</span>
+            <i class="fa fa-plus ms-3 toggle-icon"></i>
+          </button>
+        </h2>
+        <div class="accordion-body-wrapper" style="border-radius: 0%;">
+          <div class="accordion-body px-4 py-4 text-muted" style="border-radius: 0%;font-size: 17px;">
+          The timeline for web development depends on the complexity, features, and design requirements of the website. Simple websites may take 4-6 weeks, while more complex websites can take 3-6 months or longer.
+          </div>
+        </div>
+      </div>
+
+      <!-- ---------------faq 3------------ -->
+   <div class="accordion-item border mb-3" style="border-radius: 0%;">
+        <h2 class="accordion-header">
+          <button class="accordion-button d-flex justify-content-between align-items-center px-4 py-4 text-start collapsed" type="button">
+            <span class="flex-grow-1" style="font-size: 18px;">What types of websites can you develop?</span>
+            <i class="fa fa-plus ms-3 toggle-icon"></i>
+          </button>
+        </h2>
+        <div class="accordion-body-wrapper" style="border-radius: 0%;">
+          <div class="accordion-body px-4 py-4 text-muted" style="border-radius: 0%;font-size: 17px;">
+        We specialize in a wide range of websites, including e-commerce platforms, corporate websites, blogs, portfolio sites, web applications, landing pages, and custom solutions tailored to your specific needs.
+          </div>
+        </div>
+      </div>
+
+          <!-- ---------------faq 4------------ -->
+   <div class="accordion-item border mb-3" style="border-radius: 0%;">
+        <h2 class="accordion-header">
+          <button class="accordion-button d-flex justify-content-between align-items-center px-4 py-4 text-start collapsed" type="button">
+            <span class="flex-grow-1" style="font-size: 18px;">How much does web development cost?</span>
+            <i class="fa fa-plus ms-3 toggle-icon"></i>
+          </button>
+        </h2>
+        <div class="accordion-body-wrapper" style="border-radius: 0%;">
+          <div class="accordion-body px-4 py-4 text-muted" style="border-radius: 0%;font-size: 17px;">
+    The cost of web development varies based on factors such as the website's size, functionality, design requirements, and features. We offer flexible pricing models and provide a detailed quote after understanding your project needs.
+        </div>
+      </div>
+    </div>
+
+             <!-- ---------------faq 5------------ -->
+   <div class="accordion-item border mb-3" style="border-radius: 0%;">
+        <h2 class="accordion-header">
+          <button class="accordion-button d-flex justify-content-between align-items-center px-4 py-4 text-start collapsed" type="button">
+            <span class="flex-grow-1" style="font-size: 18px;">Do you offer custom web development solutions?</span>
+            <i class="fa fa-plus ms-3 toggle-icon"></i>
+          </button>
+        </h2>
+        <div class="accordion-body-wrapper" style="border-radius: 0%;">
+          <div class="accordion-body px-4 py-4 text-muted" style="border-radius: 0%;font-size: 17px;">
+Yes, we offer fully customized web development solutions that align with your business goals and branding. We work closely with you to create a website tailored to your specific requirements.        </div>
+      </div>
+    </div>
+
+                 <!-- ---------------faq 6------------ -->
+   <div class="accordion-item border mb-3" style="border-radius: 0%;">
+        <h2 class="accordion-header">
+          <button class="accordion-button d-flex justify-content-between align-items-center px-4 py-4 text-start collapsed" type="button">
+            <span class="flex-grow-1" style="font-size: 18px;">Will my website be mobile-friendly and SEO-optimized?</span>
+            <i class="fa fa-plus ms-3 toggle-icon"></i>
+          </button>
+        </h2>
+        <div class="accordion-body-wrapper" style="border-radius: 0%;">
+          <div class="accordion-body px-4 py-4 text-muted" style="border-radius: 0%;font-size: 17px;">
+Absolutely! All websites we develop are mobile-responsive and optimized for search engines (SEO). This ensures your website functions well on any device and ranks higher in search engine results.
+       </div>
+      </div>
+    </div>
+
+                     <!-- ---------------faq 8------------ -->
+   <div class="accordion-item border mb-3" style="border-radius: 0%;">
+        <h2 class="accordion-header">
+          <button class="accordion-button d-flex justify-content-between align-items-center px-4 py-4 text-start collapsed" type="button">
+            <span class="flex-grow-1" style="font-size: 18px;">What technologies do you use for web development?</span>
+            <i class="fa fa-plus ms-3 toggle-icon"></i>
+          </button>
+        </h2>
+        <div class="accordion-body-wrapper" style="border-radius: 0%;">
+          <div class="accordion-body px-4 py-4 text-muted" style="border-radius: 0%;font-size: 17px;">
+We work with a wide range of modern technologies, including ReactJS, AngularJS, NodeJS, PHP, .NET, CodeIgniter, Laravel, and more, to build scalable, secure, and high-performing websites.     </div>
+      </div>
+    </div>
+                     <!-- ---------------faq 9------------ -->
+   <div class="accordion-item border mb-3" style="border-radius: 0%;">
+        <h2 class="accordion-header">
+          <button class="accordion-button d-flex justify-content-between align-items-center px-4 py-4 text-start collapsed" type="button">
+            <span class="flex-grow-1" style="font-size: 18px;">Can you help with website maintenance and updates after development?</span>
+            <i class="fa fa-plus ms-3 toggle-icon"></i>
+          </button>
+        </h2>
+        <div class="accordion-body-wrapper" style="border-radius: 0%;">
+          <div class="accordion-body px-4 py-4 text-muted" style="border-radius: 0%;font-size: 17px;">
+Yes, we offer post-development maintenance services to ensure your website stays updated, secure, and functional. We can also assist with any additional features or updates as your business evolves.
+       </div>
+      </div>
+    </div>
+                     <!-- ---------------faq 10------------ -->
+   <div class="accordion-item border mb-3" style="border-radius: 0%;">
+        <h2 class="accordion-header">
+          <button class="accordion-button d-flex justify-content-between align-items-center px-4 py-4 text-start collapsed" type="button">
+            <span class="flex-grow-1" style="font-size: 18px;">Will I have control over my website content?</span>
+            <i class="fa fa-plus ms-3 toggle-icon"></i>
+          </button>
+        </h2>
+        <div class="accordion-body-wrapper" style="border-radius: 0%;">
+          <div class="accordion-body px-4 py-4 text-muted" style="border-radius: 0%;font-size: 17px;">
+Yes, we build websites using content management systems (CMS) such as WordPress, Drupal, or custom-built platforms, allowing you to easily manage and update your website content without technical expertise.       </div>
+      </div>
+    </div>
+                       <!-- ---------------faq 10------------ -->
+   <div class="accordion-item border mb-3" style="border-radius: 0%;">
+        <h2 class="accordion-header">
+          <button class="accordion-button d-flex justify-content-between align-items-center px-4 py-4 text-start collapsed" type="button">
+            <span class="flex-grow-1" style="font-size: 18px;">How do you ensure the security of the website?</span>
+            <i class="fa fa-plus ms-3 toggle-icon"></i>
+          </button>
+        </h2>
+        <div class="accordion-body-wrapper" style="border-radius: 0%;">
+          <div class="accordion-body px-4 py-4 text-muted" style="border-radius: 0%;font-size: 17px;">
+We follow best practices in web security, including SSL encryption, data protection, regular security audits, and implementing firewalls. We also integrate security plugins and monitor for any vulnerabilities to keep your site secure.      </div>
+      </div>
+    </div>
+
+</section>
 
 
 
@@ -802,7 +893,22 @@
   });
 </script>
 
+<script>
+  const dropdown = document.querySelector('.dropdown-hover');
+  const menu = dropdown.querySelector('.dropdown-menu');
 
+  dropdown.addEventListener('mouseenter', () => {
+    menu.style.opacity = '1';
+    menu.style.visibility = 'visible';
+    menu.style.transform = 'translateY(0)';
+  });
+
+  dropdown.addEventListener('mouseleave', () => {
+    menu.style.opacity = '0';
+    menu.style.visibility = 'hidden';
+    menu.style.transform = 'translateY(-20px)';
+  });
+</script>
 
 
 </body>

@@ -79,27 +79,42 @@
 
 
 <!-- Navbar -->
-<nav class="z-50 p-1 Navbar-main" style="margin-top: -5px;">
+<!-- Navbar -->
+<nav class="z-50 p-1 Navbar-main" style="margin-top: -4px;">
   <div class="container d-flex justify-content-between align-items-center mt-2 mb-2" style="padding-bottom: 0%;">
     <img src="./images/logo-2-yellow.png" alt="Logo" class="LOGOSSS" />
 
     <!-- Desktop Nav -->
     <div class="d-none d-md-flex gap-5 align-items-center pp1ff">
-      <a href="index.html" class="nav-link-animate" style="font-size: 18px;">Home</a>
+      <a href="index.html" class="nav-link-animate " style="font-size: 18px;">Home</a>
       <a href="about.html" class="nav-link-animate" style="font-size: 18px;">About Us</a>
 
       <!-- Dropdown -->
-   <!-- Dropdown -->
-<div class="position-relative dropdown-hover">
-  <a href="service.html" class="nav-link-animate active  dropdown-toggl border-0 bg-transparent d-inline-block" style="font-size: 18px;">Services <i class="fa-solid fa-chevron-down" style="font-size: 16px;"></i></a>
-  <div class="dropdown-menu shadow bg-white py-4 px-2 mt-2" style="width: 210px;border-radius: 0%;">
-    <a href="appdev.html" class="d-block text-decoration-none text-dark px-3 py-2 hover-orange" style="font-size: 18px;">App Development</a>
-    <a href="webdev.html" class="d-block text-decoration-none text-dark px-3 py-2 hover-orange" style="font-size: 18px;">Web Development</a>
-    <a href="gamedev.html" class="d-block text-decoration-none text-dark px-3 py-2 hover-orange" style="font-size: 18px;">Game Development</a>
-    <a href="digital.html" class="d-block text-decoration-none text-dark px-3 py-2 hover-orange" style="font-size: 18px;">Digital Marketing</a>
-    <a href="uiux.html" class="d-block text-decoration-none text-dark px-3 py-2 hover-orange" style="font-size: 18px;">UI/UX Design</a>
+<div class="position-relative dropdown-hover" style="position: relative; display: inline-block;">
+  <a href="service.html" class="nav-link-animate active dropdown-toggl border-0 bg-transparent d-inline-block" style="font-size: 18px; text-decoration: none;">
+    Services <i class="fa-solid fa-chevron-down" style="font-size: 16px;"></i>
+  </a>
+
+  <div class="dropdown-menu shadow bg-white py-3 px-2 mt--1" style="
+    width: 210px;
+    border-radius: 0%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: all 0.9s ease;
+    z-index: 999;
+  ">
+    <a href="appdev.html" style="display: block; color: black; text-decoration: none; padding: 8px 16px; font-size: 18px;">App Development</a>
+    <a href="webdev.html" style="display: block; color: black; text-decoration: none; padding: 8px 16px; font-size: 18px;">Web Development</a>
+    <a href="gamedev.html" style="display: block; color: black; text-decoration: none; padding: 8px 16px; font-size: 18px;">Game Development</a>
+    <a href="digital.html" style="display: block; color: black; text-decoration: none; padding: 8px 16px; font-size: 18px;">Digital Marketing</a>
+    <a href="uiux.html" style="display: block; color: black; text-decoration: none; padding: 8px 16px; font-size: 18px;">UI/UX Design</a>
   </div>
 </div>
+
 
       <a href="career.html" class="nav-link-animate" style="font-size: 18px;">Career</a>
       <a href="portfolio.html" class="nav-link-animate" style="font-size: 18px;">Portfolio</a>
@@ -108,7 +123,7 @@
 
     <!-- CTA Button -->
     <div class="d-none d-md-block">
-      <a href="contact.html" class="MY_BTN" style="font-size: 17px;">Take Solution</a>
+      <a href="takesolutin.html" class="MY_BTN" style="font-size: 17px;">Take Solution</a>
     </div>
 
     <!-- Mobile Toggle -->
@@ -145,7 +160,7 @@
         </div>
       </div>
 
-      <a href="contact.html" class="MY_BTN mt-3 w-100">Take Solution</a>
+      <a href="takesolutin.html" class="MY_BTN mt-3 w-100">Take Solution</a>
 
       <div class="location-mobile mt-3">
         <i class="fa-solid fa-envelope"></i>
@@ -488,23 +503,23 @@
 <!-- JS Slick Carousel -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
 <script>
-  $(document).ready(function () {
-    $('.latest-project-slider').slick({
-      dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      responsive: [
-        { breakpoint: 1024, settings: { slidesToShow: 2 } },
-        { breakpoint: 768, settings: { slidesToShow: 1 } },
-        { breakpoint: 480, settings: { slidesToShow: 1 } }
-      ]
-    });
+  const dropdown = document.querySelector('.dropdown-hover');
+  const menu = dropdown.querySelector('.dropdown-menu');
+
+  dropdown.addEventListener('mouseenter', () => {
+    menu.style.opacity = '1';
+    menu.style.visibility = 'visible';
+    menu.style.transform = 'translateY(0)';
+  });
+
+  dropdown.addEventListener('mouseleave', () => {
+    menu.style.opacity = '0';
+    menu.style.visibility = 'hidden';
+    menu.style.transform = 'translateY(-20px)';
   });
 </script>
+
 </body>
 </html>
 
