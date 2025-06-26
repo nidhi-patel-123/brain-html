@@ -12,15 +12,39 @@
 <!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="css/topbar.css">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../css/topbar.css">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&family=Playwrite+AU+SA:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
     * {
  font-family: "Barlow" , sans-serif;
 }
+ .scroll-wrapper {
+      overflow: hidden;
+      width: 100%;
+      max-width: 1250px;
+      margin: 0 auto;
+    }
 
+    .scroll-track {
+      display: flex;
+      width: calc(210px * 16 + 24px * 16); /* width * number of images + padding */
+      animation: scrollLoop 30s linear infinite;
+    }
+
+    .scroll-img {
+      width: 210px;
+      height: 400px;
+      object-fit: contain;
+      border-radius: 12px;
+      padding: 12px;
+      flex-shrink: 0;
+    }
+
+
+
+  
   </style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
 
@@ -75,16 +99,16 @@
 <!-- Navbar -->
 <nav class="z-50 p-1 Navbar-main" style="margin-top: -4px;">
   <div class="container d-flex justify-content-between align-items-center mt-2 mb-2" style="padding-bottom: 0%;">
-    <img src="./images/logo-2-yellow.png" alt="Logo" class="LOGOSSS" />
+    <img src="../images/logo-2-yellow.png" alt="Logo" class="LOGOSSS" />
 
     <!-- Desktop Nav -->
     <div class="d-none d-md-flex gap-5 align-items-center pp1ff">
-      <a href="index.html" class="nav-link-animate " style="font-size: 18px;">Home</a>
-      <a href="about.html" class="nav-link-animate" style="font-size: 18px;">About Us</a>
+      <a href="../index.html" class="nav-link-animate " style="font-size: 18px;">Home</a>
+      <a href="../about.html" class="nav-link-animate" style="font-size: 18px;">About Us</a>
 
       <!-- Dropdown -->
 <div class="position-relative dropdown-hover" style="position: relative; display: inline-block;">
-  <a href="service.html" class="nav-link-animate dropdown-toggl border-0 bg-transparent d-inline-block" style="font-size: 18px; text-decoration: none;">
+  <a href="../service.html" class="nav-link-animate dropdown-toggl border-0 bg-transparent d-inline-block" style="font-size: 18px; text-decoration: none;">
     Services <i class="fa-solid fa-chevron-down" style="font-size: 16px;"></i>
   </a>
 
@@ -100,23 +124,23 @@
     transition: all 0.9s ease;
     z-index: 999;
   ">
-    <a href="appdev.html" style="display: block; color: black; text-decoration: none; padding: 8px 16px; font-size: 18px;">App Development</a>
-    <a href="webdev.html" style="display: block; color: black; text-decoration: none; padding: 8px 16px; font-size: 18px;">Web Development</a>
-    <a href="gamedev.html" style="display: block; color: black; text-decoration: none; padding: 8px 16px; font-size: 18px;">Game Development</a>
-    <a href="digital.html" style="display: block; color: black; text-decoration: none; padding: 8px 16px; font-size: 18px;">Digital Marketing</a>
-    <a href="uiux.html" style="display: block; color: black; text-decoration: none; padding: 8px 16px; font-size: 18px;">UI/UX Design</a>
+    <a href="../appdev.html" style="display: block; color: black; text-decoration: none; padding: 8px 16px; font-size: 18px;">App Development</a>
+    <a href="../webdev.html" style="display: block; color: black; text-decoration: none; padding: 8px 16px; font-size: 18px;">Web Development</a>
+    <a href="../gamedev.html" style="display: block; color: black; text-decoration: none; padding: 8px 16px; font-size: 18px;">Game Development</a>
+    <a href="../digital.html" style="display: block; color: black; text-decoration: none; padding: 8px 16px; font-size: 18px;">Digital Marketing</a>
+    <a href="../digital.html" style="display: block; color: black; text-decoration: none; padding: 8px 16px; font-size: 18px;">UI/UX Design</a>
   </div>
 </div>
 
 
-      <a href="career.html" class="nav-link-animate" style="font-size: 18px;">Career</a>
-      <a href="portfolio.html" class="nav-link-animate" style="font-size: 18px;">Portfolio</a>
-      <a href="contact.html" class="nav-link-animate" style="font-size: 18px;">Contact Us</a>
+      <a href="../career.html" class="nav-link-animate" style="font-size: 18px;">Career</a>
+      <a href="../portfolio.html" class="nav-link-animate" style="font-size: 18px;">Portfolio</a>
+      <a href="../contact.html" class="nav-link-animate" style="font-size: 18px;">Contact Us</a>
     </div>
 
     <!-- CTA Button -->
     <div class="d-none d-md-block">
-      <a href="takesolutin.html" class="MY_BTN" style="font-size: 17px;">Take Solution</a>
+      <a href="../takesolutin.html" class="MY_BTN" style="font-size: 17px;">Take Solution</a>
     </div>
 
     <!-- Mobile Toggle -->
@@ -133,11 +157,11 @@
     </div>
 
     <nav class="d-flex flex-column gap-3">
-      <a href="index.html" class="text-white text-decoration-none border-bottom pb-1 ">HOME</a>
-      <a href="about.html" class="text-white text-decoration-none border-bottom pb-1">ABOUT US</a>
-      <a href="career.html" class="text-white text-decoration-none border-bottom pb-1">CAREER</a>
-      <a href="portfolio.html" class="text-white text-decoration-none border-bottom pb-1">PORTFOLIO</a>
-      <a href="contact.html" class="text-white text-decoration-none border-bottom pb-1">CONTACT US</a>
+      <a href="../index.html" class="text-white text-decoration-none border-bottom pb-1 ">HOME</a>
+      <a href="../about.html" class="text-white text-decoration-none border-bottom pb-1">ABOUT US</a>
+      <a href="../career.html" class="text-white text-decoration-none border-bottom pb-1">CAREER</a>
+      <a href="../portfolio.html" class="text-white text-decoration-none border-bottom pb-1">PORTFOLIO</a>
+      <a href="../contact.html" class="text-white text-decoration-none border-bottom pb-1">CONTACT US</a>
 
       <div>
         <button style="margin-top: -10px;margin-left: -10px;"  class="btn w-100 text-white text-start d-flex justify-content-between align-items-center " onclick="toggleServiceDropdown()">
@@ -145,15 +169,15 @@
           <i class="fas fa-angle-down" id="dropdownIcon"></i>
         </button>
         <div class="mt-2 d-none" id="mobileServiceDropdown">
-          <a href="appdev.html" class="text-white d-block border-bottom pb-1 ps-3" style="text-decoration: none;">APP DEVELOPMENT</a>
-          <a href="webdev.html" class="text-white d-block border-bottom pb-1 ps-3" style="text-decoration: none;">WEB DEVELOPMENT</a>
-          <a href="gamedev.html" class="text-white d-block border-bottom pb-1 ps-3" style="text-decoration: none;">GAME DEVELOPMENT</a>
-          <a href="digital.html" class="text-white d-block border-bottom pb-1 ps-3" style="text-decoration: none;">DIGITAL MARKETING</a>
-          <a href="uiux.html" class="text-white d-block border-bottom pb-1 ps-3" style="text-decoration: none;">UI/UX DESIGN</a>
+          <a href="../appdev.html" class="text-white d-block border-bottom pb-1 ps-3" style="text-decoration: none;">APP DEVELOPMENT</a>
+          <a href="../webdev.html" class="text-white d-block border-bottom pb-1 ps-3" style="text-decoration: none;">WEB DEVELOPMENT</a>
+          <a href="../gamedev.html" class="text-white d-block border-bottom pb-1 ps-3" style="text-decoration: none;">GAME DEVELOPMENT</a>
+          <a href="../digital.html" class="text-white d-block border-bottom pb-1 ps-3" style="text-decoration: none;">DIGITAL MARKETING</a>
+          <a href="../uiux.html" class="text-white d-block border-bottom pb-1 ps-3" style="text-decoration: none;">UI/UX DESIGN</a>
         </div>
       </div>
 
-      <a href="takesolutin.html" class="MY_BTN mt-3 w-100">Take Solution</a>
+      <a href="../takesolutin.html" class="MY_BTN mt-3 w-100">Take Solution</a>
 
       <div class="location-mobile mt-3">
         <i class="fa-solid fa-envelope"></i>
@@ -173,10 +197,160 @@
     </nav>
   </div>
 </nav>
+<!-- -------------------------------hero-------------------------------------- -->
+<div class="position-relative w-100 text-white mt-5" style="height: 400px;">
+  <!-- Background Image -->
+  <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-cover bg-center" style="background-image: url('../images/abouts.jpg');object-fit: cover;background-size: cover;">
+    <!-- Black Overlay -->
+    <div class="position-absolute top-0 start-0 w-100 h-100 bg-black" style="opacity: 0.7;"></div>
+  </div>
+
+  
+  <div class="position-relative z-1 px-3 px-sm-4 px-md-5 d-flex flex-column justify-content-center h-100">
+    <h1 class="fw-bold mb-2" style="font-size: 32px;">
+      <span class="d-none d-sm-inline d-md-none" style="font-size: 40px;">RadioLuisteren.fm: Live radio</span>
+      <span class="d-none d-md-inline d-lg-none" style="font-size: 50px;">RadioLuisteren.fm: Live radio</span>
+      <span class="d-none d-lg-inline" style="font-size: 55px;">RadioLuisteren.fm: Live radio</span>
+    </h1>
+
+    <!-- Breadcrumb -->
+    <div class="d-flex align-items-center gap-2" style="font-size: 1rem;">
+      <span style="color: #ee8624;">Home</span>
+      <i class="fa-solid fa-angles-right"></i>
+      <span style="color: #ee8624;">Portfolio</span>
+      <i class="fa-solid fa-angles-right"></i>
+      <span class="text-light">RadioLuisteren.fm: Live radio</span>
+    </div>
+  </div>
+</div>
 
 
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<div class="container px-4 px-sm-5 mt-5">
+
+  <!-- Game Image -->
+  <div class="w-100 mx-auto mt-5 center" style="max-width: 1200px;">
+    <img src="../images/background/frame 5.png" alt="Tic Tac Toe Game Preview" class="img-fluid rounded shadow mt-5 center">
+  </div>
+
+  <!-- Introduction -->
+  <div class="mx-auto mt-4" style="max-width: 1200px;">
+    <h1 class="h2 h2-sm fw-bold mt-5">RadioLuisteren.fm: Live radio</h1>
+    <p class="text-muted mt-3 fs-5 fs-sm-5">
+At BrainArt IT Solution, we had the privilege of developing RadioLuisteren.fm, a feature-rich mobile app designed to bring the world of radio to your fingertips. This app consolidates all national and regional radio stations into one platform, ensuring users have seamless access to music, news, sports, and entertainment wherever they go.
+
+
+    </p>
+  </div>
+
+  <!-- Dots -->
+  <div class="d-flex gap-2 mt-5 center" style="justify-content: center;">
+    <div class="rounded-circle" style="width:12px; height:12px;background-color: #9ca3af;"></div>
+     <div class="rounded-circle" style="width:12px; height:12px;background-color: #8a919f;"></div>
+ 
+    <div class="rounded-circle" style="width:12px; height:12px;background-color: #4b5563;"></div>
+  </div>
+
+  <!-- About the App -->
+  <div class="mx-auto mt-3" style="max-width: 1200px;">
+    <h1 class="h2 h2-sm fw-bold">About the App</h1>
+    <p class="text-muted mt-3 fs-5 fs-sm-5">
+RadioLuisteren.fm was designed with the user in mind, offering a simple, intuitive interface and an engaging experience for people of all ages. Whether you're at home, commuting, or working out, this app ensures your favorite radio programs are always within reach.
+    </p>
+  </div>
+
+<!-- Dots -->
+  <div class="d-flex gap-2 mt-5 center" style="justify-content: center;">
+    <div class="rounded-circle" style="width:12px; height:12px;background-color: #9ca3af;"></div>
+     <div class="rounded-circle" style="width:12px; height:12px;background-color: #8a919f;"></div>
+ 
+    <div class="rounded-circle" style="width:12px; height:12px;background-color: #4b5563;"></div>
+  </div>
+
+  <!-- Key Features -->
+  <div class="mx-auto mt-5" style="max-width: 1200px;">
+    <h1 class="h2 h2-sm fw-bold">Features We Delivered</h1>
+
+    <!-- Features List -->
+    <div class="mt-4">
+      <h5 class="fw-bold fs-4">Live Radio Streaming</h5>
+      <p class="text-muted fs-5">We integrated live streaming capabilities for both national and regional radio stations, allowing users to listen to their favorite stations anytime, anywhere.</p>
+
+      <h5 class="fw-bold mt-4 fs-4">Real-Time News and Updates</h5>
+      <p class="text-muted fs-5">Built-in features to keep users informed about the latest news, events, and live sports coverage.</p>
+
+      <h5 class="fw-bold mt-4 fs-4">Diverse Content</h5>
+      <p class="text-muted fs-5">We ensured the app caters to all tastes with access to music, sports, and entertainment from various stations.</p>
+
+      <h5 class="fw-bold mt-4 fs-4">User-Friendly Interface</h5>
+      <p class="text-muted fs-5">Developed a clean, intuitive design with simple navigation, making it easy for users to discover and enjoy new stations or their long-time favorites.</p>
+
+      <h5 class="fw-bold mt-4 fs-4">Optimized for All Occasions</h5>
+      <p class="text-muted fs-5">Whether at home, on the road, or during a workout, the app is designed to provide the best experience for every moment.</p>
+
+      <h5 class="fw-bold mt-4 fs-4">Why We Built It</h5>
+      <p class="text-muted fs-5">Our goal was to create an app that enhances the way users interact with radio, making it accessible, enjoyable, and tailored to their needs. With RadioLuisteren.fm, we delivered a solution that brings the timeless appeal of radio into the digital age.</p>
+
+     
+    </div>
+  </div>
+
+ <!-- Dots -->
+  <div class="d-flex gap-2 mt-5 center" style="justify-content: center;">
+    <div class="rounded-circle" style="width:12px; height:12px;background-color: #9ca3af;"></div>
+     <div class="rounded-circle" style="width:12px; height:12px;background-color: #8a919f;"></div>
+ 
+    <div class="rounded-circle" style="width:12px; height:12px;background-color: #4b5563;"></div>
+  </div>
+
+  <!-- Why We Built It -->
+  <div class="mx-auto mt-5" style="max-width: 1200px;">
+    <h1 class="h2 h2-sm fw-bold">The Result</h1>
+    <p class="text-muted mt-3 fs-5 fs-sm-5">
+RadioLuisteren.fm is a highly functional, scalable, and visually engaging app that has transformed how users access and enjoy live radio. It stands as a testament to our commitment to delivering high-quality, user-centric solutions for our clients
+    </p>
+  </div>
+
+ <!-- Dots -->
+  <div class="d-flex gap-2 mt-5 center" style="justify-content: center;">
+    <div class="rounded-circle" style="width:12px; height:12px;background-color: #9ca3af;"></div>
+     <div class="rounded-circle" style="width:12px; height:12px;background-color: #8a919f;"></div>
+ 
+    <div class="rounded-circle" style="width:12px; height:12px;background-color: #4b5563;"></div>
+  </div>
+
+
+   
+  <!-- Why We Built It -->
+  <div class="mx-auto mt-5" style="max-width: 1200px;">
+
+    <p class="text-muted mt-3 fs-5 fs-sm-5">
+Looking for a reliable partner to bring your app idea to life? Contact us today and let’s create something extraordinary together!
+    </p>
+  </div>
+
+
+
+
+
+</div>
+
+<div class="container py-5 d-flex justify-content-center">
+  <div class="d-flex flex-wrap justify-content-center">
+    <!-- 4 images -->
+    <img src="../images/games/41 1.png" class="scroll-img" alt="g1">
+    <img src="../images/games/42 1.png" class="scroll-img" alt="g2">
+    <img src="../images/games/43 1.png" class="scroll-img" alt="g3">
+    <img src="../images/games/44 1.png" class="scroll-img" alt="g4">
+  </div>
+</div>
+
+
+
+
+
+
+
+
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

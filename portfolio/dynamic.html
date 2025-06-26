@@ -12,15 +12,50 @@
 <!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="css/topbar.css">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../css/topbar.css">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&family=Playwrite+AU+SA:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
     * {
  font-family: "Barlow" , sans-serif;
 }
+ .scroll-wrapper {
+      overflow: hidden;
+      width: 100%;
+      max-width: 1250px;
+      margin: 0 auto;
+    }
 
+    .scroll-track {
+      display: flex;
+      width: calc(210px * 16 + 24px * 16); /* width * number of images + padding */
+      animation: scrollLoop 30s linear infinite;
+    }
+
+    .scroll-img {
+      width: 210px;
+      height: 400px;
+      object-fit: contain;
+      border-radius: 12px;
+      padding: 12px;
+      flex-shrink: 0;
+    }
+
+    @keyframes scrollLoop {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    @media (min-width: 768px) {
+      .scroll-track {
+        animation: scrollLoop 30s linear infinite;
+      }
+    }
   </style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
 
@@ -75,16 +110,16 @@
 <!-- Navbar -->
 <nav class="z-50 p-1 Navbar-main" style="margin-top: -4px;">
   <div class="container d-flex justify-content-between align-items-center mt-2 mb-2" style="padding-bottom: 0%;">
-    <img src="./images/logo-2-yellow.png" alt="Logo" class="LOGOSSS" />
+    <img src="../images/logo-2-yellow.png" alt="Logo" class="LOGOSSS" />
 
     <!-- Desktop Nav -->
     <div class="d-none d-md-flex gap-5 align-items-center pp1ff">
-      <a href="index.html" class="nav-link-animate " style="font-size: 18px;">Home</a>
-      <a href="about.html" class="nav-link-animate" style="font-size: 18px;">About Us</a>
+      <a href="../index.html" class="nav-link-animate " style="font-size: 18px;">Home</a>
+      <a href="../about.html" class="nav-link-animate" style="font-size: 18px;">About Us</a>
 
       <!-- Dropdown -->
 <div class="position-relative dropdown-hover" style="position: relative; display: inline-block;">
-  <a href="service.html" class="nav-link-animate dropdown-toggl border-0 bg-transparent d-inline-block" style="font-size: 18px; text-decoration: none;">
+  <a href="../service.html" class="nav-link-animate dropdown-toggl border-0 bg-transparent d-inline-block" style="font-size: 18px; text-decoration: none;">
     Services <i class="fa-solid fa-chevron-down" style="font-size: 16px;"></i>
   </a>
 
@@ -100,23 +135,23 @@
     transition: all 0.9s ease;
     z-index: 999;
   ">
-    <a href="appdev.html" style="display: block; color: black; text-decoration: none; padding: 8px 16px; font-size: 18px;">App Development</a>
-    <a href="webdev.html" style="display: block; color: black; text-decoration: none; padding: 8px 16px; font-size: 18px;">Web Development</a>
-    <a href="gamedev.html" style="display: block; color: black; text-decoration: none; padding: 8px 16px; font-size: 18px;">Game Development</a>
-    <a href="digital.html" style="display: block; color: black; text-decoration: none; padding: 8px 16px; font-size: 18px;">Digital Marketing</a>
-    <a href="uiux.html" style="display: block; color: black; text-decoration: none; padding: 8px 16px; font-size: 18px;">UI/UX Design</a>
+    <a href="../appdev.html" style="display: block; color: black; text-decoration: none; padding: 8px 16px; font-size: 18px;">App Development</a>
+    <a href="../webdev.html" style="display: block; color: black; text-decoration: none; padding: 8px 16px; font-size: 18px;">Web Development</a>
+    <a href="../gamedev.html" style="display: block; color: black; text-decoration: none; padding: 8px 16px; font-size: 18px;">Game Development</a>
+    <a href="../digital.html" style="display: block; color: black; text-decoration: none; padding: 8px 16px; font-size: 18px;">Digital Marketing</a>
+    <a href="../digital.html" style="display: block; color: black; text-decoration: none; padding: 8px 16px; font-size: 18px;">UI/UX Design</a>
   </div>
 </div>
 
 
-      <a href="career.html" class="nav-link-animate" style="font-size: 18px;">Career</a>
-      <a href="portfolio.html" class="nav-link-animate" style="font-size: 18px;">Portfolio</a>
-      <a href="contact.html" class="nav-link-animate" style="font-size: 18px;">Contact Us</a>
+      <a href="../career.html" class="nav-link-animate" style="font-size: 18px;">Career</a>
+      <a href="../portfolio.html" class="nav-link-animate" style="font-size: 18px;">Portfolio</a>
+      <a href="../contact.html" class="nav-link-animate" style="font-size: 18px;">Contact Us</a>
     </div>
 
     <!-- CTA Button -->
     <div class="d-none d-md-block">
-      <a href="takesolutin.html" class="MY_BTN" style="font-size: 17px;">Take Solution</a>
+      <a href="../takesolutin.html" class="MY_BTN" style="font-size: 17px;">Take Solution</a>
     </div>
 
     <!-- Mobile Toggle -->
@@ -133,11 +168,11 @@
     </div>
 
     <nav class="d-flex flex-column gap-3">
-      <a href="index.html" class="text-white text-decoration-none border-bottom pb-1 ">HOME</a>
-      <a href="about.html" class="text-white text-decoration-none border-bottom pb-1">ABOUT US</a>
-      <a href="career.html" class="text-white text-decoration-none border-bottom pb-1">CAREER</a>
-      <a href="portfolio.html" class="text-white text-decoration-none border-bottom pb-1">PORTFOLIO</a>
-      <a href="contact.html" class="text-white text-decoration-none border-bottom pb-1">CONTACT US</a>
+      <a href="../index.html" class="text-white text-decoration-none border-bottom pb-1 ">HOME</a>
+      <a href="../about.html" class="text-white text-decoration-none border-bottom pb-1">ABOUT US</a>
+      <a href="../career.html" class="text-white text-decoration-none border-bottom pb-1">CAREER</a>
+      <a href="../portfolio.html" class="text-white text-decoration-none border-bottom pb-1">PORTFOLIO</a>
+      <a href="../contact.html" class="text-white text-decoration-none border-bottom pb-1">CONTACT US</a>
 
       <div>
         <button style="margin-top: -10px;margin-left: -10px;"  class="btn w-100 text-white text-start d-flex justify-content-between align-items-center " onclick="toggleServiceDropdown()">
@@ -145,15 +180,15 @@
           <i class="fas fa-angle-down" id="dropdownIcon"></i>
         </button>
         <div class="mt-2 d-none" id="mobileServiceDropdown">
-          <a href="appdev.html" class="text-white d-block border-bottom pb-1 ps-3" style="text-decoration: none;">APP DEVELOPMENT</a>
-          <a href="webdev.html" class="text-white d-block border-bottom pb-1 ps-3" style="text-decoration: none;">WEB DEVELOPMENT</a>
-          <a href="gamedev.html" class="text-white d-block border-bottom pb-1 ps-3" style="text-decoration: none;">GAME DEVELOPMENT</a>
-          <a href="digital.html" class="text-white d-block border-bottom pb-1 ps-3" style="text-decoration: none;">DIGITAL MARKETING</a>
-          <a href="uiux.html" class="text-white d-block border-bottom pb-1 ps-3" style="text-decoration: none;">UI/UX DESIGN</a>
+          <a href="../appdev.html" class="text-white d-block border-bottom pb-1 ps-3" style="text-decoration: none;">APP DEVELOPMENT</a>
+          <a href="../webdev.html" class="text-white d-block border-bottom pb-1 ps-3" style="text-decoration: none;">WEB DEVELOPMENT</a>
+          <a href="../gamedev.html" class="text-white d-block border-bottom pb-1 ps-3" style="text-decoration: none;">GAME DEVELOPMENT</a>
+          <a href="../digital.html" class="text-white d-block border-bottom pb-1 ps-3" style="text-decoration: none;">DIGITAL MARKETING</a>
+          <a href="../uiux.html" class="text-white d-block border-bottom pb-1 ps-3" style="text-decoration: none;">UI/UX DESIGN</a>
         </div>
       </div>
 
-      <a href="takesolutin.html" class="MY_BTN mt-3 w-100">Take Solution</a>
+      <a href="../takesolutin.html" class="MY_BTN mt-3 w-100">Take Solution</a>
 
       <div class="location-mobile mt-3">
         <i class="fa-solid fa-envelope"></i>
@@ -173,10 +208,178 @@
     </nav>
   </div>
 </nav>
+<!-- -------------------------------hero-------------------------------------- -->
+<div class="position-relative w-100 text-white mt-5" style="height: 400px;">
+  <!-- Background Image -->
+  <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-cover bg-center" style="background-image: url('../images/abouts.jpg');object-fit: cover;background-size: cover;">
+    <!-- Black Overlay -->
+    <div class="position-absolute top-0 start-0 w-100 h-100 bg-black" style="opacity: 0.7;"></div>
+  </div>
+
+  
+  <div class="position-relative z-1 px-3 px-sm-4 px-md-5 d-flex flex-column justify-content-center h-100">
+    <h1 class="fw-bold mb-2" style="font-size: 32px;">
+      <span class="d-none d-sm-inline d-md-none" style="font-size: 40px;">Dynamic Event Management App</span>
+      <span class="d-none d-md-inline d-lg-none" style="font-size: 50px;">Dynamic Event Management App</span>
+      <span class="d-none d-lg-inline" style="font-size: 55px;">Dynamic Event Management App</span>
+    </h1>
+
+    <!-- Breadcrumb -->
+    <div class="d-flex align-items-center gap-2" style="font-size: 1rem;">
+      <span style="color: #ee8624;">Home</span>
+      <i class="fa-solid fa-angles-right"></i>
+      <span style="color: #ee8624;">Portfolio</span>
+      <i class="fa-solid fa-angles-right"></i>
+      <span class="text-light">Dynamic Event Management App</span>
+    </div>
+  </div>
+</div>
 
 
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<div class="container px-4 px-sm-5 mt-5">
+
+  <!-- Game Image -->
+  <div class="w-100 mx-auto mt-5 center" style="max-width: 1200px;">
+    <img src="../images/resource/event.png" alt="Tic Tac Toe Game Preview" class="img-fluid rounded shadow mt-5 center">
+  </div>
+
+  <!-- Introduction -->
+  <div class="mx-auto mt-4" style="max-width: 1200px;">
+    <h1 class="h2 h2-sm fw-bold mt-5">Dynamic Event Management App – Simplify & Elevate Event Planning</h1>
+    <p class="text-muted mt-3 fs-5 fs-sm-5">
+At BrainArt IT Solution, we develop innovative and efficient tools that make event planning seamless. Our Dynamic Event Management App is designed to provide an intuitive, streamlined, and feature-rich solution for managing events of any scale, from corporate conferences and weddings to festivals and private gatherings.
+
+
+    </p>
+  </div>
+
+  <!-- Dots -->
+  <div class="d-flex gap-2 mt-5 center" style="justify-content: center;">
+    <div class="rounded-circle" style="width:12px; height:12px;background-color: #9ca3af;"></div>
+     <div class="rounded-circle" style="width:12px; height:12px;background-color: #8a919f;"></div>
+ 
+    <div class="rounded-circle" style="width:12px; height:12px;background-color: #4b5563;"></div>
+  </div>
+
+  <!-- About the App -->
+  <div class="mx-auto mt-3" style="max-width: 1200px;">
+    <h1 class="h2 h2-sm fw-bold">About the App</h1>
+    <p class="text-muted mt-3 fs-5 fs-sm-5">
+Organizing an event requires coordination, real-time updates, and effortless communication. Our Dynamic Event Management App takes the hassle out of event planning, ensuring smooth execution and enhanced attendee engagement.
+    </p>
+  </div>
+
+<!-- Dots -->
+  <div class="d-flex gap-2 mt-5 center" style="justify-content: center;">
+    <div class="rounded-circle" style="width:12px; height:12px;background-color: #9ca3af;"></div>
+     <div class="rounded-circle" style="width:12px; height:12px;background-color: #8a919f;"></div>
+ 
+    <div class="rounded-circle" style="width:12px; height:12px;background-color: #4b5563;"></div>
+  </div>
+
+  <!-- Key Features -->
+  <div class="mx-auto mt-5" style="max-width: 1200px;">
+    <h1 class="h2 h2-sm fw-bold">Key Features</h1>
+
+    <!-- Features List -->
+    <div class="mt-4">
+      <h5 class="fw-bold fs-4">Event Planning & Scheduling</h5>
+      <p class="text-muted fs-5">Easily create, edit, and manage event schedules with a simple interface.</p>
+
+      <h5 class="fw-bold mt-4 fs-4">Attendee Management</h5>
+      <p class="text-muted fs-5">Track registrations, send invitations, and manage guest lists effortlessly.</p>
+
+      <h5 class="fw-bold mt-4 fs-4">Real-Time Notifications</h5>
+      <p class="text-muted fs-5">Send instant updates, reminders, and announcements to attendees.</p>
+
+      <h5 class="fw-bold mt-4 fs-4">Venue & Resource Management</h5>
+      <p class="text-muted fs-5">Efficiently manage venues, equipment, and staff assignments.</p>
+
+      <h5 class="fw-bold mt-4 fs-4">Customizable Ticketing & Payments</h5>
+      <p class="text-muted fs-5">Integrated secure payment gateways for hassle-free ticket sales and transactions.</p>
+
+      <h5 class="fw-bold mt-4 fs-4">Live Engagement Tools</h5>
+      <p class="text-muted fs-5">Enhance audience interaction with Q&A sessions, live polls, and real-time feedback collection.</p>
+
+      <h5 class="fw-bold mt-4 fs-4">Multi-Device Compatibility</h5>
+      <p class="text-muted fs-5">Works seamlessly across Android, iOS, and web platforms for maximum accessibility.</p>
+
+    </div>
+  </div>
+
+ <!-- Dots -->
+  <div class="d-flex gap-2 mt-5 center" style="justify-content: center;">
+    <div class="rounded-circle" style="width:12px; height:12px;background-color: #9ca3af;"></div>
+     <div class="rounded-circle" style="width:12px; height:12px;background-color: #8a919f;"></div>
+ 
+    <div class="rounded-circle" style="width:12px; height:12px;background-color: #4b5563;"></div>
+  </div>
+
+  <!-- Why We Built It -->
+  <div class="mx-auto mt-5" style="max-width: 1200px;">
+    <h1 class="h2 h2-sm fw-bold">Why Choose BrainArt IT Solution?</h1>
+    <p class="text-muted mt-3 fs-5 fs-sm-5">
+We create high-performance, user-centric applications that add real value. Our Dynamic Event Management App ensures effortless event organization, smooth execution, and maximum attendee engagement, making every event a success.
+    </p>
+  </div>
+
+ <!-- Dots -->
+  <div class="d-flex gap-2 mt-5 center" style="justify-content: center;">
+    <div class="rounded-circle" style="width:12px; height:12px;background-color: #9ca3af;"></div>
+     <div class="rounded-circle" style="width:12px; height:12px;background-color: #8a919f;"></div>
+ 
+    <div class="rounded-circle" style="width:12px; height:12px;background-color: #4b5563;"></div>
+  </div>
+
+  <!-- Conclusion -->
+  <div class="mx-auto mt-5" style="max-width: 1200px;">
+    <h1 class="h2 h2-sm fw-bold">Have an Event Management App Idea? Let’s Make It Happen!</h1>
+    <h5 class="text-muted mt-3" style="font-size: 20px;">
+     
+At BrainArt IT Solution, we specialize in custom app development to meet your unique needs. 🚀 Let’s build something exceptional—Contact us today!
+    </h5>
+  </div>
+
+
+
+ 
+
+
+<div class="container- py-5">
+  <div class="scroll-wrapper">
+    <div class="scroll-track">
+      <!-- 8 images + duplicated 8 images for seamless scroll -->
+      <img src="../images/resource/Home _ Default (2) 2.png" class="scroll-img" alt="g1">
+      <img src="../images/resource/Home _ Select Option (1) 2.png" class="scroll-img" alt="g1">
+      <img src="../images/resource/Provider (1) 1.png" class="scroll-img" alt="g1">
+      <img src="../images/resource/Sign In (1) 1.png" class="scroll-img" alt="g1">
+      <img src="../images/resource/Edit Profile (1) 1.png" class="scroll-img" alt="g1">
+      <img src="../images/resource/All Cards (1) 1.png" class="scroll-img" alt="g1">
+      <img src="../images/resource/Add Card Details (1) 1.png" class="scroll-img" alt="g1">
+      <img src="../images/resource/Manage Notifications 2.png" class="scroll-img" alt="g1">
+      <img src="../images/resource/Home _ Booking Done (3) 1.png" class="scroll-img" alt="g1">
+   
+
+      <!-- Duplicate for seamless loop -->
+   <img src="../images/resource/Home _ Default (2) 2.png" class="scroll-img" alt="g1">
+      <img src="../images/resource/Home _ Select Option (1) 2.png" class="scroll-img" alt="g1">
+      <img src="../images/resource/Provider (1) 1.png" class="scroll-img" alt="g1">
+      <img src="../images/resource/Sign In (1) 1.png" class="scroll-img" alt="g1">
+      <img src="../images/resource/Edit Profile (1) 1.png" class="scroll-img" alt="g1">
+      <img src="../images/resource/All Cards (1) 1.png" class="scroll-img" alt="g1">
+      <img src="../images/resource/Add Card Details (1) 1.png" class="scroll-img" alt="g1">
+      <img src="../images/resource/Manage Notifications 2.png" class="scroll-img" alt="g1">
+      <img src="../images/resource/Home _ Booking Done (3) 1.png" class="scroll-img" alt="g1">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
