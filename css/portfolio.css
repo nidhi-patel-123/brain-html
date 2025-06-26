@@ -1,0 +1,13 @@
+
+  @media (max-width: 1104px) {
+    .forms {
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+  }
+  @media (max-width: 1102px) {
+    .img1 {
+      object-fit: contain;
+      height:100%;
+    }
+  }

@@ -14,6 +14,7 @@
   
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="css/topbar.css">
+  <link rel="stylesheet" href="css/portfolio.css">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&family=Playwrite+AU+SA:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -173,10 +174,150 @@
     </nav>
   </div>
 </nav>
+<!-- -------------------------hero----------------------------------------- -->
+ <!-- Portfolio Hero Section -->
+<div class="position-relative w-100 text-white mt-5" style="height: 400px;">
+  <!-- Background Image -->
+  <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-75" style="
+    background-image: url('images/main-slider/portfolio.jpg');
+    background-size: cover;
+    background-position: center;
+  ">
+    <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0,0,0,0.7);"></div>
+  </div>
+
+  <!-- Content -->
+  <div class="position-relative z-1 h-100 d-flex align-items-center ps-4 ps-md-5">
+    <div class="ms-3 ms-md-5">
+      <h1 class="display-4 fw-bold">Portfolio</h1>
+      <div class="d-flex align-items-center gap-2 mt-2 fs-6">
+        <span style="color: #ee8624;">Home</span>
+        <span class="text-white"><i class="fa-solid fa-angles-right"></i></span>
+        <span class="text-light">Portfolio</span>
+      </div>
+    </div>
+  </div>
+</div>
 
 
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<div class="container my-5">
+  <!-- Project 1 -->
+  <div class="row justify-content-center align-items-center mb-5 forms mt-5">
+    <div class="col-12 col-md-5">
+      <img src="images/background/Frame 3.png" alt="TIC TAC TOE PRO" class="img-fluid shadow-lg img1">
+    </div>
+    <div class="col-12 col-md-5 text-md-start mt-3 mt-md-0">
+      <h2 class="fs-3 fw-bold mb-2">TIC TAC TOE PRO</h2>
+      <p class="text-dark mb-3" style="font-size: 17px;">
+        Experience the ultimate version of the classic Tic Tac Toe game! With advanced features, sleek design, and engaging gameplay, this app offers fun for all ages. Play against AI with adjustable difficulty levels or challenge your friends in multiplayer mode.
+      </p>
+      <a href="/TicTac" class="btn ostech-btn text-white" style="border-radius: 0%;">
+        Read More <i class="fa-solid fa-arrow-right ms-1"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Project 2 (reverse order) -->
+  <div class="row justify-content-center align-items-center mb-5 forms">
+    <div class="col-12 col-md-5 order-md-2">
+      <img src="images/background/frame 4.png" alt="Photo Recovery & Data Recovery" class="img-fluid shadow-lg img1">
+    </div>
+    <div class="col-12 col-md-5 order-md-1 text-md-start mt-3 mt-md-0">
+      <h2 class="fs-3 fw-bold mb-2">Photo Recovery & Data Recovery</h2>
+      <p class="text-dark mb-3" style="font-size: 17px;">
+        We develop cutting-edge Photo Recovery apps to help you restore lost or deleted photos seamlessly. Our solutions are fast, secure, and designed for ultimate ease of use.
+      </p>
+      <a href="/photo" class="btn ostech-btn text-white" style="border-radius: 0%;">
+        Read More <i class="fa-solid fa-arrow-right ms-1"></i>
+      </a>
+    </div>
+  </div>
+
+    <!-- Project 3 -->
+  <div class="row justify-content-center align-items-center mb-5 forms mt-5">
+    <div class="col-12 col-md-5">
+      <img src="images/background/Frame 5.png" alt="TIC TAC TOE PRO" class="img-fluid shadow-lg img1">
+    </div>
+    <div class="col-12 col-md-5 text-md-start mt-3 mt-md-0">
+      <h2 class="fs-3 fw-bold mb-2">Radio Luisteren.fm: Live radio</h2>
+      <p class="text-dark mb-3" style="font-size: 17px;">
+    We develop custom RadioLuisteren.fm solutions for clients, offering seamless live radio streaming experiences. Tailored for your audience, ensuring reliable access to music, news, and more.
+      </p>
+      <a href="/TicTac" class="btn ostech-btn text-white" style="border-radius: 0%;">
+        Read More <i class="fa-solid fa-arrow-right ms-1"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Project 4 (reverse order) -->
+  <div class="row justify-content-center align-items-center mb-5 forms">
+    <div class="col-12 col-md-5 order-md-2">
+      <img src="images/resource/event.png" alt="Photo Recovery & Data Recovery" class="img-fluid shadow-lg img1">
+    </div>
+    <div class="col-12 col-md-5 order-md-1 text-md-start mt-3 mt-md-0">
+      <h2 class="fs-3 fw-bold mb-2">Dynamic Event Management App</h2>
+      <p class="text-dark mb-3" style="font-size: 17px;">
+We develop and design Dynamic Event Management Apps that streamline event planning, attendee management, and real-time coordination for a seamless experience.
+      </p>
+      <a href="/photo" class="btn ostech-btn text-white" style="border-radius: 0%;">
+        Read More <i class="fa-solid fa-arrow-right ms-1"></i>
+      </a>
+    </div>
+  </div>
+
+    <!-- Project 5 -->
+  <div class="row justify-content-center align-items-center mb-5 forms mt-5">
+    <div class="col-12 col-md-5">
+      <img src="images/background/frame6.jpg.png" alt="TIC TAC TOE PRO" class="img-fluid shadow-lg img1">
+    </div>
+    <div class="col-12 col-md-5 text-md-start mt-3 mt-md-0">
+      <h2 class="fs-3 fw-bold mb-2">Rayhan Medical Complex App</h2>
+      <p class="text-dark mb-3" style="font-size: 17px;">
+The Rayhan Medical Complex App is designed to provide a seamless and user-friendly healthcare experience. From booking appointments and accessing medical records to telemedicine consultations, this app ensures that quality healthcare is always within reach.
+      </p>
+      <a href="/TicTac" class="btn ostech-btn text-white" style="border-radius: 0%;">
+        Read More <i class="fa-solid fa-arrow-right ms-1"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Project 6 (reverse order) -->
+  <div class="row justify-content-center align-items-center mb-5 forms">
+    <div class="col-12 col-md-5 order-md-2">
+      <img src="images/background/frame7.jpg.png" alt="Photo Recovery & Data Recovery" class="img-fluid shadow-lg img1">
+    </div>
+    <div class="col-12 col-md-5 order-md-1 text-md-start mt-3 mt-md-0">
+      <h2 class="fs-3 fw-bold mb-2">NextStep Freelancing</h2>
+      <p class="text-dark mb-3" style="font-size: 17px;">
+       NextStep Freelancing is a comprehensive platform designed to help freelancers launch, grow, and succeed in their careers. From expert resources and skill development courses to client connections and freelancing insights, we provide everything you need to thrive in the competitive freelance market.
+      </p>
+      <a href="/photo" class="btn ostech-btn text-white" style="border-radius: 0%;">
+        Read More <i class="fa-solid fa-arrow-right ms-1"></i>
+      </a>
+    </div>
+  </div>
+
+
+    <!-- Project 7 -->
+  <div class="row justify-content-center align-items-center mb-5 forms mt-5">
+    <div class="col-12 col-md-5">
+      <img src="images/background/frame8.jpg.png" alt="TIC TAC TOE PRO" class="img-fluid shadow-lg img1">
+    </div>
+    <div class="col-12 col-md-5 text-md-start mt-3 mt-md-0">
+      <h2 class="fs-3 fw-bold mb-2">One More Step Multimedia Education</h2>
+      <p class="text-dark mb-3" style="font-size: 17px;">
+At OMS Multimedia, we specialize in delivering cutting-edge digital solutions tailored to your business needs. we help businesses enhance their digital presence with impactful and engaging content. Let’s bring your vision to life with creativity and technology!
+      </p>
+      <a href="/TicTac" class="btn ostech-btn text-white" style="border-radius: 0%;">
+        Read More <i class="fa-solid fa-arrow-right ms-1"></i>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
