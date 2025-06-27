@@ -14,6 +14,7 @@
   
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="css/topbar.css">
+  <link rel="stylesheet" href="css/footer.css">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&family=Playwrite+AU+SA:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -116,6 +117,96 @@
   z-index: 1;
   color: white;
 
+}
+/* ------------------------------------------------------------- */
+  /* Section Styling */
+    .career-section {
+      padding: 60px 15px;
+      text-align: center;
+    }
+
+    .career-section h6 {
+      font-weight: 600;
+      color: #666;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .career-section h2 {
+      font-weight: 700;
+      margin: 10px 0 20px;
+    }
+
+    .career-section p.lead {
+      color: #555;
+      margin-bottom: 40px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Career Card Styling */
+    .career-card {
+      text-align: start;
+      transition: box-shadow 0.3s ease;
+           box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    }
+
+   
+    .career-card h5 {
+      font-weight: 700;
+      margin-top: 20px;
+    }
+
+    .career-card p {
+      color: #444;
+      font-size: 16px;
+      margin: 15px 0;
+    }
+
+    .career-card a {
+      color: #000;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .career-card a:hover {
+      text-decoration: underline;
+    }
+
+    /* REVERSED Image Hover Effect */
+    .career-img {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+      object-fit: cover;
+      transition: transform 0.4s ease, filter 0.4s ease;
+      filter: grayscale(0%); /* NORMAL: Color */
+    }
+
+    .career-img:hover {
+    
+      filter: grayscale(100%); /* ON HOVER: Grayscale */
+    }
+    /* ----------------------------------- */
+.job-strip .job-entry {
+  border-left: 4px solid transparent;
+  border-radius: 10px;
+  background: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.job-strip .job-entry {
+  border-left: 4px solid #ee8624;
+  background: #f9f9f9;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.left-bar {
+  width: 6px;
+  height: 50px;
+  /* background: #ee8624; */
+  border-radius: 4px;
 }
 
 
@@ -310,7 +401,7 @@
 
       <!-- Right Side: Text Content -->
       <div class="col-md-6 ps-md-5">
-        <div class="d-flex align-items-center mb-4">
+        <div class="d-flex align-items-center mb-3">
           <img src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/sec-title-s-1.png"
                alt="sec-title-s-1"
                title="sec-title-s-1"
@@ -319,18 +410,18 @@
           <h6 class="sec-title__tagline mb-0">Join Our Team</h6>
         </div>
 
-        <h1 class="h2 fw-bold text-dark mb-3 mt-2">
+        <h1 class="h2 fw-bold text-dark mb-3 ">
           Welcome, Innovators! Shape Your Future with Us
         </h1>
-        <p class="text-muted fw-semibold">
+        <p class="text-muted fw-semibold mt-4">
           At BrainArt IT Solution, we believe in innovation, collaboration, and personal growth. Join our passionate team of professionals who are committed to making a difference through technology. Whether you're a seasoned expert or a fresh talent, we offer an environment where creativity and expertise thrive.
         </p>
-        <p class="text-muted mt-3">
+        <p class="text-muted mt-4">
           We're looking for creative minds and tech enthusiasts who thrive in a collaborative environment. If you're passionate about technology and learning, let's grow together!
         </p>
 
         <div class="mt-4">
-          <a href="contact.html" class="btn btn-primary ostech-btn" style="border-radius: 0%;color: white;">More About Us</a>
+          <a href="contact.html" class="btn btn-primary ostech-btn mt-4" style="border-radius: 0%;color: white;">More About Us</a>
         </div>
       </div>
     </div>
@@ -436,6 +527,96 @@
 
 
 
+<!-- -------------------------------------------------------------------------------------- -->
+
+<section class="career-section">
+
+  <h2>CAREERS AT  <span style="color: #ee8624;">BRAINART IT SOLUTION</span></h2>
+  <p class="lead">
+    We're always adding new faces with unique backgrounds and perspectives to our Credera team.
+    Explore our open positions below.
+  </p>
+
+  <div class="container">
+    <div class="row g-4">
+      <!-- Students Card -->
+      <div class="col-md-6">
+        <div class="career-card p-4">
+          <img src="https://img.freepik.com/free-vector/team-leader-teamwork-concept_74855-6671.jpg?uid=R195395238&ga=GA1.1.1975205788.1747372593&semt=ais_items_boosted&w=740" alt="Students" class="career-img" style="height: 300px;">
+          <h5>
+Flutter Developer</h5>
+          <p>
+            Start your career with a wide range of client experiences while continuing to deepen your
+            skills alongside leaders who are deeply invested in your growth and development.
+          </p>
+   
+        <div >
+          <a href="contact.html" class="btn btn-primary ostech-btn mt-4" style="border-radius: 0%;color: white;text-decoration: none;">APPLY NOW</a>
+        </div>
+        </div>
+      </div>
+
+      <!-- Experienced Professionals Card -->
+      <div class="col-md-6">
+        <div class="career-card p-4">
+          <img src="https://img.freepik.com/free-vector/tiny-developers-programming-website-internet-platform-flat-vector-illustration-cartoon-programmers-near-screen-with-open-code-script-software-development-digital-technology-concept_74855-10168.jpg?t=st=1751022587~exp=1751026187~hmac=f18286dca3dccc9cc1e06d002329e47bc045b6214c6d766e40630428b73fafca&w=1380" alt="Professionals" class="career-img" style="height: 300px;object-fit: cover;">
+          <h5>
+Full Stack Developer</h5>
+          <p>
+            Join us as we make an extraordinary impact on our clients, colleagues, and communities.
+            We’re looking for experienced professionals who are passionate about delivering exceptional
+            client service.
+          </p>
+     
+        <div>
+          <a href="contact.html" class="btn btn-primary ostech-btn mt-4" style="border-radius: 0%;color: white;text-decoration: none;">APPLY NOW</a>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- <div class="container py-5">
+  <h2 class="text-center mb-5 fw-bold text-dark">Career Opportunities at BrainArt IT Solution</h2>
+
+
+  <div class="job-strip d-flex flex-column gap-4">
+
+
+    <div class="job-entry p-4 d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between shadow-sm">
+      <div class="d-flex align-items-center mb-3 mb-md-0">
+        <div class="left-bar me-3"></div>
+        <div>
+          <h5 class="mb-1 fw-bold">Flutter Developer</h5>
+          <p class="mb-0 text-muted small">
+            Experience: Fresher &nbsp; | &nbsp; Openings: 1 &nbsp; | &nbsp; Qualification: Graduate
+          </p>
+        </div>
+      </div>
+         <a href="#" class="btn btn-primary ostech-btn rounded-pill py-3" style="color: white;">Apply</a>
+    </div>
+
+   
+    <div class="job-entry p-4 d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between shadow-sm">
+      <div class="d-flex align-items-center mb-3 mb-md-0">
+        <div class="left-bar me-3"></div>
+        <div>
+          <h5 class="mb-1 fw-bold">Full Stack Developer</h5>
+          <p class="mb-0 text-muted small">
+            Experience: Fresher &nbsp; | &nbsp; Openings: 1 &nbsp; | &nbsp; Qualification: Graduate
+          </p>
+        </div>
+      </div>
+      <a href="#" class="btn btn-primary ostech-btn rounded-pill py-3" style="color: white;">Apply</a>
+    </div>
+
+  </div>
+</div> -->
 
 
 
@@ -450,13 +631,128 @@
 
 
 
+<!-- --------------------------footer-------------------------------- -->
+ <!-- Footer Start -->
+<footer class="main-footer">
+  <div class="bg-image"></div>
 
+  <div class="widgets-section">
+    <div class="containerrr">
+      <div class="row footer-responsive">
 
+        <!-- About Widget -->
+        <div class="footer-column col-xl-3 col-lg-12 col-md-6 col-sm-12">
+          <div class="footer-widget about-widget">
+            <div class="logo">
+              <a href="index.html" style="text-decoration: none;">
+                <img src="images/background/footer-logo.png" alt="Footer Logo" style="width: 200px;" />
+              </a>
+            </div>
+            <div class="text">
+              BrainArt IT Solution is a leading software development company offering top-notch app development,
+              web development, and design services.
+            </div>
+           <ul class="social-icon-two d-flex gap-2" style="padding-left: 0; margin: 0;">
+  <li style="list-style: none;">
+    <a href="https://www.linkedin.com/company/brainart-it-solution/" target="_blank" style="text-decoration: none;">
+      <i class="fa-brands fa-linkedin-in"></i>
+    </a>
+  </li>
+  <li style="list-style: none;">
+    <a href="https://www.instagram.com/brainart_it_solution/" target="_blank" style="text-decoration: none;">
+      <i class="fab fa-instagram"></i>
+    </a>
+  </li>
+  <li style="list-style: none;">
+    <a href="https://www.facebook.com/people/Brainart-it-soution/" target="_blank" style="text-decoration: none;">
+      <i class="fab fa-facebook"></i>
+    </a>
+  </li>
+  <li style="list-style: none;">
+    <a href="https://join.skype.com/invite/vHEhLX46XvDt" target="_blank" style="text-decoration: none;">
+      <i class="fab fa-skype"></i>
+    </a>
+  </li>
+</ul>
 
+          </div>
+        </div>
 
+        <!-- Company Links -->
+        <div class="footer-column col-xl-3 col-lg-4 col-md-6 col-sm-12" style="text-decoration: none;">
+          <div class="footer-widget">
+            <h3 class="widget-title">Company</h3>
+      <ul class="user-links" style="padding-left: 0; margin-bottom: 0;">
+  <li style="list-style: none;">
+    <a href="about.html" style="text-decoration: none;">About Us</a>
+  </li>
+  <li style="list-style: none;">
+    <a href="services.html" style="text-decoration: none;">Services</a>
+  </li>
+  <li style="list-style: none;">
+    <a href="career.html" style="text-decoration: none;">Career</a>
+  </li>
+  <li style="list-style: none;">
+    <a href="portfolio.html" style="text-decoration: none;">Portfolio</a>
+  </li>
+  <li style="list-style: none;">
+    <a href="contact.html" style="text-decoration: none;">Contact Us</a>
+  </li>
+</ul>
 
+          </div>
+        </div>
 
+        <!-- Contact Info -->
+        <div class="footer-column col-xl-3 col-lg-4 col-md-6 col-sm-12">
+          <div class="footer-widget contact-widget">
+            <h3 class="widget-title">Contact</h3>
+            <div class="widget-content">
+              <div class="text">
+                440, Opera Business Hub, Lajamni Chowk, Digital Valley, Surat, Gujarat -394101
+              </div>
+           <ul class="contact-info" style="padding-left: 0; margin-bottom: 0;">
+  <li style="list-style: none; text-decoration: none;">
+    <i class="fa fa-envelope"></i>
+    <a href="mailto:info@brainartit.in" style="text-decoration: none;">info@brainartit.in</a>
+  </li>
+  <li style="list-style: none; text-decoration: none;">
+    <i class="fa fa-phone-square"></i>
+    <a href="tel:+919327228578" style="text-decoration: none;">+91 93272 28578</a>
+  </li>
+</ul>
 
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery -->
+        <div class="footer-column col-xl-3 col-lg-4 col-md-6 col-sm-12">
+          <div class="footer-widget">
+            <h3 class="widget-title">Gallery</h3>
+            <div class="row d-flex g-2">
+              <div class="col-4"><img src="images/footer/8.png" alt="" /></div>
+              <div class="col-4"><img src="images/footer/2.jpeg" alt="" /></div>
+              <div class="col-4"><img src="images/footer/7.png" alt="" /></div>
+              <div class="col-4"><img src="images/footer/1.jpeg" alt="" /></div>
+              <div class="col-4"><img src="images/footer/3 1.png" alt="" /></div>
+              <div class="col-4"><img src="images/footer/4.png" alt="" /></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Copyright -->
+<div style="padding: 10px; background-color: black;">
+  <p style="text-align: center; margin-bottom: 0px; color: white;">
+    © 2025 BrainArt IT Solution All Rights Reserved
+  </p>
+</div>
+<!-- Footer End -->
 
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
