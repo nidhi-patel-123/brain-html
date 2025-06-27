@@ -22,6 +22,101 @@
 }
 
   </style>
+  <style>
+.why-join-us-flip {
+  background-color: #f9f9f9;
+}
+
+.why-join-us-flip h2 {
+  font-size: 2.5rem;
+  color: #222;
+}
+
+.why-join-us-flip .highlight {
+  color: #ee8624;
+}
+
+.flip-card {
+  background: transparent;
+  width: 100%;
+  height: 250px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+}
+
+.flip-card-front {
+  background: #ffffff;
+}
+
+.flip-card-front img {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+.flip-card-front h5 {
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.flip-card-back {
+  position: relative;
+  background-image: url("https://img.freepik.com/free-photo/boy-pretends-be-superhero-is-playing-as-astronaut-draw-concept_1150-19566.jpg?uid=R195395238&ga=GA1.1.1975205788.1747372593&semt=ais_items_boosted&w=740");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  transform: rotateY(180deg);
+  text-align: center;
+  padding: 20px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 15px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.flip-card-back::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(35, 35, 35, 0.646); /* adjust this for darkness */
+  z-index: 0;
+  border-radius: 15px;
+}
+
+.flip-card-back p {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+  </style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
 
 
@@ -173,6 +268,191 @@
     </nav>
   </div>
 </nav>
+
+
+<!-- Career Hero Section -->
+<section class="position-relative w-100 text-white mt-5">
+  <!-- Background Image with Overlay -->
+  <div class="position-absolute top-0 start-0 w-100 h-100 bg-cover bg-center" 
+       style="background-image: url('images/main-slider/abouts.jpg'); z-index: 1;background-size: cover;">
+    <div class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-75"></div>
+  </div>
+
+  <!-- Content Aligned Left -->
+  <div class=" position-relative z-2 py-5" style="min-height: 400px; max-height: 400px; display: flex; align-items: center;">
+    <div class="ps-3 ps-md-5" style="margin-left: 90px;">
+      <h1 class="fw-bold display-5">Career</h1>
+      <div class="d-flex align-items-cente gap-2 mt-2 fs-6">
+        <span style="color: #ee8624;">Home</span>
+        <span class="text-white"><i class="fa-solid fa-angles-right"></i></span>
+        <span class="text-light">Career</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- CareerWhyUs Section -->
+<section class="bg-light py-5">
+  <div class="container">
+    <div class="row align-items-center wcs-001">
+
+      <!-- Left Side: Images -->
+      <div class="col-md-6 position-relative mb-4 mb-md-0 text-center">
+        <img src="./images/cc.png" alt="Meeting" class="img-fluid rounded grayscale">
+        <img src="./images/c2.webp" alt="Discussion"
+             class="position-absolute  shadow-lg rounded"
+             style="bottom: 0; right: 20px; width: 70%; max-width: 300px;height: 300px;border: 5px solid white;object-fit: cover;">
+      </div>
+
+      <!-- Right Side: Text Content -->
+      <div class="col-md-6 ps-md-5">
+        <div class="d-flex align-items-center mb-3">
+          <img src="https://ostechwp.pixydrops.com/wp-content/uploads/2024/05/sec-title-s-1.png"
+               alt="sec-title-s-1"
+               title="sec-title-s-1"
+               class="me-2 sec-title__img"
+               style="height: 8px;width: 24px;">
+          <h6 class="sec-title__tagline mb-0">Join Our Team</h6>
+        </div>
+
+        <h1 class="h2 fw-bold text-dark mb-3">
+          Welcome, Innovators! Shape Your Future with Us
+        </h1>
+        <p class="text-muted fw-semibold">
+          At BrainArt IT Solution, we believe in innovation, collaboration, and personal growth. Join our passionate team of professionals who are committed to making a difference through technology. Whether you're a seasoned expert or a fresh talent, we offer an environment where creativity and expertise thrive.
+        </p>
+        <p class="text-muted mt-3">
+          We're looking for creative minds and tech enthusiasts who thrive in a collaborative environment. If you're passionate about technology and learning, let's grow together!
+        </p>
+
+        <div class="mt-4">
+          <a href="contact.html" class="btn btn-primary ostech-btn" style="border-radius: 0%;color: white;">More About Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ----------------------------------------------------------------------------------------- -->
+<section class="why-join-us-flip py-5">
+  <div class="container text-center">
+    <h2 class="mb-4 fw-bold">Why <span class="highlight">Join Us?</span></h2>
+    <p class="mb-5 text-muted">
+      Be part of a team where innovation meets opportunity, and your growth matters.
+    </p>
+    <div class="row g-4 justify-content-center">
+      <!-- Card 1 -->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="images/new icon/career-development.png" alt="Career Growth">
+              <h5>Career Growth</h5>
+            </div>
+            <div class="flip-card-back">
+              <p>We offer real paths for internal promotions and leadership roles.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="images/new icon/time-left.png" alt="Work-Life Balance">
+              <h5>Work-Life Balance</h5>
+            </div>
+            <div class="flip-card-back">
+              <p>Flexible hours and remote options to keep you refreshed and productive.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="images/new icon/success.png" alt="Achievement">
+              <h5>Recognition</h5>
+            </div>
+            <div class="flip-card-back">
+              <p>Your hard work is celebrated through awards and shoutouts.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="images/new icon/training.png" alt="Training">
+              <h5>Continuous Learning</h5>
+            </div>
+            <div class="flip-card-back">
+              <p>We provide training, mentorship and certifications for your growth.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="images/new icon/growth.png" alt="Projects">
+              <h5>Innovative Projects</h5>
+            </div>
+            <div class="flip-card-back">
+              <p>Work on global tech products that make a real-world impact.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Card 6 -->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="images/new icon/team.png" alt="Team">
+              <h5>Collaborative Team</h5>
+            </div>
+            <div class="flip-card-back">
+              <p>Join a team that supports, inspires, and wins together.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <!-- Swiper JS -->
