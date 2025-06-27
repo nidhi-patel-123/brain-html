@@ -86,16 +86,17 @@
 
 .flip-card-back {
   position: relative;
-  background-image: url("./images/background/funfact-1-1.png");
-  background-size: cover;
+ 
+  background-image: url("https://admin.arbomex.com/wp-content/uploads/2023/02/arbomex-faq-cover-mb.jpg"); /* Ensure correct path */
+  background-size: cover;  /* Important: show full image design */
+  background-repeat: no-repeat;
   background-position: center;
-  color: rgb(40, 40, 40);
+  color: white;
   transform: rotateY(180deg);
   text-align: center;
   padding: 20px;
   font-size: 1.2rem;
   font-weight: 700;
-  /* border-radius: 15px; */
   overflow: hidden;
   z-index: 1;
 }
@@ -104,16 +105,18 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(126, 126, 126, 0); /* adjust this for darkness */
+  /* NO overlay to hide design */
+  background-color: transparent;
+  background-color: #252525a2;
   z-index: 0;
-  /* border-radius: 15px; */
 }
 
 .flip-card-back p {
   position: relative;
   z-index: 1;
-}
+  color: white;
 
+}
 
 
   </style>
