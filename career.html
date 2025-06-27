@@ -189,24 +189,54 @@
       filter: grayscale(100%); /* ON HOVER: Grayscale */
     }
     /* ----------------------------------- */
-.job-strip .job-entry {
-  border-left: 4px solid transparent;
-  border-radius: 10px;
-  background: #ffffff;
-  transition: all 0.3s ease;
+.sec-title__tagline11111 {
+    margin: 0;
+    color: var(--ostech-text, #686A6F);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
 }
 
-.job-strip .job-entry {
-  border-left: 4px solid #ee8624;
-  background: #f9f9f9;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+.cps-h1 {
+    margin: 10px 0px;
+    font-size: 30px;
+    font-weight: bold;
 }
 
-.left-bar {
-  width: 6px;
-  height: 50px;
-  /* background: #ee8624; */
-  border-radius: 4px;
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(31, 41, 55, 0.7); /* gray-800 */
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  padding-top: 60px;
+  z-index: 1050;
+}
+
+.popup-box {
+  width: 100%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+/* Remove blue border and shadow on input focus */
+.form-control:focus {
+  box-shadow: none;
+  border-color: #ced4da; /* or your custom border color */
+  outline: none;
+}
+
+/* Optional: also apply to textarea and file input */
+textarea.form-control:focus,
+input[type="file"].form-control:focus {
+  box-shadow: none;
+  border-color: #ced4da;
+  outline: none;
 }
 
 
@@ -525,98 +555,103 @@
   </div>
 </section>
 
+<!-- ----------------------------------------------------------------------------------------------------------------------- -->
+ <!-- Career Section -->
+<div class="container py-5">
+  <h2 class="text-center mb-5">Career Opportunities at BrainArt IT Solution</h2>
+  <div class="row g-4">
 
-
-<!-- -------------------------------------------------------------------------------------- -->
-
-<section class="career-section">
-
-  <h2>CAREERS AT  <span style="color: #ee8624;">BRAINART IT SOLUTION</span></h2>
-  <p class="lead">
-    We're always adding new faces with unique backgrounds and perspectives to our Credera team.
-    Explore our open positions below.
-  </p>
-
-  <div class="container">
-    <div class="row g-4">
-      <!-- Students Card -->
-      <div class="col-md-6">
-        <div class="career-card p-4">
-          <img src="https://img.freepik.com/free-vector/team-leader-teamwork-concept_74855-6671.jpg?uid=R195395238&ga=GA1.1.1975205788.1747372593&semt=ais_items_boosted&w=740" alt="Students" class="career-img" style="height: 300px;">
-          <h5>
-Flutter Developer</h5>
-          <p>
-            Start your career with a wide range of client experiences while continuing to deepen your
-            skills alongside leaders who are deeply invested in your growth and development.
+    <!-- Job Card 1 -->
+    <div class="col-12">
+      <div class="d-flex flex-column flex-md-row align-items-center bg-white shadow p-4 rounded">
+        <img src="./images/icons/images-removebg-preview.png" alt="Flutter" class="img-fluid me-md-4 mb-3 mb-md-0" style="height: 80px; width: 80px;">
+        <div class="flex-fill">
+          <h5 class="mb-2">Flutter Developer</h5>
+          <p class="mb-0 text-muted">
+            <strong>Experience:</strong> Fresher |
+            <strong>No. of Openings:</strong> 1 |
+            <strong>Qualification:</strong> Graduate
           </p>
-   
-        <div >
-          <a href="contact.html" class="btn btn-primary ostech-btn mt-4" style="border-radius: 0%;color: white;text-decoration: none;">APPLY NOW</a>
         </div>
-        </div>
-      </div>
-
-      <!-- Experienced Professionals Card -->
-      <div class="col-md-6">
-        <div class="career-card p-4">
-          <img src="https://img.freepik.com/free-vector/tiny-developers-programming-website-internet-platform-flat-vector-illustration-cartoon-programmers-near-screen-with-open-code-script-software-development-digital-technology-concept_74855-10168.jpg?t=st=1751022587~exp=1751026187~hmac=f18286dca3dccc9cc1e06d002329e47bc045b6214c6d766e40630428b73fafca&w=1380" alt="Professionals" class="career-img" style="height: 300px;object-fit: cover;">
-          <h5>
-Full Stack Developer</h5>
-          <p>
-            Join us as we make an extraordinary impact on our clients, colleagues, and communities.
-            We’re looking for experienced professionals who are passionate about delivering exceptional
-            client service.
-          </p>
-     
-        <div>
-          <a href="contact.html" class="btn btn-primary ostech-btn mt-4" style="border-radius: 0%;color: white;text-decoration: none;">APPLY NOW</a>
-        </div>
-        </div>
+ <button style="color: white;border-radius: 0%;padding-left: 60px;padding-right: 60px;"  class="btn btn-primary ostech-btn mt-3 mt-md-0 ms-md-4" onclick="openPopup()">Apply</button>
       </div>
     </div>
-  </div>
-</section>
 
-
-
-
-<!-- -------------------------------------------------------------------------------------------- -->
-<!-- <div class="container py-5">
-  <h2 class="text-center mb-5 fw-bold text-dark">Career Opportunities at BrainArt IT Solution</h2>
-
-
-  <div class="job-strip d-flex flex-column gap-4">
-
-
-    <div class="job-entry p-4 d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between shadow-sm">
-      <div class="d-flex align-items-center mb-3 mb-md-0">
-        <div class="left-bar me-3"></div>
-        <div>
-          <h5 class="mb-1 fw-bold">Flutter Developer</h5>
-          <p class="mb-0 text-muted small">
-            Experience: Fresher &nbsp; | &nbsp; Openings: 1 &nbsp; | &nbsp; Qualification: Graduate
+    <!-- Job Card 2 -->
+    <div class="col-12">
+      <div class="d-flex flex-column flex-md-row align-items-center bg-white shadow p-4 rounded">
+        <img src="./images/icons/images-removebg-preview (1).png" alt="React" class="img-fluid me-md-4 mb-3 mb-md-0" style="height: 80px; width: 80px;">
+        <div class="flex-fill">
+          <h5 class="mb-2">Full Stack Developer</h5>
+          <p class="mb-0 text-muted">
+            <strong>Experience:</strong> Fresher |
+            <strong>No. of Openings:</strong> 1 |
+            <strong>Qualification:</strong> Graduate
           </p>
         </div>
+        <button style="color: white;border-radius: 0%;padding-left: 60px;padding-right: 60px;"  class="btn btn-primary ostech-btn mt-3 mt-md-0 ms-md-4" onclick="openPopup()">Apply</button>
       </div>
-         <a href="#" class="btn btn-primary ostech-btn rounded-pill py-3" style="color: white;">Apply</a>
     </div>
 
-   
-    <div class="job-entry p-4 d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between shadow-sm">
-      <div class="d-flex align-items-center mb-3 mb-md-0">
-        <div class="left-bar me-3"></div>
-        <div>
-          <h5 class="mb-1 fw-bold">Full Stack Developer</h5>
-          <p class="mb-0 text-muted small">
-            Experience: Fresher &nbsp; | &nbsp; Openings: 1 &nbsp; | &nbsp; Qualification: Graduate
+    
+    <!-- Job Card 3 -->
+    <div class="col-12">
+      <div class="d-flex flex-column flex-md-row align-items-center bg-white shadow p-4 rounded">
+        <img src="./images/bdee.png" alt="React" class="img-fluid me-md-4 mb-3 mb-md-0" style="height: 80px; width: 80px;object-fit: cover;">
+        <div class="flex-fill">
+          <h5 class="mb-2">Business Development Executive</h5>
+          <p class="mb-0 text-muted">
+            <strong>Experience:</strong> Fresher |
+            <strong>No. of Openings:</strong> 1 |
+            <strong>Qualification:</strong> Graduate
           </p>
         </div>
+        <button style="color: white;border-radius: 0%;padding-left: 60px;padding-right: 60px;"  class="btn btn-primary ostech-btn mt-3 mt-md-0 ms-md-4" onclick="openPopup()">Apply</button>
       </div>
-      <a href="#" class="btn btn-primary ostech-btn rounded-pill py-3" style="color: white;">Apply</a>
     </div>
 
   </div>
-</div> -->
+</div>
+
+<!-- Application Popup -->
+<!-- Application Popup -->
+<div id="popupForm" class="popup-overlay d-none">
+  <div class="popup-box bg-white p-4 rounded shadow position-relative">
+    <button type="button" class="btn-close position-absolute top-0 end-0 m-3" onclick="closePopup()"></button>
+    <h5 class="mb-3">Apply for Job</h5>
+    <form id="applicationForm" onsubmit="submitForm(event)">
+      <div class="mb-3">
+        <input type="text" name="name" class="form-control p-3" placeholder="First Name">
+        <small class="text-danger" id="error-name"></small>
+      </div>
+      <div class="mb-3">
+        <input type="text" name="lastName" class="form-control p-3" placeholder="Last Name">
+        <small class="text-danger" id="error-lastName"></small>
+      </div>
+      <div class="mb-3">
+        <input type="email" name="email" class="form-control p-3" placeholder="Email">
+        <small class="text-danger" id="error-email"></small>
+      </div>
+      <div class="mb-3">
+        <input type="tel" name="phone" class="form-control p-3" placeholder="Phone">
+        <small class="text-danger" id="error-phone"></small>
+      </div>
+      <div class="mb-3">
+        <textarea name="message" class="form-control p-3" placeholder="Message"></textarea>
+        <small class="text-danger" id="error-message"></small>
+      </div>
+      <div class="mb-3">
+        <input type="file" name="resume" class="form-control p-3">
+        <small class="text-danger" id="error-resume"></small>
+      </div>
+      <button type="submit" class="btn btn-primary ostech-btn w-100" style="color: white;">Send Message</button>
+      <p class="text-center text-muted mt-3" id="formResult"></p>
+    </form>
+  </div>
+</div>
+
+
+
 
 
 
@@ -784,6 +819,101 @@ Full Stack Developer</h5>
     menu.style.transform = 'translateY(-20px)';
   });
 </script>
+
+
+
+<script>
+  function openPopup() {
+    document.getElementById("popupForm").classList.remove("d-none");
+  }
+
+  function closePopup() {
+    document.getElementById("popupForm").classList.add("d-none");
+  }
+
+  function validateForm(formData) {
+    const errors = {};
+
+    if (!formData.name.trim()) errors.name = "Please enter your first name";
+    if (!formData.lastName.trim()) errors.lastName = "Please enter your last name";
+
+    if (!formData.email.trim()) {
+      errors.email = "Please enter your email";
+    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      errors.email = "Please enter a valid email address";
+    }
+
+    if (!formData.phone.trim()) {
+      errors.phone = "Please enter your phone number";
+    } else if (!/^\d{10}$/.test(formData.phone)) {
+      errors.phone = "Phone number must be 10 digits";
+    }
+
+    if (!formData.message.trim()) errors.message = "Please enter a message";
+    if (!formData.resume) errors.resume = "Please upload your resume file";
+
+    return errors;
+  }
+
+  function submitForm(e) {
+    e.preventDefault();
+
+    const form = document.getElementById("applicationForm");
+    const formData = new FormData(form);
+    const fields = {
+      name: formData.get("name") || "",
+      lastName: formData.get("lastName") || "",
+      email: formData.get("email") || "",
+      phone: formData.get("phone") || "",
+      message: formData.get("message") || "",
+      resume: formData.get("resume"),
+    };
+
+    // Clear errors
+    Object.keys(fields).forEach((key) => {
+      document.getElementById(`error-${key}`)?.innerText = "";
+    });
+
+    const errors = validateForm(fields);
+    if (Object.keys(errors).length > 0) {
+      Object.keys(errors).forEach((key) => {
+        document.getElementById(`error-${key}`)?.innerText = errors[key];
+      });
+      return;
+    }
+
+    // Display uploading...
+    document.getElementById("formResult").innerText = "Uploading...";
+
+    fetch("http://localhost:5000/upload", {
+      method: "POST",
+      body: formData,
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data && data.success) {
+          document.getElementById("formResult").innerText = "File uploaded successfully!";
+          form.reset();
+          closePopup();
+        } else {
+          document.getElementById("formResult").innerText = `Upload failed: ${data.error || "Try again."}`;
+        }
+      })
+      .catch(() => {
+        document.getElementById("formResult").innerText = "An error occurred. Please try again.";
+      });
+  }
+</script>
+<script>
+  function openPopup() {
+    document.getElementById("popupForm").classList.remove("d-none");
+  }
+
+  function closePopup() {
+    document.getElementById("popupForm").classList.add("d-none");
+  }
+</script>
+
 </body>
 </html>
 
