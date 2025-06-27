@@ -47,7 +47,7 @@
   position: relative;
   width: 100%;
   height: 100%;
-  transition: transform 0.6s;
+  transition: transform 0.8s;
   transform-style: preserve-3d;
 }
 
@@ -60,7 +60,7 @@
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  border-radius: 15px;
+  border-radius: 10px;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -86,7 +86,7 @@
 
 .flip-card-back {
   position: relative;
-  background-image: url("https://img.freepik.com/free-photo/boy-pretends-be-superhero-is-playing-as-astronaut-draw-concept_1150-19566.jpg?uid=R195395238&ga=GA1.1.1975205788.1747372593&semt=ais_items_boosted&w=740");
+  background-image: url("./images/careerg.avif");
   background-size: cover;
   background-position: center;
   color: white;
@@ -95,7 +95,7 @@
   padding: 20px;
   font-size: 1.2rem;
   font-weight: 700;
-  border-radius: 15px;
+  /* border-radius: 15px; */
   overflow: hidden;
   z-index: 1;
 }
@@ -104,9 +104,9 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(35, 35, 35, 0.646); /* adjust this for darkness */
+  background-color: rgba(10, 10, 10, 0.75); /* adjust this for darkness */
   z-index: 0;
-  border-radius: 15px;
+  /* border-radius: 15px; */
 }
 
 .flip-card-back p {
@@ -299,10 +299,10 @@
 
       <!-- Left Side: Images -->
       <div class="col-md-6 position-relative mb-4 mb-md-0 text-center">
-        <img src="./images/cc.png" alt="Meeting" class="img-fluid rounded grayscale">
+        <img src="./images/cc.png" alt="Meeting" class="img-fluid rounded grayscale" style="width: 100%;height: 430px;">
         <img src="./images/c2.webp" alt="Discussion"
              class="position-absolute  shadow-lg rounded"
-             style="bottom: 0; right: 20px; width: 70%; max-width: 300px;height: 300px;border: 5px solid white;object-fit: cover;">
+             style="bottom: 0; right: 20px; width: 70%; max-width: 270px;height: 230px;border: 5px solid white;object-fit: cover;">
       </div>
 
       <!-- Right Side: Text Content -->
