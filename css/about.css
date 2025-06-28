@@ -52,12 +52,14 @@
 .about-two__thumb__item--one::after {
   content: "";
   width: 18px;
-  height: 76%;
+  height: 74%;
   background: var(--ostech-base, #ee8624);
   position: absolute;
   top: 0;
   right: 0;
   animation: topBottom 4s ease-in-out infinite;
+
+
 }
 
 .about-two__thumb__item--two {
