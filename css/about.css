@@ -47,6 +47,7 @@
 
 .about-two__thumb__item--one {
   padding-right: 50px;
+  position: relative;
 }
 
 .about-two__thumb__item--one::after {
@@ -57,10 +58,22 @@
   position: absolute;
   top: 0;
   right: 0;
-  animation: topBottom 4s ease-in-out infinite;
-
-
+  animation: smoothUpDown 4s ease-in-out infinite;
 }
+
+/* Smooth animation using transform */
+@keyframes smoothUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 
 .about-two__thumb__item--two {
   position: relative;
